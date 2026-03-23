@@ -21,4 +21,3 @@ function whatIsInAName(arr, obj) {
   return arr.filter(item => keys.every(key => item[key] === obj[key])
   );
 }
-
