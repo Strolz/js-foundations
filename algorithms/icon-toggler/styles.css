@@ -1,0 +1,51 @@
+
+/* Reset default spacing and ensure consistent box sizing */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Center content vertically and horizontally on the page */
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+/* Add spacing below the heading */
+.heading {
+    margin-bottom: 1rem;
+}
+
+/* Remove list styling and set a fixed width for alignment */
+.item-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100px;
+}
+
+/* Align fruit name and heart icon on opposite sides */
+.item-list li {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Remove default button visuals for a cleaner icon look */
+button {
+  outline: none;
+  box-shadow: none;
+  border: none;
+  
+}
+
+/* Style applied when heart is in the “filled” state */
+.filled {
+  color: aqua;
+}
