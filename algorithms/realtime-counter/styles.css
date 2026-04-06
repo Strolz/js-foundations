@@ -1,0 +1,31 @@
+/* Establish page layout and center all content */
+body {
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+h1 {
+    background-color: aqua;
+}
+
+/* Center elements*/
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main__textbox {
+    width: 15rem;
+    height: 5rem;
+}
+
+/* UI state: highlight count when capacity is reached */
+.capacity {
+    color: red;
+}
