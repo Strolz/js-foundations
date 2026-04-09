@@ -2,9 +2,12 @@
 <html lang="en">
 
   <head>
+    <!-- Page metadata + global resources -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lightbox Viewer</title>
+    <title>lightbox Viewer</title>
+
+    <!-- Core stylesheet -->
     <link rel="stylesheet" href="styles.css">
   </head>
 
@@ -14,16 +17,21 @@
         <h1>Museum Gallery</h1>
     </div>
 
+    <!-- Thumbnail Gallery -->
     <div class="gallery">
-        <img src="https://cdn.freecodecamp.org/curriculum/labs/stonehenge-thumbnail.jpg" class="gallery__item">
-        <img src="https://cdn.freecodecamp.org/curriculum/labs/storm-thumbnail.jpg" class="gallery__item">
-        <img src="https://cdn.freecodecamp.org/curriculum/labs/trees-thumbnail.jpg" class="gallery__item">
+        <img src="https://cdn.freecodecamp.org/curriculum/labs/stonehenge-thumbnail.jpg" class="gallery-item">
+        <img src="https://cdn.freecodecamp.org/curriculum/labs/storm-thumbnail.jpg" class="gallery-item">
+        <img src="https://cdn.freecodecamp.org/curriculum/labs/trees-thumbnail.jpg" class="gallery-item">
     </div>
 
-    <div class="lightBox">
+    <!-- Lightbox w/ overlay-->
+    <div class="overlay"></div>
+    <div class="lightbox">
         <button id="close-btn">&times</button>
-        <img src="" id="lightbox__image">
+        <img src="" id="lightbox-image">
     </div>
+
+    <!-- Lightbox interaction script -->
     <script src="script.js"></script>
 </body>
 </html>

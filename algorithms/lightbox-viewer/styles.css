@@ -25,6 +25,7 @@ h1 {
     margin: 0 auto;
 }
 
+/* Gallery grid layout */
 .gallery {
     display: flex;
     flex-direction: row;
@@ -32,27 +33,40 @@ h1 {
     gap: .5rem;
 }
 
-.gallery__item {
+.gallery-item {
     width: 200px;
     height: 225px;
 }
 
-.lightBox {
+/* Lightbox container */
+.lightbox {
     display: none;
+    position: fixed;
     justify-content: center;
     align-items: center;
-    background: transparent gray;
-    position: fixed;
+    top: 0;
+    left: 0;
     height: 100%;
     width: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Semi Transparent*/
 }
 
-#lightbox__image {
+.overlay {
+  position: fixed;
+  inset: 0;
+  display: none; 
+}
+
+.overlay.shows {
+  display: block;
+}
+
+
+#lightbox-image {
     display: flex;
     margin: 0 auto;
     width: 75%;
-    height: 50%;
-    object-fit: cover;
+    height: 60%;
 }
 
 .show {
