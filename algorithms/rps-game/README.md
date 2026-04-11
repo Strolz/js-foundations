@@ -64,37 +64,85 @@ You will need to use let to declare these variables because their values will ch
 
 Step 6
 ======
+Now it's time to get the results of the round. Complete the getRoundResults function.
 
+If the player wins the round, update the playerScore by 1 and return the message "Player wins! [player's choice] beats [computer's choice]".
+
+If the computer and player choose the same option, return the message "It's a tie! Both chose [player's choice]".
+
+If the computer wins the round, update the computerScore by 1 and return the message "Computer wins! [computer's choice] beats [player's choice]".
+
+[computer's choice] should be replaced with computerResult while [player's choice] should be replaced with the userOption.
 ---------------------------------
 
 Step 7
 ======
+The next portion of the workshop is to create the functionality that will show the results.
 
+Start by creating a variable called playerScoreSpanElement and assign it the value of the element with the id player-score.
+
+Then create a variable called computerScoreSpanElement and assign it the value of the element with the id computer-score.
+
+Finally, create a variable called roundResultsMsg and assign it the value of the element with the id results-msg.
 ---------------------------------
 
 Step 8
 ======
+Now it is time to update the scores and the round results message.
 
+Create a showResults function with a parameter called userOption.
+
+Inside your showResults function, the roundResultsMsg should be updated with the result of the round.
+
+Then, the playerScoreSpanElement and computerScoreSpanElement should also be updated to show the updated scores of the player and computer.
+
+Remember, that the order matters here. You will need to first update the roundResultsMsg, then the playerScoreSpanElement, and finally the computerScoreSpanElement because the roundResultsMsg will be used to determine the scores.
 ---------------------------------
 
 Step 9
 ======
+Now it is time to test out your showResults function.
 
+Start by creating a variable called rockBtn and assign it the value of the button with the id of rock-btn.
+
+Then, create a variable called paperBtn and assign it the value of the button with the id of paper-btn.
+
+Finally, create a variable called scissorsBtn and assign it the value of the button with the id of scissors-btn.
 ---------------------------------
 
 Step 10
 =======
+The next step is to attach event listeners to each of the buttons you created in the previous step.
 
+Start by creating an event listener for the rockBtn button. When the rockBtn button is clicked, you should call the showResults function with the argument "Rock".
+
+Then, create an event listener for the paperBtn button. When the paperBtn button is clicked, you should call the showResults function with the argument "Paper".
+
+Finally, create an event listener for the scissorsBtn button. When the scissorsBtn button is clicked, you should call the showResults function with the argument "Scissors".
+
+Now, you should be able to click on any of the buttons and see the results for each round.
 ---------------------------------
 
 Step 11
 =======
+For the last portion of the workshop, you will focus on building out the winner message and reset button functionality.
 
+Start by creating a variable called winnerMsgElement that will store the element with the id of winner-msg.
+
+Then, create a variable called optionsContainer that will store the element with the class of options-container.
+
+Finally, create a variable called resetGameBtn that will store the element with the id of reset-game-btn.
 ---------------------------------
 
 Step 12
 =======
+If you try to play the game, you will see that you can play for an infinite amount of rounds. But the rules state that the first one to three points wins. You want to check if there's a winner, and display a message.
 
+In your showResults function, if the player has reached three points, update the winnerMsgElement to "Player has won the game!". If the computer has reached three points, update the winnerMsgElement to "Computer has won the game!".
+
+If there is a winner, show the resetGameBtn button by setting its display to block and hide the optionsContainer by setting its display to none.
+
+Now, try to play the game and see if the winner message is displayed when a player reaches three points.
 ---------------------------------
 
 Step 13
