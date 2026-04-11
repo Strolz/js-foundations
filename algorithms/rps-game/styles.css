@@ -6,6 +6,7 @@
   box-sizing: border-box;
 }
 
+/* Theme color variables */
 :root {
   --very-dark-blue: #0a0a23;
   --white: #ffffff;
@@ -84,4 +85,12 @@ h1 {
 #reset-game-btn {
   display: none;
   margin: 20px auto;
+}
+
+.is-hidden {
+  display: none;
+}
+
+#reset-game-btn.is-block {
+  display: block;
 }

@@ -147,10 +147,26 @@ Now, try to play the game and see if the winner message is displayed when a play
 
 Step 13
 =======
+If the player or computer has won the game, there should be an option to reset the game and play again.
 
+Add an event listener to the resetGameBtn button. Your event listener should take in a "click" event and a reference to the resetGame function.
 ---------------------------------
 
 Step 14
 =======
+For the final step of the workshop, you will need to build out the reset game functionality.
 
+Create a resetGame function that accomplishes the following:
+
+Resets the player and computer scores to 0.
+Updates the playerScoreSpanElement and computerScoreSpanElement to display the new scores.
+Hides the resetGameBtn button.
+Shows the optionsContainer so the player can play again.
+Clears the content for the winnerMsgElement and roundResultsMsg elements.
+Try testing out the game by playing a few rounds until one of the players reaches 3 points. Then, click the "Play again?" button to see if the game resets correctly.
+
+And with this final step, you have completed the Rock, Paper, Scissors game!
 ---------------------------------
+
+URL Link to lab : https://www.freecodecamp.org/learn/javascript-v9/workshop-rps-game/step-1
+
