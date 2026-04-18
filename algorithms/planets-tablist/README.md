@@ -129,20 +129,32 @@ Use the forEach method to loop through the panels and set the hidden attribute o
 
 Step 18
 =======
+Now it is time to set the clicked tab to be selected.
 
+Use the setAttribute method on the tab to set the aria-selected attribute to "true".
 ---------------------------------
 
 Step 19
 =======
+Now it is time to work on displaying the correct panel when a tab is clicked. Each of the panels has an id that matches the aria-controls attribute of the corresponding tab. For example, the first panel has an id of panel-earth, which matches the aria-controls attribute value for the first tab, which is panel-earth.
 
+Create a variable called associatedPanel and assign it the value tab.getAttribute("aria-controls"). This will give you the id of the panel that corresponds to the clicked tab.
 ---------------------------------
 
 Step 20
 =======
+Since associatedPanel is an id, that will allow you to query the document and find the corresponding panel element.
 
+Create a new variable called panel and assign it the value of document.getElementById(associatedPanel).
 ---------------------------------
 
 Step 21
 =======
+For the last step, you need to make the panel visible when its associated tab is clicked. You can do this by setting the hidden property of the panel to false.
 
+Click on any of the tabs, and you should see the corresponding panel content displayed.
+
+And with that last change, your workshop is complete!
 ---------------------------------
+
+URL Link to lab : https://www.freecodecamp.org/learn/javascript-v9/workshop-planets-tablist/step-1

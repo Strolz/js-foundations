@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+     <!-- Page metadata + global resources -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Planets Facts</title>
-    <link rel="stylesheet" href="./styles.css" />
+    <title>Planets facts</title>
+    <!-- Core stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
 
+    <!-- Main tabs-->
     <div class="tabs">
         <h2 id="tabs-title">Planets</h2>
 
@@ -17,6 +20,7 @@
             <button role="tab" aria-controls="panel-mars" aria-selected="false" id="tab-mars">🔴 Mars</button>
         </div>
 
+        <!-- Planet information panels-->
         <div id="panel-earth" role="tabpanel" aria-labelledby="tab-earth">
             <p>
                 Earth is our home planet, known for its abundant water, diverse ecosystems, and life-supporting atmosphere. It's the only planet in the solar system known to harbor life.
@@ -32,8 +36,9 @@
                 Mars, the red planet, is a rocky world with the tallest volcano and deepest canyon in the solar system. It's a key focus for exploration in the search for past or present life.
             </p>
         </div>
-        
     </div>
-    <script src="./script.js"></script>
+    
+    <!-- Tab state change script-->
+    <script src="script.js"></script>
   </body>
 </html>
