@@ -1,22 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    
+    <!-- Page metadata + global resources -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Theme Switcher</title>
+
+    <!-- Core stylesheet -->
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-      <div class="main">
-        <button id="theme-switcher-button" aria-haspopup="true" aria-expanded="false" aria-controls="theme-dropdown">Switch Theme</button>
+      <!-- Theme Selection Button -->
+      <button id="theme-switcher-button" aria-haspopup="true" aria-expanded="false" aria-controls="theme-dropdown">Switch Theme</button>
 
-        <ul id="theme-dropdown" role="menu" aria-labelledby="theme-switcher-button" hidden>
-            <li id="theme-light" role="menuitem" aria-controls="panel-light">Light</li>
-            <li id="theme-dark" role="menuitem" aria-controls="panel-dark">Dark</li>
-            <li id="theme-teal" role="menuitem" aria-controls="panel-teal">Teal</li>
-        </ul>
-      </div>
+      <!-- Theme Selections -->
+      <ul id="theme-dropdown" role="menu" aria-labelledby="theme-switcher-button" hidden>
+          <li id="theme-light" role="menuitem" aria-controls="panel-light">Light</li>
+          <li id="theme-dark" role="menuitem" aria-controls="panel-dark">Dark</li>
+          <li id="theme-teal" role="menuitem" aria-controls="panel-teal">Teal</li>
+      </ul>
+
+      <!-- Displayed Theme Message-->
       <div id="theme-message" aria-live="polite"></div>
+
     <script src="script.js"></script>
   </body>
 </html>

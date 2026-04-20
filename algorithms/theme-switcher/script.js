@@ -21,6 +21,7 @@ const body = document.querySelector("body")
 const themeMessage = document.getElementById("theme-message")
 const dropdown = document.getElementById("theme-dropdown");
 
+// Toggle theme menu visibility and sync aria-expanded state
 themeButton.addEventListener("click", () => {
 
     if(dropdown.hidden == false) {
@@ -33,6 +34,7 @@ themeButton.addEventListener("click", () => {
     themeButton.ariaExpanded = true;
 })
 
+// Handle UI background color change and display corresponding text
 menuItems.forEach(item => item.addEventListener("click", () => {
     body.className= "";
     let themeName = item.id.slice(6);
