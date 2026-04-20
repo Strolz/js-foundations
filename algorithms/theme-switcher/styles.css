@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  transition: background 0.3s, color 0.3s;
+}
+
+[role="menuitem"] {
+    cursor: pointer;
+}
+
+#theme-message {
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    width: max-content;
+    font-size: larger;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+.theme-light {
+    background-color: blanchedalmond;
+}
+
+.theme-dark {
+    background-color: darkgrey;
+}
+
+.theme-teal {
+    background-color: aqua;
+}
