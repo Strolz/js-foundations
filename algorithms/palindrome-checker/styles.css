@@ -1,0 +1,37 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --dark-grey: #1b1b32;
+    --light-grey: #f5f6f7;
+    --golden-yellow: #fecc4c;
+    --yellow: #ffcc4c;
+    --gold: #feac32;
+    --orange: #ffac33;
+    --dark-orange: #f89808;
+}
+
+body {
+    background-color: var(--dark-grey);
+    color: var(--light-grey);
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+button {
+    background-color: var(--gold);
+    border-width: 3px;
+    margin: 1rem auto;
+    padding: .5rem;
+}
