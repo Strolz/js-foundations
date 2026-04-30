@@ -2,8 +2,11 @@
 <html lang="en">
 
 <head>
+    <!-- Page metadata + global resources -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Core stylesheet -->
     <link rel="stylesheet" href="styles.css">
     <title>Regex Sandbox</title>
 
@@ -12,11 +15,14 @@
 <body>
     <h1>Regex Sandbox</h1>
     <main>
+        <!-- RegExp Creator-->
         <div id="regex-container">
             <label for="pattern">Regex Pattern:
                 <div id="pattern-container">/<input type="text" id="pattern" name="pattern"
                         placeholder="Enter your regex pattern">/</div>
             </label>
+
+            <!-- User selected Flag(s)-->
             <div id="flags-container">
                 <p>Flags: </p>
                 <label for="i">
@@ -27,10 +33,14 @@
                 </label>
             </div>
         </div>
+
+        <!-- User input to test RegExp -->
         <div id="test-container">
             <p>Test String:</p>
             <div id="test-string" placeholder="Enter your test string" contenteditable="true"></div>
         </div>
+
+        <!-- Test Button -->
         <button class="btn" id="test-btn" type="button">Test Regex</button>
         <div id="result-container">
             <h2>Result:</h2>
@@ -39,6 +49,8 @@
         </div>
 
     </main>
+
+    <!-- RegExp testing script -->
     <script src="script.js"></script>
 </body>
 
