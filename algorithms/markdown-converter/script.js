@@ -12,51 +12,57 @@ const linkText = /^\[(.+?)\]\((.+?)\)$/;
 const quote = /^>/;
 
 function convertMarkdown() {
+    const lines = markdownInput.value.split("\n");
+    const converted = lines.map(line => convertSingleLine(line));
+    return converted.join("");
+}
+
+function convertSingleLine(line) {
      
-    if(h1Exp.test(markdownInput.value) && !h2Exp.test(markdownInput.value)) {
-        return `<h1>${markdownInput.value
+    if(h1Exp.test(line) && !h2Exp.test(line)) {
+        return `<h1>${line
                 .slice(1)
                 .trim()}</h1>`;
     }
-    if(h2Exp.test(markdownInput.value) && !h3Exp.test(markdownInput.value)) {
-        return `<h2>${markdownInput.value
+    if(h2Exp.test(line) && !h3Exp.test(line)) {
+        return `<h2>${line
                 .slice(2)
                 .trim()}</h2>`;
     }
-    if(h3Exp.test(markdownInput.value)) {
-        return `<h3>${markdownInput.value
+    if(h3Exp.test(line)) {
+        return `<h3>${line
                 .slice(3)
                 .trim()}</h3>`;
     }
-    if(bold.test(markdownInput.value)) {
-        const text = markdownInput.value.match(bold)[2];
+    if(bold.test(line)) {
+        const text = line.match(bold)[2];
         return `<strong>${text
                         .trim()}</strong>`; 
     }
-    if(italic.test(markdownInput.value)) {
-        const text = markdownInput.value.match(italic)[2];
+    if(italic.test(line)) {
+        const text = line.match(italic)[2];
         return `<em>${text
                         .trim()}</em>`; 
     }
-    if(image.test(markdownInput.value)) {
-        const match = markdownInput.value.match(image);
+    if(image.test(line)) {
+        const match = line.match(image);
         const alt = match[1];
         const src = match[2];
         return `<img alt="${alt}" src="${src}">`
     }
-    if(linkText.test(markdownInput.value)) {
-        const match = markdownInput.value.match(linkText);
+    if(linkText.test(line)) {
+        const match = line.match(linkText);
         const text = match[1];
         const url = match[2];
         return `<a href="${url}">${text}</a>`
     }
-    if(quote.test(markdownInput.value)) {
-        return `<blockquote>${markdownInput.value
+    if(quote.test(line)) {
+        return `<blockquote>${line
                 .slice(1)
                 .trim()}</blockquote>`;
     }
 
-   return markdownInput.value;
+   return line;
 
 }   
 
