@@ -7,6 +7,7 @@ const h2Exp = /^##/;
 const h3Exp = /^###/;
 const bold = /^(\*\*|__)(.+?)\1$/;
 const italic = /^(\*|_)(.+?)\1$/;
+const image = /^!\[(.+?)\]\((.+?)\)$/;
 
 function convertMarkdown() {
      
@@ -34,6 +35,12 @@ function convertMarkdown() {
         const text = markdownInput.value.match(italic)[2];
         return `<em>${text
                         .trim()}</em>`; 
+    }
+    if(image.test(markdownInput.value)) {
+        const match = markdownInput.value.match(image);
+        const alt = match[1];
+        const src = match[2];
+        return `<img alt="${alt}" src="${src}">`
     }
 
    return markdownInput.value;
