@@ -9,6 +9,7 @@ const bold = /^(\*\*|__)(.+?)\1$/;
 const italic = /^(\*|_)(.+?)\1$/;
 const image = /^!\[(.+?)\]\((.+?)\)$/;
 const linkText = /^\[(.+?)\]\((.+?)\)$/;
+const quote = /^>/;
 
 function convertMarkdown() {
      
@@ -48,6 +49,11 @@ function convertMarkdown() {
         const text = match[1];
         const url = match[2];
         return `<a href="${url}">${text}</a>`
+    }
+    if(quote.test(markdownInput.value)) {
+        return `<blockquote>${markdownInput.value
+                .slice(1)
+                .trim()}</blockquote>`;
     }
 
    return markdownInput.value;
