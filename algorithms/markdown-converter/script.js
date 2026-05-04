@@ -5,6 +5,7 @@ const htmlPreview = document.getElementById("preview");
 const h1Exp = /^#/;
 const h2Exp = /^##/;
 const h3Exp = /^###/;
+const bold = /^(\*\*|__)(.+?)\1$/;
 
 function convertMarkdown() {
      
@@ -23,8 +24,13 @@ function convertMarkdown() {
                 .slice(3)
                 .trim()}</h3>`;
     }
+    if(bold.test(markdownInput.value)) {
+        const text = markdownInput.value.match(bold)[2];
+        return `<strong>${text}</strong>`; 
+    }
 
-   return markdownInput.value;      
+   return markdownInput.value;
+
 }   
 
 markdownInput.addEventListener("input", () => {
