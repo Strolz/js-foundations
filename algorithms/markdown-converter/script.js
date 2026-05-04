@@ -2,14 +2,14 @@ const markdownInput = document.getElementById("markdown-input");
 const rawOutput = document.getElementById("html-output");
 const htmlPreview = document.getElementById("preview");
 
-const h1Exp = /^#/;
-const h2Exp = /^##/;
-const h3Exp = /^###/;
-const bold = /^(\*\*|__)(.+?)\1$/;
-const italic = /^(\*|_)(.+?)\1$/;
+const h1Exp = /^#\s+.+/;
+const h2Exp = /^##\s+.+/;
+const h3Exp = /^###\s+.+/;
+const bold = /(\*\*|__)(.+?)\1/;
+const italic = /(\*|_)(.+?)\1/;
 const image = /^!\[(.+?)\]\((.+?)\)$/;
 const linkText = /^\[(.+?)\]\((.+?)\)$/;
-const quote = /^>/;
+const quote = /^>\s?.+/;
 
 function convertMarkdown() {
     const lines = markdownInput.value.split("\n");
@@ -18,31 +18,30 @@ function convertMarkdown() {
 }
 
 function convertSingleLine(line) {
-     
+    
     if(h1Exp.test(line) && !h2Exp.test(line)) {
-        return `<h1>${line
-                .slice(1)
-                .trim()}</h1>`;
+        const inner = line.slice(1).trim();    
+        return `<h1>${convertSingleLine(inner)}</h1>`;
     }
     if(h2Exp.test(line) && !h3Exp.test(line)) {
-        return `<h2>${line
-                .slice(2)
-                .trim()}</h2>`;
+        const inner = line.slice(2).trim();    
+        return `<h2>${convertSingleLine(inner)}</h2>`;
     }
     if(h3Exp.test(line)) {
-        return `<h3>${line
-                .slice(3)
-                .trim()}</h3>`;
+        const inner = line.slice(3).trim();    
+        return `<h3>${convertSingleLine(inner)}</h3>`;
     }
     if(bold.test(line)) {
         const text = line.match(bold)[2];
-        return `<strong>${text
-                        .trim()}</strong>`; 
+        return convertSingleLine(
+            line.replace(bold, (_, __, text) => `<strong>${text}</strong>`)
+        ); 
     }
     if(italic.test(line)) {
         const text = line.match(italic)[2];
-        return `<em>${text
-                        .trim()}</em>`; 
+        return convertSingleLine(
+        line.replace(italic, (_, __, text) => `<em>${text}</em>`)
+        ); 
     }
     if(image.test(line)) {
         const match = line.match(image);
@@ -57,9 +56,8 @@ function convertSingleLine(line) {
         return `<a href="${url}">${text}</a>`
     }
     if(quote.test(line)) {
-        return `<blockquote>${line
-                .slice(1)
-                .trim()}</blockquote>`;
+        const inner = line.slice(1).trim();
+        return `<blockquote>${convertSingleLine(inner)}</blockquote>`;
     }
 
    return line;
