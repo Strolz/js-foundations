@@ -6,6 +6,7 @@ const h1Exp = /^#/;
 const h2Exp = /^##/;
 const h3Exp = /^###/;
 const bold = /^(\*\*|__)(.+?)\1$/;
+const italic = /^(\*|_)(.+?)\1$/;
 
 function convertMarkdown() {
      
@@ -26,7 +27,13 @@ function convertMarkdown() {
     }
     if(bold.test(markdownInput.value)) {
         const text = markdownInput.value.match(bold)[2];
-        return `<strong>${text}</strong>`; 
+        return `<strong>${text
+                        .trim()}</strong>`; 
+    }
+    if(italic.test(markdownInput.value)) {
+        const text = markdownInput.value.match(italic)[2];
+        return `<em>${text
+                        .trim()}</em>`; 
     }
 
    return markdownInput.value;
