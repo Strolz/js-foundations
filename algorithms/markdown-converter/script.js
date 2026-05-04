@@ -8,6 +8,7 @@ const h3Exp = /^###/;
 const bold = /^(\*\*|__)(.+?)\1$/;
 const italic = /^(\*|_)(.+?)\1$/;
 const image = /^!\[(.+?)\]\((.+?)\)$/;
+const linkText = /^\[(.+?)\]\((.+?)\)$/;
 
 function convertMarkdown() {
      
@@ -41,6 +42,12 @@ function convertMarkdown() {
         const alt = match[1];
         const src = match[2];
         return `<img alt="${alt}" src="${src}">`
+    }
+    if(linkText.test(markdownInput.value)) {
+        const match = markdownInput.value.match(linkText);
+        const text = match[1];
+        const url = match[2];
+        return `<a href="${url}">${text}</a>`
     }
 
    return markdownInput.value;
