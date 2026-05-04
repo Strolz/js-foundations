@@ -4,6 +4,7 @@ const htmlPreview = document.getElementById("preview");
 
 const h1Exp = /^#/;
 const h2Exp = /^##/;
+const h3Exp = /^###/;
 
 function convertMarkdown() {
      
@@ -12,11 +13,17 @@ function convertMarkdown() {
                 .slice(1)
                 .trim()}</h1>`;
     }
-    if(h2Exp.test(markdownInput.value)) {
+    if(h2Exp.test(markdownInput.value) && !h3Exp.test(markdownInput.value)) {
         return `<h2>${markdownInput.value
                 .slice(2)
                 .trim()}</h2>`;
     }
+    if(h3Exp.test(markdownInput.value)) {
+        return `<h3>${markdownInput.value
+                .slice(3)
+                .trim()}</h3>`;
+    }
+
    return markdownInput.value;      
 }   
 
