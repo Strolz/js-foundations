@@ -11,12 +11,14 @@ const image = /^!\[(.+?)\]\((.+?)\)$/;
 const linkText = /^\[(.+?)\]\((.+?)\)$/;
 const quote = /^>\s?.+/;
 
+// Handle multiline input
 function convertMarkdown() {
     const lines = markdownInput.value.split("\n");
     const converted = lines.map(line => convertSingleLine(line));
     return converted.join("");
 }
 
+// Convert a single markdown line into the appropriate HTML
 function convertSingleLine(line) {
     
     if(h1Exp.test(line) && !h2Exp.test(line)) {
@@ -64,6 +66,7 @@ function convertSingleLine(line) {
 
 }   
 
+// Enable UI updating
 markdownInput.addEventListener("input", () => {
     let newOutput = convertMarkdown();
     rawOutput.textContent = newOutput;
