@@ -13,7 +13,9 @@ Feel free to explore the HTML and CSS, then add a form element and give it an id
 
 Step 2
 ======
+In your form, users will be able to input a number which represents their daily calorie budget.
 
+Create a label element, give it a for attribute set to budget and the text Budget, then create an input element with the id set to budget.
 ---------------------------------
 
 Step 3
