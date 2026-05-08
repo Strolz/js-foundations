@@ -80,5 +80,45 @@ Then add a button with the id set to clear to clear the form (don't forget to gi
 
 Step 12
 =======
+Your form needs somewhere to display the results. Add an empty div element and give it an id of output and the class values of output and hide.
+---------------------------------
+
+Step 13
+=======
+Finally, you need to link your JavaScript file to your HTML. Create a script element to do so.
+---------------------------------
+
+Step 14
+=======
+
+---------------------------------
+
+Step 15
+=======
+
+---------------------------------
+
+Step 16
+=======
+
+---------------------------------
+
+Step 17
+=======
+
+---------------------------------
+
+Step 18
+=======
+
+---------------------------------
+
+Step 19
+=======
+
+---------------------------------
+
+Step 20
+=======
 
 ---------------------------------
