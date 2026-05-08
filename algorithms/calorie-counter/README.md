@@ -73,7 +73,9 @@ Set the Breakfast option as the selected option.
 
 Step 11
 =======
+Create another div element. Within it, nest a button to submit the form. This button should have the text Calculate Remaining Calories.
 
+Then add a button with the id set to clear to clear the form (don't forget to give it a type attribute that prevents it from submitting the form). This button needs the text Clear.
 ---------------------------------
 
 Step 12
