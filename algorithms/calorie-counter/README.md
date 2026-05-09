@@ -97,12 +97,13 @@ Begin by getting the form element (using the id) and storing it in a variable ca
 
 Step 15
 =======
-
+Get your #budget element and assign it to budgetNumberInput, and your #entry-dropdown element and assign it to entryDropdown.
 ---------------------------------
 
 Step 16
 =======
-
+Step 16
+Following the same pattern, assign your #add-entry element to addEntryButton, your #clear element to clearButton, and your #output element to output.
 ---------------------------------
 
 Step 17
