@@ -108,20 +108,113 @@ Following the same pattern, assign your #add-entry element to addEntryButton, yo
 
 Step 17
 =======
+Declare a variable named isError using let and initialize it with false, allowing for its reassignment later.
 
+Later on in the project, you will update the value of isError if the user provides an invalid input.
 ---------------------------------
 
 Step 18
 =======
+When the user inputs their daily calorie budget, the input field will only accept numerical values. However, if a number is entered with a + or - sign, you'll need to remove those characters.
 
+Start by declaring a cleanInputString function that takes a str parameter.
+
+NOTE: Values from an HTML input field are received as strings in JavaScript. You'll need to convert these strings into numbers before performing any calculations. Converting string values into numbers will be covered in a future step.
 ---------------------------------
 
 Step 19
 =======
-
+Declare a regex variable and assign it the value from the example above. In future steps, you will update this regex pattern to match specific characters needed for the calorie counter.
 ---------------------------------
 
 Step 20
+=======
+The current pattern will match the exact text "hello", which is not the desired behavior. Instead, you want to search for +, -, or spaces. Replace the pattern in your regex variable with \+- to match plus and minus characters.
+
+Note that you need to use the backslash \ character to escape the + symbol because it has a special meaning in regular expressions.
+---------------------------------
+
+Step 21
+=======
+
+---------------------------------
+
+Step 23
+=======
+
+---------------------------------
+
+Step 24
+=======
+
+---------------------------------
+
+Step 25
+=======
+
+---------------------------------
+
+Step 26
+=======
+
+---------------------------------
+
+Step 27
+=======
+
+---------------------------------
+
+Step 28
+=======
+
+---------------------------------
+
+Step 29
+=======
+
+---------------------------------
+
+Step 30
+=======
+
+---------------------------------
+
+Step 31
+=======
+
+---------------------------------
+
+Step 32
+=======
+
+---------------------------------
+
+Step 33
+=======
+
+---------------------------------
+
+Step 34
+=======
+
+---------------------------------
+
+Step 35
+=======
+
+---------------------------------
+
+Step 36
+=======
+
+---------------------------------
+
+Step 37
+=======
+
+---------------------------------
+
+Step 38
 =======
 
 ---------------------------------
