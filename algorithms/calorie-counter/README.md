@@ -136,17 +136,22 @@ Note that you need to use the backslash \ character to escape the + symbol becau
 
 Step 21
 =======
+In regex, shorthand character classes allow you to match specific characters without having to write those characters in your pattern. Shorthand character classes are preceded with a backslash (\). The character class \s will match any whitespace character. Add this to your regex pattern.
+---------------------------------
 
+Step 22
+=======
+Turn your +-\s pattern into a character class. Note that you no longer need to escape the + character, because you are using a character class.
 ---------------------------------
 
 Step 23
 =======
-
+Add the g flag to your regex pattern.
 ---------------------------------
 
 Step 24
 =======
-
+Use your regex to replace all instances of +, -, and a space in str with an empty string. Return this value.
 ---------------------------------
 
 Step 25
