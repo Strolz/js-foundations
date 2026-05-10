@@ -156,57 +156,71 @@ Use your regex to replace all instances of +, -, and a space in str with an empt
 
 Step 25
 =======
+Now it is time to test out your cleanInputString function.
 
+Inside your cleanInputString function, add a console.log() statement with two arguments. The first argument should be the string "original string: " and the second argument should be the str parameter.       
 ---------------------------------
 
 Step 26
 =======
+To see the results from the cleanInputString function, you will need to add a console.log() statement. Inside that console statement, call the cleanInputString function with the string value of "+-99" as an argument.
 
+Open up the console and you should see the original string followed by the cleaned string value with the +- removed.
 ---------------------------------
 
 Step 27
 =======
-
+Once you have finished testing your cleanInputString function, you can remove both of your console statements.
 ---------------------------------
 
 Step 28
 =======
+In HTML, number inputs allow for exponential notation (such as 1e10). You need to filter those out.
 
+Start by creating a function called isInvalidInput – it should take a single str parameter.
 ---------------------------------
 
 Step 29
 =======
-
+Declare a regex variable, and assign it a regex that matches the character e.
 ---------------------------------
 
 Step 30
 =======
+The regex above would match hello, Hello, HELLO, and even hElLo because of the i flag. This flag makes your pattern case-insensitive.
 
+Add the i flag to your regex pattern.
 ---------------------------------
 
 Step 31
 =======
+Number inputs only allow the e to occur between two digits. To match any number, you can use the character class [0-9]. This will match any digit between 0 and 9.
 
+Add this character class before and after e in your pattern.
 ---------------------------------
 
 Step 32
 =======
-
+The + quantifier in a regular expression allows you to match a pattern that occurs one or more times. To match your digit pattern one or more times, add a plus after each of the digit character classes. For example: [0-9]+.
 ---------------------------------
 
 Step 33
 =======
-
+There is a shorthand character class to match any digit: \d. Replace your [0-9] character classes with this shorthand.
 ---------------------------------
 
 Step 34
 =======
-
+Return the result of calling the .match() method on str and passing your regex variable as the argument. You'll use this match result later on.
 ---------------------------------
 
 Step 35
 =======
+Now it is time to test your isInvalidInput function. For this test, you want to check if the function can detect scientific notation like 1e3 or 10e2. While this is a valid way to represent numbers, it is not a valid input for your calorie counter project.
 
+Below your isInvalidInput function, add a console statement. Inside that console statement, call the isInvalidInput function with an argument of "1e3".
+
+Open up the console to see the result. In the next step, you will learn more about what that result means.
 ---------------------------------
 
 Step 36
@@ -220,6 +234,46 @@ Step 37
 ---------------------------------
 
 Step 38
+=======
+
+---------------------------------
+
+Step 39
+=======
+
+---------------------------------
+
+Step 40
+=======
+
+---------------------------------
+
+Step 41
+=======
+
+---------------------------------
+
+Step 42
+=======
+
+---------------------------------
+
+Step 43
+=======
+
+---------------------------------
+
+Step 44
+=======
+
+---------------------------------
+
+Step 45
+=======
+
+---------------------------------
+
+Step 46
 =======
 
 ---------------------------------

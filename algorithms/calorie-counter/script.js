@@ -11,3 +11,8 @@ function cleanInputString(str) {
   const regex = /[+-\s]/;
   return str.replace(regex, "");
 }
+
+function isInvalidInput(str) {
+  const regex = /[0-9]+e[0-9]+/i;
+  return str.match(regex);
+}
