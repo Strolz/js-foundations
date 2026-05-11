@@ -225,32 +225,50 @@ Open up the console to see the result. In the next step, you will learn more abo
 
 Step 36
 =======
+Now it is time to test for a valid input. Update your console statement to the following: console.log(isInvalidInput("10")).
 
+Open up the console to see the result. You will learn more about what this result means in the next step.
 ---------------------------------
 
 Step 37
 =======
+When you open the console, you should see the result of null. The match method returns null when no match is found. In this case, the isInvalidInput function should return null when the input is a valid number without any scientific notation.
 
+null in JavaScript is a special primitive that represents the intentional absence of a value. In a boolean context, null is considered falsy which evaluates to false in a conditional statement.
+
+Now that you have finished testing your isInvalidInput function, you can remove the console.log statement.
 ---------------------------------
 
 Step 38
 =======
+Now you need to retrieve the value of entryDropdown.value to get the currently selected option from the dropdown.
 
+Print entryDropdown.value to the console to see its value.
+
+Since entryDropdown.value is in a static context (outside of an event listener), it only shows the value at the moment the code runs. This means it won't automatically update as the user interacts with the dropdown.
+
+It will capture the initial value (in this case, "breakfast") and won't reflect any changes the user makes afterward.
 ---------------------------------
 
 Step 39
 =======
+Now that you have finished testing the value of entryDropdown.value, you can remove the console.log statement.
 
+Your next step is to allow users to add entries to the calorie counter. Declare an empty function addEntry. This function should not take any parameters
 ---------------------------------
 
 Step 40
 =======
+You'll need to know which category the entry goes in. Thankfully, you added a dropdown for the user to select a category.
 
+Remember that you queried that dropdown earlier in your JavaScript and assigned it to the entryDropdown variable. You can use the value property to get the value of the selected option.
+
+Use concatenation to add a # to the beginning of the value property of entryDropdown, and assign that result to a targetId variable.
 ---------------------------------
 
 Step 41
 =======
-
+Now you need to target the .input-container element within the element that has your targetId. Declare a new targetInputContainer variable, and assign it the value of document.querySelector(). Use concatenation to separate targetId and '.input-container' with a space, and pass that string to querySelector().
 ---------------------------------
 
 Step 42
