@@ -273,25 +273,83 @@ Now you need to target the .input-container element within the element that has 
 
 Step 42
 =======
-
+Replace your concatenated string in the querySelector with a template literal – be sure to keep the space between your targetId variable and .input-container.
 ---------------------------------
 
 Step 43
 =======
-
+Thanks to template literals, you actually don't need the targetId variable at all. Remove that variable, and update your template literal to replace targetId with entryDropdown.value – remember to add # before that, in the string.
 ---------------------------------
 
 Step 44
 =======
+You will want to number the entries a user adds. To get all of the number inputs, you can use the querySelectorAll() method.
 
+The querySelectorAll() method returns a NodeList of all the elements that match the selector. A NodeList is an array-like object, so you can access the elements using bracket notation.
+
+Declare an entryNumber variable and give it the value of targetInputContainer.querySelectorAll(). You do not need to pass an argument to the query selector yet.
 ---------------------------------
 
 Step 45
 =======
+Each entry will have a text input for the entry's name, and a number input for the calories. To get a count of the number of entries, you can query by text inputs.
 
+Pass the string input[type="text"] to the querySelectorAll() method. Remember that you will need to use single quotes for your string, so that you can use double quotes within.
+
+This will return a NodeList of all the text inputs in the form. You can then access the length property of the NodeList to get the number of entries. Do this on the same line.
 ---------------------------------
 
 Step 46
+=======
+Now you need to build your dynamic HTML string to add to the webpage. Declare a new HTMLString variable, and assign it an empty template literal string.
+---------------------------------
+
+Step 47
+=======
+Inside your template literal, create a label element and give it the text Entry # Name. Using your template literal syntax, replace # with the value of entryNumber.
+---------------------------------
+
+Step 48
+=======
+Give your label element a for attribute with the value X-#-name, where X is the value of the entryDropdown element and # is the value of entryNumber. Remember that HTML attributes should be wrapped in double quotes.
+---------------------------------
+
+Step 49
+=======
+After your label element, and on a new line in your template string, create an input element. Give it a type attribute set to text, a placeholder attribute set to Name, and an id attribute that matches the for attribute of your label element.
+---------------------------------
+
+Step 50
+=======
+Create another label element (on a new line) at the end of your HTMLString. This label should have the text Entry # Calories, using your template literal syntax to replace # with the value of entryNumber, and the for attribute set to X-#-calories, where X is the value of entryDropdown and # is the value of entryNumber.
+---------------------------------
+
+Step 51
+=======
+
+---------------------------------
+
+Step 52
+=======
+
+---------------------------------
+
+Step 53
+=======
+
+---------------------------------
+
+Step 54
+=======
+
+---------------------------------
+
+Step 55
+=======
+
+---------------------------------
+
+Step 56
 =======
 
 ---------------------------------
