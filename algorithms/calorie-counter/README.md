@@ -326,25 +326,36 @@ Create another label element (on a new line) at the end of your HTMLString. This
 
 Step 51
 =======
-
+Finally, on a new line after your second label, create another input element. Give this one a type attribute set to number, a min attribute set to 0 (to ensure negative calories cannot be added), a placeholder attribute set to Calories, and an id attribute that matches the for attribute of your second label element.
 ---------------------------------
 
 Step 52
 =======
-
+Use the addition assignment operator += to append your HTMLString variable to targetInputContainer.innerHTML.
 ---------------------------------
 
 Step 53
 =======
+The addEventListener method takes two arguments. The first is the event to listen to. (Ex. 'click') The second is the callback function, or the function that runs when the event is triggered.
 
+Call the .addEventListener() method on the addEntryButton. Pass in the string "click" for the first argument and the addEntry function for the second argument.
+
+Note that you should not call addEntry, but pass the variable (or function reference) directly.
 ---------------------------------
 
 Step 54
 =======
+Try adding a couple of entries to the Breakfast category, and you may notice some bugs! The first thing we need to fix is the entry counts – the first entry should have a count of 1, not 0.
 
+This bug occurs because you are querying for input[type="text"] elements before adding the new entry to the page. To fix this, update your entryNumber variable to be the value of the length of the query plus 1. Add this on your declaration line, not in your template strings.
 ---------------------------------
 
 Step 55
+=======
+
+---------------------------------
+
+Step 56
 =======
 
 ---------------------------------
