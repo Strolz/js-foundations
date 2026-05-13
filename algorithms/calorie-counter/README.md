@@ -352,7 +352,9 @@ This bug occurs because you are querying for input[type="text"] elements before 
 
 Step 55
 =======
+Your other bug occurs if you add a Breakfast entry, fill it in, then add a second Breakfast entry. You'll see that the values you added disappeared.
 
+This is because you are updating innerHTML directly, which does not preserve your input content. Change your innerHTML assignment to use the insertAdjacentHTML() method of targetInputContainer instead. Do not pass any arguments yet.
 ---------------------------------
 
 Step 56
@@ -360,7 +362,32 @@ Step 56
 
 ---------------------------------
 
-Step 56
+Step 57
+=======
+
+---------------------------------
+
+Step 58
+=======
+
+---------------------------------
+
+Step 59
+=======
+
+---------------------------------
+
+Step 60
+=======
+
+---------------------------------
+
+Step 61
+=======
+
+---------------------------------
+
+Step 62
 =======
 
 ---------------------------------
