@@ -359,12 +359,20 @@ This is because you are updating innerHTML directly, which does not preserve you
 
 Step 56
 =======
+The insertAdjacentHtml method takes two arguments. The first argument is a string that specifies the position of the inserted element. The second argument is a string containing the HTML to be inserted.
 
+For the first argument, pass the string "beforeend" to insert the new element as the last child of targetInputContainer.
+
+For the second argument, pass your HTMLString variable.
 ---------------------------------
 
 Step 57
 =======
+Great! Now you can add entries without losing your previous inputs.
 
+Your next step is to write a function that will get the calorie counts from the user's entries.
+
+Declare a getCaloriesFromInputs function, and give it a parameter called list.
 ---------------------------------
 
 Step 58
@@ -383,6 +391,56 @@ Step 60
 ---------------------------------
 
 Step 61
+=======
+
+---------------------------------
+
+Step 62
+=======
+
+---------------------------------
+
+Step 63
+=======
+
+---------------------------------
+
+Step 64
+=======
+
+---------------------------------
+
+Step 65
+=======
+
+---------------------------------
+
+Step 66
+=======
+
+---------------------------------
+
+Step 67
+=======
+
+---------------------------------
+
+Step 68
+=======
+
+---------------------------------
+
+Step 69
+=======
+
+---------------------------------
+
+Step 70
+=======
+
+---------------------------------
+
+Step 62
 =======
 
 ---------------------------------
