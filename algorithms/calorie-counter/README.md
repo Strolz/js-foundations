@@ -377,57 +377,67 @@ Declare a getCaloriesFromInputs function, and give it a parameter called list.
 
 Step 58
 =======
-
+In your new function, declare a calories variable and assign it the value 0. Use let to declare it, since you will be reassigning it later.
 ---------------------------------
 
 Step 59
 =======
-
+Create a for...of loop that loops through the list. For the loop's variable name, use const to declare a variable called item.
 ---------------------------------
 
 Step 60
 =======
+The NodeList values you will pass to list will consist of input elements. So you will want to look at the value attribute of each element.
 
+Assign item.value to a const variable called currVal.
 ---------------------------------
 
 Step 61
 =======
+Remember that you wrote a function earlier to clean the user's input? You'll need to use that function here.
 
+Update your currVal declaration to be the result of calling cleanInputString with item.value.
 ---------------------------------
 
 Step 62
 =======
-
+You also need to confirm the input is valid. Declare an invalidInputMatch variable, and assign it the result of calling your isInvalidInput function with currVal as the argument.
 ---------------------------------
 
 Step 63
 =======
-
+Add an if statement that checks if invalidInputMatch is truthy.
 ---------------------------------
 
 Step 64
 =======
+Browsers have a built in alert() function, which you can use to display a pop-up message to the user. The message to display is passed as the argument to the alert() function.
 
+Using a template literal, in your if block, call the alert() function to tell the user "Invalid Input: ", followed by the first value in the invalidInputMatch array.
 ---------------------------------
 
 Step 65
 =======
+In programming, null is meant to represent the absence of a value. In this case, if the user enters an invalid input, you want to alert them and then return null to indicate that the function has failed.
 
+Still within your if block, set isError to true and return null.
 ---------------------------------
 
 Step 66
 =======
+Use the addition assignment operator to add currVal to your calories total. You'll need to use the Number constructor to convert currVal to a number.
 
+The Number constructor is a function that converts a value to a number. If the value cannot be converted, it returns NaN which stands for "Not a Number".
 ---------------------------------
 
 Step 67
 =======
-
+After your for loop has completed, return the calories value.
 ---------------------------------
 
 Step 68
 =======
-
+Now it's time to start putting it all together. Declare an empty calculateCalories function, which takes a parameter named e. This function will be another event listener, so the first argument passed will be the browser event – e is a common name for this parameter.
 ---------------------------------
 
 Step 69
