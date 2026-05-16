@@ -454,12 +454,74 @@ Your function needs to get the values from the entries the user has added.
 Declare a breakfastNumberInputs variable, and give it the value of calling document.querySelectorAll() with the selector #breakfast input[type='number']. This will return any number inputs that are in the #breakfast element.
 ---------------------------------
 
-Step 62
+Step 71
+=======
+Using that same syntax, query your number inputs in the #lunch element and assign them to lunchNumberInputs.
+---------------------------------
+
+Step 72
+=======
+Following the same pattern, query for your number inputs in the #dinner, #snacks, and #exercise elements. Assign them to variables following the naming scheme of the previous two.
+---------------------------------
+
+Step 73
+=======
+Now that you have your lists of elements, you can pass them to your getCaloriesFromInputs function to extract the calorie total.
+
+Declare a breakfastCalories variable, and assign it the result of calling getCaloriesFromInputs with breakfastNumberInputs as the argument.
+---------------------------------
+
+Step 74
 =======
 
 ---------------------------------
 
-Step 62
+Step 75
+=======
+
+---------------------------------
+
+Step 76
+=======
+
+---------------------------------
+
+Step 77
+=======
+
+---------------------------------
+
+Step 78
+=======
+
+---------------------------------
+
+Step 79
+=======
+
+---------------------------------
+
+Step 80
+=======
+
+---------------------------------
+
+Step 81
+=======
+
+---------------------------------
+
+Step 82
+=======
+
+---------------------------------
+
+Step 83
+=======
+
+---------------------------------
+
+Step 84
 =======
 
 ---------------------------------
