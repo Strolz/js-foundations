@@ -473,22 +473,26 @@ Declare a breakfastCalories variable, and assign it the result of calling getCal
 
 Step 74
 =======
-
+Now declare a lunchCalories variable, and give it the value of calling getCaloriesFromInputs with your lunchNumberInputs.
 ---------------------------------
 
 Step 75
 =======
-
+Following this same pattern, declare variables for the number inputs in the #dinner, #snacks, and #exercise elements. Assign them the appropriate getCaloriesFromInputs calls.
 ---------------------------------
 
 Step 76
 =======
+You also need to get the value of your #budget input. You already queried this at the top of your code, and set it to the budgetNumberInput variable. However, you used getElementById, which returns an Element, not a NodeList.
 
+A NodeList is an array-like object, which means you can iterate through it and it shares some common methods with an array. For your getCaloriesFromInputs function, an array will work for the argument just as well as a NodeList does.
+
+Declare a budgetCalories variable and set it to the result of calling getCaloriesFromInputs – pass an array containing your budgetNumberInput as the argument.
 ---------------------------------
 
 Step 77
 =======
-
+Your getCaloriesFromInputs function will set the global error flag isError to true if an invalid input is detected. Add an if statement to your calculateCalories function that checks the truthiness of your global error flag, and if it is truthy then use return to end the function execution.
 ---------------------------------
 
 Step 78
