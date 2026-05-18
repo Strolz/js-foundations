@@ -543,60 +543,74 @@ To keep your code clean and readable, you should add this on a new line in the t
 
 Step 86
 =======
+Now create a p element with the text budgetCalories Calories Budgeted, using interpolation to replace budgetCalories with the appropriate variable.
 
+This should come after your hr element.
 ---------------------------------
 
 Step 87
 =======
-
+Using the same interpolation syntax, add a second p element with the text consumedCalories Calories Consumed and a third with the text exerciseCalories Calories Burned. Remember to replace your consumedCalories and exerciseCalories variables with the appropriate values.
 ---------------------------------
 
 Step 88
 =======
+Finally, you need to make the #output element visible so the user can see your text. Your output variable is an Element, which has a classList property. This property has a .remove() method, which accepts a string representing the class to remove from the element.
 
+Use the .remove() method of the output variable's classList property to remove the hide class. Don't forget to place the word hide inside quotes.
 ---------------------------------
 
 Step 89
 =======
+If you click on your Calculate Remaining Calories button, you'll see that nothing happens. You still need to mount the event listener.
 
+Add an event listener to your calorieCounter element. The event type should be submit, and the callback function should be calculateCalories.
 ---------------------------------
 
 Step 90
 =======
-
+Your final feature to add is the ability for a user to clear the form. Start by declaring an empty function called clearForm – it should not take any arguments.
 ---------------------------------
 
 Step 91
 =======
-
+You need to get all of the input containers. Declare an inputContainers variable, and assign it to the value of querying the document for all elements with the class input-container.
 ---------------------------------
 
 Step 92
 =======
-
+Wrap your inputContainers query selector in Array.from(). Do this on the same line as your declaration.
 ---------------------------------
 
 Step 93
 =======
+It is time for another loop. Create a for...of loop with a variable called container to iterate through the inputContainers array.
 
+Inside the loop, set the innerHTML property of the container to an empty string. This will clear all of the contents of that input container.
 ---------------------------------
 
 Step 94
 =======
-
+After your loop completes, you need to clear the budgetNumberInput. Set the value property of budgetNumberInput to an empty string.
 ---------------------------------
 
 Step 95
 =======
+You also need to clear the output element's text. You can do this by setting the innerText property to an empty string.
 
+The difference between innerText and innerHTML is that innerText will not render HTML elements, but will display the tags and content as raw text.
 ---------------------------------
 
 Step 96
 =======
+To finish off this function, you need to restore the hide class to the output element. The classList property has an .add() method which is the opposite of the .remove() method. It accepts a string representing the class to add to the element.
 
+Add the hide class to your output.
 ---------------------------------
 
 Step 97
 =======
+To complete this workshop, add an event listener to the clearButton button. When the button is clicked, it should call the clearForm function.
 
+Congratulations! Your project is complete.
 ---------------------------------
