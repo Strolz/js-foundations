@@ -6,16 +6,19 @@ const clearButton = document.getElementById('clear');
 const output = document.getElementById('output');
 let isError = false;
 
+// Normalize user input
 function cleanInputString(str) {
   const regex = /[+-\s]/g;
   return str.replace(regex, '');
 }
 
+// Handle scientific‑notation style invalid input
 function isInvalidInput(str) {
   const regex = /\d+e\d+/i;
   return str.match(regex);
 }
 
+// Generate a new entry field for the selected meal section
 function addEntry() {
   const targetInputContainer = document.querySelector(`#${entryDropdown.value} .input-container`);
   const entryNumber = targetInputContainer.querySelectorAll('input[type="text"]').length + 1;
@@ -32,6 +35,7 @@ function addEntry() {
   targetInputContainer.insertAdjacentHTML('beforeend', HTMLString);
 }
 
+// Compute and update the calorie totals
 function calculateCalories(e) {
   e.preventDefault();
   isError = false;
@@ -67,6 +71,7 @@ function calculateCalories(e) {
   output.classList.remove('hide');
 }
 
+// Validate and total the calories from a list of inputs
 function getCaloriesFromInputs(list) {
   let calories = 0;
 
@@ -98,3 +103,4 @@ function clearForm() {
 
 addEntryButton.addEventListener("click", addEntry);
 calorieCounter.addEventListener("submit", calculateCalories);
+clearButton.addEventListener("click", clearForm);

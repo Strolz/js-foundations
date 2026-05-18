@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Page metadata + global resources -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Core stylesheet -->
     <link rel="stylesheet" href="styles.css" />
     <title>Calorie Counter</title>
   </head>
   <body>
     <main>
       <h1>Calorie Counter</h1>
+
+      <!-- Main Calorie Meal Sections-->
       <div class="container">
         <form id="calorie-counter">
           <label for="budget">Budget</label>
@@ -34,6 +38,8 @@
             <div class="input-container"></div>
           </fieldset>
           <div class="controls">
+            
+            <!-- Meal Selection Dropdown -->
             <span>
               <label for="entry-dropdown">Add food or exercise:</label>
               <select name="options" id="entry-dropdown">
@@ -43,6 +49,8 @@
                 <option value="snacks">Snacks</option>
                 <option value="exercise">Exercise</option>
               </select>
+              
+              <!-- Form Entry Buttons -->  
               <button id="add-entry">Add Entry</button>
             </span>
           </div>
@@ -51,9 +59,11 @@
               <button id="clear" type="button">Clear</button>
             </div>
         </form>
+        <!-- Result Output -->
         <div id="output" class="output and hide"></div>     
       </div>
     </main>
+    <!-- Core JS -->
     <script src="script.js"></script>
   </body>
 </html>
