@@ -514,20 +514,89 @@ Declare a surplusOrDeficit variable. Then use a ternary operator to set surplusO
 
 Step 81
 =======
-
+You need to construct the HTML string that will be displayed in the output element. Start by assigning an empty template literal to the innerHTML property of the output element on a new line at the end of the function.
 ---------------------------------
 
 Step 82
 =======
+Your output.innerHTML string will need a span element. Create that, and give it a class attribute set to the surplusOrDeficit variable. Your surplusOrDeficit variable should be converted to lower case using the toLowerCase() method.
 
+Do not give your span any text yet.
 ---------------------------------
 
 Step 83
 =======
-
+Give your span the text remainingCalories Calorie surplusOrDeficit, using interpolation to replace remainingCalories and surplusOrDeficit with the appropriate variables.
 ---------------------------------
 
 Step 84
+=======
+In your span text, wrap your remainingCalories reference in Math.abs() to ensure that the value is positive.
+---------------------------------
+
+Step 85
+=======
+After your span element, add an hr element to create a horizontal line.
+
+To keep your code clean and readable, you should add this on a new line in the template literal.
+---------------------------------
+
+Step 86
+=======
+
+---------------------------------
+
+Step 87
+=======
+
+---------------------------------
+
+Step 88
+=======
+
+---------------------------------
+
+Step 89
+=======
+
+---------------------------------
+
+Step 90
+=======
+
+---------------------------------
+
+Step 91
+=======
+
+---------------------------------
+
+Step 92
+=======
+
+---------------------------------
+
+Step 93
+=======
+
+---------------------------------
+
+Step 94
+=======
+
+---------------------------------
+
+Step 95
+=======
+
+---------------------------------
+
+Step 96
+=======
+
+---------------------------------
+
+Step 97
 =======
 
 ---------------------------------
