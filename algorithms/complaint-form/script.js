@@ -27,4 +27,15 @@ const submitBtn = document.getElementById("submit-btn");
 
 function validateForm() {
 
+     return {
+        "full-name": fullName.value,
+        "email": email.value.match(/@/),
+        "order-no": orderNo.value,
+        "product-code": productCode.value,
+        "quantity": quantity.value,
+        "complaints-group": Array.from(complaintCheckBox).some(box => box.checked),
+        "complaint-description": complaintDescription.value.length < 20,
+    }
+
+    
 }
