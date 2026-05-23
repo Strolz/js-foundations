@@ -51,4 +51,6 @@ function isValid() {
     return Object.values(formState).every(truth => truth === true)
 }
 
-
+submitBtn.addEventListener("click", (e) => {
+    
+});
