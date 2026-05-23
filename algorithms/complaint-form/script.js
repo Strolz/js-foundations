@@ -45,3 +45,10 @@ function validateForm() {
     }
     
 }
+
+function isValid() {
+    const formState = validateForm();
+    return Object.values(formState).every(truth => truth === true)
+}
+
+
