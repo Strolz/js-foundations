@@ -52,5 +52,6 @@ function isValid() {
 }
 
 submitBtn.addEventListener("click", (e) => {
-    
+    if (!!isValid()) e.preventDefault(e);    
 });
+
