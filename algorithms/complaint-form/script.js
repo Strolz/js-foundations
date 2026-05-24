@@ -55,3 +55,8 @@ submitBtn.addEventListener("click", (e) => {
     if (!!isValid()) e.preventDefault(e);    
 });
 
+fullName.addEventListener("input", () => {
+    fullName.value.trim() 
+    ? fullName.style.borderColor = "green"
+    : fullName.style.borderColor = "red"
+});
