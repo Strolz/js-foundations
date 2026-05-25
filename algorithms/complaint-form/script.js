@@ -27,13 +27,12 @@ const btnContainer = document.getElementById("btn-container");
 const submitBtn = document.getElementById("submit-btn");
 
 function validateForm() {
-
-     return {
-        "full-name": !!fullName.value,
+    return {
+        "full-name": !!fullName.value.trim(),
         "email": !!email.value.match(/@/),
-        "order-no": !!orderNo.value,
-        "product-code": !!productCode.value,
-        "quantity": !!quantity.value,
+        "order-no": /^2024\d{6}$/.test(orderNo.value.trim()),
+        "product-code": /^[A-Za-z]{2}\d{2}-[A-Za-z]\d{3}-[A-Za-z]{2}\d$/.test(productCode.value.trim()),
+        "quantity": !!quantity.value.trim(),
         "complaints-group": Array.from(complaintCheckBox).some(box => box.checked),
         "complaint-description": 
             !otherComplaint.checked ||
@@ -42,8 +41,7 @@ function validateForm() {
         "other-solution": 
             !otherSolution.checked ||
             solutionDescription.value.trim().length >= 20,
-    }
-    
+    };
 }
 
 function isValid() {
@@ -65,4 +63,10 @@ email.addEventListener("change", () => {
     email.value.trim() 
     ? fullName.style.borderColor = "green"
     : fullName.style.borderColor = "red"
+});
+
+orderNo.addEventListener("change", () => {
+    /^2024\d{6}$/.test(orderNo.value.trim()) 
+    ? orderNo.style.borderColor = "green"
+    : orderNo.style.borderColor = "red"
 });
