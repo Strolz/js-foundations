@@ -70,3 +70,9 @@ orderNo.addEventListener("change", () => {
     ? orderNo.style.borderColor = "green"
     : orderNo.style.borderColor = "red"
 });
+
+productCode.addEventListener("change", () => {
+    /^[A-Za-z]{2}\d{2}-[A-Za-z]\d{3}-[A-Za-z]{2}\d$/.test(productCode.value.trim()) 
+    ? productCode.style.borderColor = "green"
+    : productCode.style.borderColor = "red"
+});
