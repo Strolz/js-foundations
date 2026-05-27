@@ -90,3 +90,10 @@ complaintCheckBox.forEach(box => {
     });
 });
 
+solutionsRadioBtns.forEach(btn => {
+    btn.addEventListener("change", () => {
+        const oneChecked = Array.from(solutionsRadioBtns).some(cr => cr.checked);
+        solutionsGroup.style.borderColor = oneChecked ? "green" : "red";
+    });
+});
+
