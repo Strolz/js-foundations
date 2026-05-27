@@ -17,7 +17,7 @@ const complaintDescriptionContainer = document.getElementById("complaint-descrip
 const complaintDescription = document.getElementById("complaint-description");
 
 const solutionsGroup = document.getElementById("solutions-group");
-const solutionsRadioBtn = document.querySelectorAll("#solutions-group input[type='radio']");
+const solutionsRadioBtns = document.querySelectorAll("#solutions-group input[type='radio']");
 const otherSolution = document.getElementById("other-solution");
 
 const solutionDescriptionContainer = document.getElementById("solution-description-container");
@@ -37,7 +37,7 @@ function validateForm() {
         "complaint-description": 
             !otherComplaint.checked ||
             complaintDescription.value.trim().length >= 20,
-        "solutions-group": Array.from(solutionsRadioBtn).some(r => r.checked),
+        "solutions-group": Array.from(solutionsRadioBtns).some(r => r.checked),
         "other-solution": 
             !otherSolution.checked ||
             solutionDescription.value.trim().length >= 20,
@@ -61,8 +61,8 @@ fullName.addEventListener("change", () => {
 
 email.addEventListener("change", () => {
     email.value.trim() 
-    ? fullName.style.borderColor = "green"
-    : fullName.style.borderColor = "red"
+    ? email.style.borderColor = "green"
+    : email.style.borderColor = "red"
 });
 
 orderNo.addEventListener("change", () => {
@@ -82,3 +82,11 @@ quantity.addEventListener("change", () => {
     ? quantity.style.borderColor = "green"
     : quantity.style.borderColor = "red"
 });
+
+complaintCheckBox.forEach(box => {
+    box.addEventListener("change", () => {
+        const oneChecked = Array.from(complaintCheckBox).some(cb => cb.checked);
+        complaintsGroup.style.borderColor = oneChecked ? "green" : "red";
+    });
+});
+
