@@ -97,3 +97,8 @@ solutionsRadioBtns.forEach(btn => {
     });
 });
 
+complaintDescription.addEventListener("change", () => {
+    otherComplaint.checked && complaintDescription.value.trim().length >= 20
+    ? complaintDescription.style.borderColor = "green"
+    : complaintDescription.style.borderColor = "red"
+});
