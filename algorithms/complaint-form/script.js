@@ -32,7 +32,7 @@ function validateForm() {
         "email": !!email.value.match(/@/),
         "order-no": /^2024\d{6}$/.test(orderNo.value.trim()),
         "product-code": /^[A-Za-z]{2}\d{2}-[A-Za-z]\d{3}-[A-Za-z]{2}\d$/.test(productCode.value.trim()),
-        "quantity": !!quantity.value.trim(),
+        "quantity": !!quantity.value.trim() >= 1,
         "complaints-group": Array.from(complaintCheckBox).some(box => box.checked),
         "complaint-description": 
             !otherComplaint.checked ||
@@ -75,4 +75,10 @@ productCode.addEventListener("change", () => {
     /^[A-Za-z]{2}\d{2}-[A-Za-z]\d{3}-[A-Za-z]{2}\d$/.test(productCode.value.trim()) 
     ? productCode.style.borderColor = "green"
     : productCode.style.borderColor = "red"
+});
+
+quantity.addEventListener("change", () => {
+    quantity.value.trim() > 0
+    ? quantity.style.borderColor = "green"
+    : quantity.style.borderColor = "red"
 });
