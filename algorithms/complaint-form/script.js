@@ -32,7 +32,7 @@ function validateForm() {
         "email": !!email.value.match(/@/),
         "order-no": /^2024\d{6}$/.test(orderNo.value.trim()),
         "product-code": /^[A-Za-z]{2}\d{2}-[A-Za-z]\d{3}-[A-Za-z]{2}\d$/.test(productCode.value.trim()),
-        "quantity": !!quantity.value.trim() >= 1,
+        "quantity": quantity.value.trim() >= 1,
         "complaints-group": Array.from(complaintCheckBox).some(box => box.checked),
         "complaint-description": 
             !otherComplaint.checked ||
@@ -49,8 +49,8 @@ function isValid() {
     return Object.values(formState).every(truth => truth === true)
 }
 
-submitBtn.addEventListener("click", (e) => {
-    if (!!isValid()) e.preventDefault(e);    
+mainForm.addEventListener("submit", (e) => {
+    if (!isValid()) e.preventDefault(e);    
 });
 
 fullName.addEventListener("change", () => {
@@ -103,7 +103,7 @@ complaintDescription.addEventListener("change", () => {
     : complaintDescription.style.borderColor = "red"
 });
 
-solutionDescription.addEventListener("change", () => {
+solutionDescription.addEventListener("input", () => {
     otherSolution.checked && solutionDescription.value.trim().length >= 20
     ? solutionDescription.style.borderColor = "green"
     : solutionDescription.style.borderColor = "red"
