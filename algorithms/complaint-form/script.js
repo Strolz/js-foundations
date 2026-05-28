@@ -38,7 +38,7 @@ function validateForm() {
             !otherComplaint.checked ||
             complaintDescription.value.trim().length >= 20,
         "solutions-group": Array.from(solutionsRadioBtns).some(r => r.checked),
-        "other-solution": 
+        "solution-description": 
             !otherSolution.checked ||
             solutionDescription.value.trim().length >= 20,
     };
@@ -101,4 +101,10 @@ complaintDescription.addEventListener("change", () => {
     otherComplaint.checked && complaintDescription.value.trim().length >= 20
     ? complaintDescription.style.borderColor = "green"
     : complaintDescription.style.borderColor = "red"
+});
+
+solutionDescription.addEventListener("change", () => {
+    otherSolution.checked && solutionDescription.value.trim().length >= 20
+    ? solutionDescription.style.borderColor = "green"
+    : solutionDescription.style.borderColor = "red"
 });
