@@ -26,6 +26,7 @@ const solutionDescription = document.getElementById("solution-description");
 const btnContainer = document.getElementById("btn-container");
 const submitBtn = document.getElementById("submit-btn");
 
+// Validate turthiness of form fields
 function validateForm() {
     return {
         "full-name": !!fullName.value.trim(),
@@ -44,15 +45,18 @@ function validateForm() {
     };
 }
 
+// Ensure all fields are truthy
 function isValid() {
     const formState = validateForm();
     return Object.values(formState).every(truth => truth === true)
 }
 
+// Submit form if requirements pass
 mainForm.addEventListener("submit", (e) => {
     if (!isValid()) e.preventDefault(e);    
 });
 
+// Handle border color updates based on field validity
 fullName.addEventListener("change", () => {
     fullName.value.trim() 
     ? fullName.style.borderColor = "green"
