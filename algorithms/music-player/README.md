@@ -36,17 +36,33 @@ src: "https://cdn.freecodecamp.org/curriculum/js-music-player/scratching-the-sur
 
 Step 5
 ======
+Add a second object with the following keys and values:
 
+id: 1,
+title: "Can't Stay Down",
+artist: "Quincy Larson",
+duration: "4:15",
+src: "https://cdn.freecodecamp.org/curriculum/js-music-player/can't-stay-down.mp3",
 ---------------------------------
 
 Step 6
 ======
+Add a third object with the following properties and values:
 
+id: 2,
+title: "Still Learning",
+artist: "Quincy Larson",
+duration: "3:51",
+src: "https://cdn.freecodecamp.org/curriculum/js-music-player/still-learning.mp3",
 ---------------------------------
 
 Step 7
 ======
+The rest of the songs has been added to the allSongs array for you.
 
+In previous lessons, you learned about the Web Audio API and how to use it to play songs. All modern browsers support the Web Audio API, which lets you generate and process audio in web applications.
+
+Create a variable named audio and set it equal to new Audio(). This will create a new HTML5 audio element.
 ---------------------------------
 
 Step 8
