@@ -67,12 +67,16 @@ Create a variable named audio and set it equal to new Audio(). This will create 
 
 Step 8
 ======
+Your music player should keep track of the songs, the current song playing, and the time of the current song. To do this, you will need to create an object to store this information.
 
+Start by declaring a new variable called userData and assign it an empty object.
 ---------------------------------
 
 Step 9
 ======
+In your userData object, create a songs property and set its value to the allSongs array.
 
+Then, to handle the current song's information and track its playback time, create a currentSong and songCurrentTime properties. Set the values to null and 0, respectively.
 ---------------------------------
 
 Step 10

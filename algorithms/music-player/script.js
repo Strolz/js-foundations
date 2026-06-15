@@ -77,4 +77,10 @@ const allSongs = [
   },
 ];
 
-const audio = new Audio();             
+const audio = new Audio();
+
+const userData = {
+    songs: allSongs,
+    currentSong: null,
+    songCurrentTime: 0,
+};
