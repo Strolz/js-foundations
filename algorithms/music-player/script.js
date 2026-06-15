@@ -84,3 +84,7 @@ const userData = {
     currentSong: null,
     songCurrentTime: 0,
 };
+
+const playSong = id => {
+  const song = userData.songs.find((song) => song.id === id);
+}

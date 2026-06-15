@@ -81,7 +81,9 @@ Then, to handle the current song's information and track its playback time, crea
 
 Step 10
 =======
+It's time to begin implementing the functionality for playing the displayed songs.
 
+Define a playSong function that takes an single parameter which will represent the unique identifier of the song you want to play.
 ---------------------------------
 
 Step 11
