@@ -121,7 +121,11 @@ Then, set userData.currentSong to song, and to finally play the song, use the pl
 
 Step 16
 =======
+In previous steps you built out the functionality for playing a song. Now you need to add the functionality to the play button.
 
+Use the addEventListener() method on playButton and pass in a "click" event for the first argument. For now, use a callback that calls playSong(0) as the second argument.
+
+Then, test it by clicking the play button.
 ---------------------------------
 
 Step 17
