@@ -88,27 +88,35 @@ Define a playSong function that takes an single parameter which will represent t
 
 Step 11
 =======
-
+Within your playSong function, use the find() method on the userData.songs array to search for a song which has an id strictly equal to the id passed into the playSong function. Assign the find call to a variable named song.
 ---------------------------------
 
 Step 12
 =======
+Still inside the playSong function, set the audio.src property equal to song.src. This tells the audio element where to find the audio data for the selected song.
 
+Also, set the audio.title property equal to song.title. This tells the audio element what to display as the title of the song.
 ---------------------------------
 
 Step 13
 =======
+Before playing the song, you need to make sure it starts from the beginning. This can be achieved by the use of the currentTime property on the audio object.
 
+Add an if statement to check if no current song is playing by verifying that userData.currentSong is falsy. Inside if block, set the currentTime property of the audio object to 0
 ---------------------------------
 
 Step 14
 =======
+Add an else block to handle the song's current playback time. This allows you to resume the current song at the point where it was paused.
 
+Within the else block, set the currentTime property of the audio object to the value stored in userData.songCurrentTime.
 ---------------------------------
 
 Step 15
 =======
+Next, use the classList property and the add() method to add the playing class to the playButton element. This will look for the class playing in the CSS file and add it to the playButton element.
 
+Then, set userData.currentSong to song, and to finally play the song, use the play() method on the audio variable. play() is a method from the web audio API for playing an mp3 file.
 ---------------------------------
 
 Step 16
