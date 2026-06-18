@@ -144,7 +144,9 @@ This ensures that the currently playing song will continue to play when the play
 
 Step 19
 =======
+Now, use the querySelectorAll method to target the .playlist-song elements and store them in a variable named songs.
 
+Then, call the forEach method on songs. Pass in a callback function that uses song as the parameter to the method. Leave the curly braces empty for now.
 ---------------------------------
 
 Step 20

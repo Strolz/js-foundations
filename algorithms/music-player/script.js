@@ -108,3 +108,8 @@ playButton.addEventListener("click", () => {
     playSong(userData.currentSong);
   }
 })
+
+const songs = document.querySelectorAll(".playlist-song");
+songs.forEach(song => () => {
+
+})
