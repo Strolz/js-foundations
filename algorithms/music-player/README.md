@@ -130,12 +130,16 @@ Then, test it by clicking the play button.
 
 Step 17
 =======
+Anytime you click the play button, the first song of your playlist will always play. To fix this, within the arrow function of the event listener, replace playSong(0) with an if statement that checks if userData.currentSong is null.
 
+Inside the if block, call the playSong function with the id of the first song in the userData.songs array.
 ---------------------------------
 
 Step 18
 =======
+Add an else block. Inside the else block, call the playSong function with the id of the currently playing song as an argument.
 
+This ensures that the currently playing song will continue to play when the play button is clicked.
 ---------------------------------
 
 Step 19
