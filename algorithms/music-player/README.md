@@ -151,7 +151,11 @@ Then, call the forEach method on songs. Pass in a callback function that uses so
 
 Step 20
 =======
+When you click a song of your playlist you want to play that song. For that you'll need to add an event listener for the click event on each button element which is a child of a song element.
 
+Complete the callback of your forEach to do that. Inside the addEventListener callback, call playSong(n), where n is the song id that you can get from the id attribute of song.
+
+Note that each song has an id attribute of song-n: you'll need to get the n part and convert it into a number before passing it to playSong().
 ---------------------------------
 
 Step 21
