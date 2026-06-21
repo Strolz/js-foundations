@@ -119,3 +119,6 @@ songs.forEach((song) => {
   })
 })
 
+const pauseSong = () => {
+  userData.songCurrentTime = audio;
+}

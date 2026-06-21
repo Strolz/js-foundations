@@ -160,7 +160,9 @@ Note that each song has an id attribute of song-n: you'll need to get the n part
 
 Step 21
 =======
+Now you need to work on pausing the currently playing song.
 
+Define a pauseSong function that takes no parameters. Within your new function, to store the current time of the song when it is paused, set the songCurrentTime of the userData object to the currentTime of the audio variable.
 ---------------------------------
 
 Step 22
