@@ -90,21 +90,20 @@ const playSong = id => {
   audio.src = song.src;
   audio.title = song.title;
 
-const pauseSong = () => {
-  userData.songCurrentTime = audio;
-  playButton.classList.remove("playing");
-  audio.pause();
-}
- 
   if (userData.currentSong === null) {
     audio.currentTime = 0
   } else {
     audio.currentTime = userData.songCurrentTime;
   }
-
   playButton.classList.add("playing")
   userData.currentSong = song;
   audio.play();
+}
+
+const pauseSong = () => {
+  userData.songCurrentTime = audio;
+  playButton.classList.remove("playing");
+  audio.pause();
 }
 
 playButton.addEventListener("click", () => {
@@ -124,3 +123,5 @@ songs.forEach((song) => {
       playSong(Number(id));
   })
 })
+
+pauseButton.addEventListener("click", pauseSong);
