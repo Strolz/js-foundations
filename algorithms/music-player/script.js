@@ -89,6 +89,12 @@ const playSong = id => {
   const song = userData.songs.find((song) => song.id === id);
   audio.src = song.src;
   audio.title = song.title;
+
+const pauseSong = () => {
+  userData.songCurrentTime = audio;
+  playButton.classList.remove("playing");
+  audio.pause();
+}
  
   if (userData.currentSong === null) {
     audio.currentTime = 0
@@ -118,7 +124,3 @@ songs.forEach((song) => {
       playSong(Number(id));
   })
 })
-
-const pauseSong = () => {
-  userData.songCurrentTime = audio;
-}
