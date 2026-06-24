@@ -101,7 +101,7 @@ const playSong = id => {
 }
 
 const pauseSong = () => {
-  userData.songCurrentTime = audio;
+  userData.songCurrentTime = audio.currentTime;
   playButton.classList.remove("playing");
   audio.pause();
 }
@@ -110,7 +110,7 @@ playButton.addEventListener("click", () => {
   if(userData.currentSong === null) {
     playSong(0);
   } else {
-    playSong(userData.currentSong);
+    playSong(userData.currentSong.id);
   }
 })
 

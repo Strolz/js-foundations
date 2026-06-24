@@ -183,7 +183,7 @@ Test out your app by first clicking on the play button followed by the pause but
 
 Step 24
 =======
-
+Create a function named getCurrentSongIndex that returns the index at which userData.currentSong can be found in userData.songs and -1 when the current song is null.
 ---------------------------------
 
 Step 25
