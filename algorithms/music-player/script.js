@@ -108,6 +108,11 @@ const pauseSong = () => {
 
 const getCurrentSongIndex = () => userData.songs.indexOf(userData.currentSong);
 
+const getNextSong = () => {
+  const nextIndex = getCurrentSongIndex() + 1;
+  return userData.songs[nextIndex];
+};
+
 playButton.addEventListener("click", () => {
   if(userData.currentSong === null) {
     playSong(0);

@@ -188,7 +188,7 @@ Create a function named getCurrentSongIndex that returns the index at which user
 
 Step 25
 =======
-
+Now, create a function named getNextSong. Make it return the song that can be found at getCurrentSongIndex() plus one in userData.songs, or undefined if the current song is the last one in the playlist.
 ---------------------------------
 
 Step 26
