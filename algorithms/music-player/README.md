@@ -193,7 +193,9 @@ Now, create a function named getNextSong. Make it return the song that can be fo
 
 Step 26
 =======
+Now that you know how to find the next song to play, create a function named playNextSong. Inside the playNextSong function, create an if statement to check if the currentSong of userData is strictly equal to null. This will check if there's no current song playing in the userData object.
 
+If the condition is true, call the playSong function with the id of the first song in the userData.songs array as an argument.
 ---------------------------------
 
 Step 27
