@@ -113,9 +113,23 @@ const getNextSong = () => {
   return userData.songs[nextIndex];
 };
 
-const playNextSong = () =>{
+const playNextSong = () => {
+  if (userData.currentSong === null) {
+    playSong(userData.songs[0].id);
+    return;
+  }
 
-}
+  const nextSong = getNextSong();
+
+  if (!nextSong) {
+    userData.currentSong = null;
+    userData.songCurrentTime = 0;
+    pauseSong();
+    return;
+  }
+  
+  playSong(nextSong.id);
+};
 
 playButton.addEventListener("click", () => {
   if(userData.currentSong === null) {

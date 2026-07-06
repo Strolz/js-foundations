@@ -200,7 +200,9 @@ If the condition is true, call the playSong function with the id of the first so
 
 Step 27
 =======
+If userData.currentSong is not null you need to find the next song to play. Remember that you can use getNextSong for that.
 
+Complete your playNextSong function so that it plays the next song in the playlist. If the current song is the last one, set userData.currentSong to null, userData.songCurrentTime to zero and call the pauseSong function.
 ---------------------------------
 
 Step 28
