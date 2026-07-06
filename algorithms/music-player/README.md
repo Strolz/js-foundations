@@ -216,7 +216,7 @@ Test out your app by first clicking on the play button followed by the next butt
 
 Step 29
 =======
-
+Now, create a function named getPreviousSong. Make it return the song that can be found at getCurrentSongIndex() minus one in userData.songs, or undefined if the current song is the first one in the playlist.
 ---------------------------------
 
 Step 30

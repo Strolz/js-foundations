@@ -113,6 +113,11 @@ const getNextSong = () => {
   return userData.songs[nextIndex];
 };
 
+const getPreviousSong = () => {
+  const prevIndex = getCurrentSongIndex() - 1;
+  return userData.songs[prevIndex];
+}
+
 const playNextSong = () => {
   if (userData.currentSong === null) {
     playSong(userData.songs[0].id);
