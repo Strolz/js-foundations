@@ -221,7 +221,7 @@ Now, create a function named getPreviousSong. Make it return the song that can b
 
 Step 30
 =======
-
+Create a function named playPreviousSong. Inside your new function, use the value returned by the getPreviousSong function to find the song to play. When getPreviousSong() is undefined, play the first song in your playlist. Otherwise, play the song before the current song playing.
 ---------------------------------
 
 Step 31
