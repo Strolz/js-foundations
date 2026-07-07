@@ -226,7 +226,7 @@ Create a function named playPreviousSong. Inside your new function, use the valu
 
 Step 31
 =======
-
+Add a "click" event listener to the previousButton element, then pass in playPreviousSong as the second argument.
 ---------------------------------
 
 Step 32
