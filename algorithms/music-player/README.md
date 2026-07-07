@@ -231,7 +231,9 @@ Add a "click" event listener to the previousButton element, then pass in playPre
 
 Step 32
 =======
+If you play a bit with your player you'll notice a few bugs. First, when you play a song, pause it and then press either the previous button or next button, the song won't start from the beginning.
 
+To start fixing that, add second parameter named start to your playSong function. Give it the default value of true.
 ---------------------------------
 
 Step 33
