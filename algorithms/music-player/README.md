@@ -248,7 +248,7 @@ Finally, pass false as the second argument to the playSong(userData.currentSong.
 
 Step 35
 =======
-
+If you press the previous button when no song is playing, the first song will play. To fix this, add an if statement at the beginning of the playPreviousSong function. Check if the current song is null and stop the function execution with a return statement.
 ---------------------------------
 
 Step 36
