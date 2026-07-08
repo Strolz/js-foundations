@@ -151,7 +151,7 @@ playButton.addEventListener("click", () => {
   if(userData.currentSong === null) {
     playSong(0);
   } else {
-    playSong(userData.currentSong.id);
+    playSong(userData.currentSong.id, false);
   }
 })
 

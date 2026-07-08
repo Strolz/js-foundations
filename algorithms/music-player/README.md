@@ -243,7 +243,7 @@ Now, use the OR operator to add the start parameter as a second condition to the
 
 Step 34
 =======
-
+Finally, pass false as the second argument to the playSong(userData.currentSong.id) function call. Then, test that everything works as expected by playing a song, pausing it and then pressing either the previous button or the next button.
 ---------------------------------
 
 Step 35
