@@ -238,7 +238,7 @@ To start fixing that, add second parameter named start to your playSong function
 
 Step 33
 =======
-
+Now, use the OR operator to add the start parameter as a second condition to the if statement after userData.currentSong === null.
 ---------------------------------
 
 Step 34
