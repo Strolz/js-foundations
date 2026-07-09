@@ -260,12 +260,16 @@ Create a function named highlightCurrentSong. Inside the function, check that a 
 
 Step 37
 =======
+You need to get the id of the currently playing song. For this, you can use userData.currentSong?.id.
 
+Use getElementById() to select the currently playing song: pass a template literal to prefix the id with song-. Assign it to a variable named songToHighlight.
 ---------------------------------
 
 Step 38
 =======
+Now, you need to add the aria-current attribute to the currently playing song.
 
+Check if songToHighlight exists. If so, use the setAttribute method on songToHighlight and pass in "aria-current" and "true" as the first and second arguments.
 ---------------------------------
 
 Step 39

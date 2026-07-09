@@ -146,6 +146,15 @@ const playNextSong = () => {
   playSong(nextSong.id);
 };
 
+const highlightCurrentSong = () => {
+  const current = document.querySelector('.playlist-song[aria-current="true"]');
+  if (current) {
+    current.removeAttribute("aria-current");
+  }
+  const songToHighlight = document.getElementById(`song-${userData.currentSong?.id}`);
+  songToHighlight?.setAttribute("aria-current", true);
+};
+
 playButton.addEventListener("click", () => {
   if(userData.currentSong === null) {
     playSong(0);
