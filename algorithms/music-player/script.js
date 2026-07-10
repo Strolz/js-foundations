@@ -152,11 +152,11 @@ const playNextSong = () => {
 };
 
 const setPlayerDisplay = () => {
-  userData.currentSong.title
+  userData.currentSong?.title
   ? playingSong.textContent = userData.currentSong.title
   : playingSong.textContent = "";
 
-   userData.currentSong.artist
+   userData.currentSong?.artist
   ? songArtist.textContent = userData.currentSong.artist
   : songArtist.textContent = "";
 }
