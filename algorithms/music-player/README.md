@@ -288,7 +288,9 @@ As a first step, access the #player-song-title and #player-song-artist elements,
 
 Step 41
 =======
+Create a function named setPlayerDisplay. Inside the function, set the textContent of playingSong to the current song's title, if defined. Otherwise, set it to an empty string.
 
+Below that, set the textContent of songArtist to the current song's artist, if defined. Otherwise, set it to empty string.
 ---------------------------------
 
 Step 42

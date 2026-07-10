@@ -151,6 +151,16 @@ const playNextSong = () => {
   playSong(nextSong.id);
 };
 
+const setPlayerDisplay = () => {
+  userData.currentSong.title
+  ? playingSong.textContent = userData.currentSong.title
+  : playingSong.textContent = "";
+
+   userData.currentSong.artist
+  ? songArtist.textContent = userData.currentSong.artist
+  : songArtist.textContent = "";
+}
+
 const highlightCurrentSong = () => {
   const current = document.querySelector('.playlist-song[aria-current="true"]');
   if (current) {
