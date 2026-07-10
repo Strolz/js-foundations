@@ -98,6 +98,7 @@ const playSong = (id, start=true) => {
     audio.currentTime = userData.songCurrentTime;
   }
   playButton.classList.add("playing")
+  setPlayerDisplay();
   userData.currentSong = song;
 
   highlightCurrentSong();
@@ -159,6 +160,14 @@ const setPlayerDisplay = () => {
    userData.currentSong?.artist
   ? songArtist.textContent = userData.currentSong.artist
   : songArtist.textContent = "";
+}
+
+const setPlayButtonAccessibleText = () => {
+  if(userData.currentSong === null) {
+  playButton?.setAttribute(`aria-label`, `Play`)
+  } else {
+  playButton?.setAttribute(`aria-label`, `Play ${userData.currentSong.title}`)
+  }
 }
 
 const highlightCurrentSong = () => {

@@ -295,12 +295,16 @@ Below that, set the textContent of songArtist to the current song's artist, if d
 
 Step 42
 =======
+To ensure the player's display updates whenever a new song begins playing, call the setPlayerDisplay() function within the playSong() function.
 
+Now you should see the song title and the artist show up in the display.
 ---------------------------------
 
 Step 43
 =======
+To make the application more accessible, it is important that the play button describes the current song or the first song in the playlist.
 
+Create a function named setPlayButtonAccessibleText. Inside the function, set the aria-label attribute of the play button to Play followed by a space and the current song's title. If userData.currentSong is null, set it to Play.
 ---------------------------------
 
 Step 44
