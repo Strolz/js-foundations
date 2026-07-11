@@ -309,7 +309,7 @@ Create a function named setPlayButtonAccessibleText. Inside the function, set th
 
 Step 44
 =======
-
+Now, call the setPlayButtonAccessibleText function inside the playSong function.    
 ---------------------------------
 
 Step 45
