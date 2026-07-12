@@ -1,6 +1,7 @@
 const pads = document.querySelectorAll(".drum-pad");
 const display = document.getElementById("display");
 
+// Allow audio to play when pad buttons are clicked
 pads.forEach(pad => {
     const audio = pad.querySelector("audio");
     pad.addEventListener("click", () => {
@@ -9,6 +10,7 @@ pads.forEach(pad => {
     })
 })
 
+// Allow audio to play when corresponding key is pressed
 document.addEventListener("keydown", (e) => {
     const key = e.key.toUpperCase();
     const pad = document.querySelector(`.drum-pad:has(#${key})`);
