@@ -17,7 +17,7 @@ Start by creating an object with the three properties above for the Spanish lave
 
 Step 2
 ======
-
+Now create another object, with the same three properties, to represent another cultivar of spanish lavender called Pretty Polly, and assign it to a variable named prettyPolly.
 ---------------------------------
 
 Step 3
