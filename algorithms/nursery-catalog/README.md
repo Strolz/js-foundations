@@ -51,7 +51,7 @@ Add another key-value pair to your catalog. Use your prettyPolly variable as the
 
 Step 8
 ======
-
+Keep adding the remaining plants to your catalog as you did in the previous steps.
 ---------------------------------
 
 Step 9
