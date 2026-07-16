@@ -33,3 +33,8 @@ const royalCrown = {
     scientificName: "Lavandula dentata",
     cultivar: "Royal Crown"
 }
+
+const catalog = new Map();
+
+catalog.set("ballerina", ballerina);
+console.log(catalog);
