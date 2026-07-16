@@ -22,7 +22,7 @@ Now create another object, with the same three properties, to represent another 
 
 Step 3
 ======
-
+Declare a catalog variable and assign it a Map object.
 ---------------------------------
 
 Step 4
