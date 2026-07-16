@@ -36,5 +36,7 @@ const royalCrown = {
 
 const catalog = new Map();
 
-catalog.set("ballerina", ballerina);
+catalog.set(ballerina, {small: 1, medium: 2, large: 3});
+catalog.set(prettyPolly, {small: 1, medium: 2, large: 3});
 console.log(catalog);
+console.log(catalog.size);

@@ -39,12 +39,14 @@ The size property of a Map object returns the number of elements in the map. Log
 
 Step 6
 ======
+Unlike regular objects, for which keys must always be strings, map objects allow you to use any datatype as keys. In your catalog, you're going to use object-object key-value pairs, associating each of your plant object with an object containing the number of available pots for different sizes.
 
+Modify your set call to use your ballerina object as key. For the value, use an object containing three properties, small, medium, and large, each with the value of a positive integer.
 ---------------------------------
 
 Step 7
 ======
-
+Add another key-value pair to your catalog. Use your prettyPolly variable as the key and make the value an object with small, medium, and large properties whose values are integers again.
 ---------------------------------
 
 Step 8
