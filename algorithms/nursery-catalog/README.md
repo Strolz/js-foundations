@@ -68,12 +68,14 @@ Use the get method to retrieve the value of the ballerina key from your catalog 
 
 Step 11
 =======
+When the value associated with a key is an object, the get method will return a reference to that object. You can use that reference to modify the object inside the map.
 
+To test it, set the small property of getBallerina to an integer different from 20. Then, look at the browser console to check that the value has changed in your catalog.
 ---------------------------------
 
 Step 12
 =======
-
+Next, remove the getBallerina declaration and each reference to it from your code.
 ---------------------------------
 
 Step 13
