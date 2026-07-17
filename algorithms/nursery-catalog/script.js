@@ -44,4 +44,3 @@ catalog.set(imperialGem, { small: 19, medium: 35, large: 28 });
 catalog.set(royalCrown, { small: 40, medium: 22, large: 9 });
 
 console.log(catalog);
-console.log(catalog.size);
