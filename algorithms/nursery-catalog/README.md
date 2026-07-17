@@ -56,12 +56,14 @@ Keep adding the remaining plants to your catalog as you did in the previous step
 
 Step 9
 ======
-
+Now that you added all your plants to the catalog, remove your console.log(catalog.size) call.
 ---------------------------------
 
 Step 10
 =======
+When you need to retrieve an element from a map, you can use the get method. It takes a key as its argument, and returns the associated value.
 
+Use the get method to retrieve the value of the ballerina key from your catalog assign it to a variable named getBallerina. Then, log your new variable to the console.
 ---------------------------------
 
 Step 11
