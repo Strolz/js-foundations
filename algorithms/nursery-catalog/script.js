@@ -43,4 +43,15 @@ catalog.set(hidcote, { small: 33, medium: 13, large: 18 });
 catalog.set(imperialGem, { small: 19, medium: 35, large: 28 });
 catalog.set(royalCrown, { small: 40, medium: 22, large: 9 });
 
+const sellPlants = (plant, potSize, quantity) => {
+    const pots = catalog.get(plant);
+    const available = pots[potSize];
+   
+    if(quantity > available) {
+        return `Not enough ${potSize} size pots for ${plant.scientificName} '${plant.cultivar}'. Only ${available} left.`
+    }
+}
+
+console.log(sellPlants(ballerina, "small", 25));
+
 console.log(catalog);
