@@ -58,9 +58,13 @@ const sellPlants = (plant, size, potsNo) => {
 const removePlant = plant => catalog.delete(plant);
 
 const displayCatalog = () => {
-    for(const key of catalog.keys()) {
-        console.log(key);
-    }
+    let output = "";
+
+    catalog.forEach((value, key) => {
+        output += `${key.scientificName} '${key.cultivar}': ${value.small} S, ${value.medium} M, ${value.large} L\n`;
+    });
+
+    return output;
 }
 
-displayCatalog();
+console.log(displayCatalog());

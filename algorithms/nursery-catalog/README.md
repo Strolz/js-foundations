@@ -131,17 +131,22 @@ Then, call displayCatalog and see the output in the console.
 
 Step 20
 =======
+If you need to loop through the values of your map object, you can use the values method instead.
 
+Modify your function to iterate over the values stored in your catalog and log each of them to the console.
 ---------------------------------
 
 Step 21
 =======
+Alternatively, you can iterate over your map object by using the entries method, which returns a map iterator containing key-value pairs.
 
+Modify your displayCatalog function to iterate over the entries in your catalog map and log each entry to the console.
 ---------------------------------
 
 Step 22
 =======
-
+Modify your function to return a string containing your entire catalog and log the result to the console. 
+Note that the representation of each entry should terminate with a newline character.
 ---------------------------------
 
 Step 23
