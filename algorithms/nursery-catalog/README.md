@@ -151,12 +151,12 @@ Note that the representation of each entry should terminate with a newline chara
 
 Step 23
 =======
-
+Now that you tested displayCatalog, remove the console.log.
 ---------------------------------
 
 Step 24
 =======
-
+Create a function named displayPlantsSet and make it return a new Set object.
 ---------------------------------
 
 Step 25

@@ -67,4 +67,5 @@ const displayCatalog = () => {
     return output;
 }
 
-console.log(displayCatalog());
+const displayPlantsSet = () => new Set();
+
