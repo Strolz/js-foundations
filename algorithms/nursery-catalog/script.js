@@ -51,9 +51,16 @@ const sellPlants = (plant, size, potsNo) => {
         return `Not enough ${size} size pots for ${name}. Only ${pots[size]} left.`
     }
     
-        pots[size] - potsNo;
-        return `Catalog successfully updated.`
+    pots[size] - potsNo;
+    return `Catalog successfully updated.`
 }
 
 const removePlant = plant => catalog.delete(plant);
 
+const displayCatalog = () => {
+    for(const key of catalog.keys()) {
+        console.log(key);
+    }
+}
+
+displayCatalog();

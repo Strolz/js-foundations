@@ -117,12 +117,16 @@ Modify your sellPlants function to return Item not found. when the catalog does 
 
 Step 18
 =======
-
+Before you move on, remove the console.log calls from your code.
 ---------------------------------
 
 Step 19
 =======
+The keys method is directly available on the Map object and returns a MapIterator that enables you to iterate over the keys of your map.
 
+Create a function named displayCatalog. Inside your function, create a for...of loop that iterates over the keys in catalog and logs each of them to the console.
+
+Then, call displayCatalog and see the output in the console.
 ---------------------------------
 
 Step 20
