@@ -105,7 +105,7 @@ After that, log the result of calling your new function with the string "balleri
 
 Step 16
 =======
-
+Now, modify your removePlant call passing it the ballerina object and look at the console. You'll see an error that you are going to fix in the next step.
 ---------------------------------
 
 Step 17

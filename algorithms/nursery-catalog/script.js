@@ -54,6 +54,8 @@ const sellPlants = (plant, size, potsNo) => {
         return `Catalog successfully updated.`
 }
 
-console.log(sellPlants(ballerina, "small", 10));
+const removePlant = plant => catalog.delete(plant);
 
+console.log(removePlant(ballerina));
+console.log(sellPlants(ballerina, "small", 10));
 console.log(catalog);
