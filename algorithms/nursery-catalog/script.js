@@ -50,8 +50,10 @@ const sellPlants = (plant, size, potsNo) => {
         return `Not enough ${size} size pots for ${name}. Only ${pots[size]} left.`
     }
     
+        pots[size] - potsNo;
+        return `Catalog successfully updated.`
 }
 
-console.log(sellPlants(ballerina, "small", 25));
+console.log(sellPlants(ballerina, "small", 10));
 
 console.log(catalog);

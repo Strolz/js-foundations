@@ -89,12 +89,18 @@ To test that everything works, log the result of calling your sellPlants functio
 
 Step 14
 =======
+When there are enough pots to sell you need to update the catalog by subtracting the pots of the specified size. In that case, return Catalog successfully updated.
 
+Modify your function to achieve that. Then, update your function call by passing 10 as third argument instead of 25.
 ---------------------------------
 
 Step 15
 =======
+To remove an element from a map object, you can use the delete method, which takes a key as argument and removes the entry associated with that key. It returns a boolean indicating if the removal has been successful.
 
+Create a function named removePlant that takes a plant object as its argument and removes it from the catalog. Make it return either true or false depending on if the specified plant has been deleted from the catalog.
+
+After that, log the result of calling your new function with the string "ballerina" as its argument.
 ---------------------------------
 
 Step 16
