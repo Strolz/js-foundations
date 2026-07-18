@@ -110,7 +110,9 @@ Now, modify your removePlant call passing it the ballerina object and look at th
 
 Step 17
 =======
+Your sellPlants function is raising a TypeError because is trying to read a property of an object that has been deleted from the catalog. So, you'll need to take care of the case in which a key is not found in your catalog map. For that, the has method comes in handy. It returns a boolean indicating whether the specified key exists in the map or not.
 
+Modify your sellPlants function to return Item not found. when the catalog does not contain the plant passed to the function.
 ---------------------------------
 
 Step 18
