@@ -67,5 +67,13 @@ const displayCatalog = () => {
     return output;
 }
 
-const displayPlantsSet = () => new Set();
+const displayPlantsSet = () => {
+    const catalogSet = new Set();
+    catalogSet.add(ballerina);
+    
+    return catalogSet
+};
 
+const plantsSet = displayPlantsSet();
+console.log(plantsSet.has(ballerina));
+console.log(plantsSet);

@@ -161,27 +161,32 @@ Create a function named displayPlantsSet and make it return a new Set object.
 
 Step 25
 =======
+Declare a variable named plantsSet and assign it a call to the displayPlantsSet function.
+
+Then log plantsSet to the console. You'll need to open the browser console to see your set.
 
 ---------------------------------
 
 Step 26
 =======
-
+Inside your displayPlantsSet function, use the add method to add the ballerina object to your set before returning it.
 ---------------------------------
 
 Step 27
 =======
+Now try to add the ballerina object to your catalogSet inside your function a second time. You'll see that nothing happens, because the object is already stored in your set and duplicate elements are not allowed in sets.
 
+If you want, you can check the number of elements in your set by using the size property, in the same way you did before for your map.
 ---------------------------------
 
 Step 28
 =======
-
+Still within your function, add the prettyPolly object to your set.
 ---------------------------------
 
 Step 29
 =======
-
+Use the has method to check if the ballerina object is contained in your plantsSet and log the result to the console
 ---------------------------------
 
 Step 30
