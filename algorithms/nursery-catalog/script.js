@@ -44,6 +44,7 @@ catalog.set(imperialGem, { small: 19, medium: 35, large: 28 });
 catalog.set(royalCrown, { small: 40, medium: 22, large: 9 });
 
 const sellPlants = (plant, size, potsNo) => {
+    if(!catalog.has(plant)) return `Item not found.`;
     const name = `${plant.scientificName} '${plant.cultivar}'`
     const pots = catalog.get(plant);
     if (pots[size] - potsNo < 0) {
