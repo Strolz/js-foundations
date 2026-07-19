@@ -75,5 +75,4 @@ const displayPlantsSet = () => {
 };
 
 const plantsSet = displayPlantsSet();
-console.log(plantsSet.has(ballerina));
 console.log(plantsSet);

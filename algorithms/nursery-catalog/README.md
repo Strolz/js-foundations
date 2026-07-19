@@ -191,15 +191,17 @@ Use the has method to check if the ballerina object is contained in your plantsS
 
 Step 30
 =======
-
+Call the clear method on plantsSet to remove all the elements from it.
 ---------------------------------
 
 Step 31
 =======
-
+Remove both the clear and has calls from your code.
 ---------------------------------
 
 Step 32
 =======
+To complete this workshop, modify your displayPlantsSet to return a set of the unique plant common names in your catalog.
 
+To achieve it, create an array containing the commonName of each plant object stored as a key of the catalog map. Pass the array to the Set constructor and return the set from the function.
 ---------------------------------
