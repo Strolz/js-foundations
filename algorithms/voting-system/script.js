@@ -1,3 +1,15 @@
+const optionA = {
+  name: "Turkey"
+}
+
+const optionB = {
+  name: "Beef"
+}
+
+const optionC = {
+  name: "Ham"
+}
+
 const poll = new Map();
 
 poll.set("Turkey", new Set());
