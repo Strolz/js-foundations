@@ -12,9 +12,9 @@ const optionC = {
 
 const poll = new Map();
 
-poll.set(optionA, { votes: 1});
-poll.set(optionB, { votes: 3});
-poll.set(optionC, { votes: 5});
+poll.set("Turkey", new Set());
+poll.set("Beef", new Set());
+poll.set("Ham", new Set());
 
 const addOption = (option) => {
 }
