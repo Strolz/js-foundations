@@ -6,13 +6,13 @@ poll.set("Ham", new Set());
 
 const addOption = (option) => {
   if(!option) {
-    return `Option cannot be empty`
+    return `Option cannot be empty.`
   }
-  if(option.has(option)) {
+  if(poll.has(option)) {
     return `Option "${option}" already exists.`
   }
   poll.set(option, new Set()); 
-  return `Option "${option}" added to the poll`
+  return `Option "${option}" added to the poll.`
 }
 
 const vote = (option, voterId) => {
@@ -23,7 +23,7 @@ const vote = (option, voterId) => {
   const voters = poll.get(option);
 
   if(voters.has(voterId)) {
-    return `Voter ${voterId} has already voted for "<option>".`
+    return `Voter ${voterId} has already voted for "${option}".`
   }
 
   voters.add(voterId);
@@ -31,7 +31,7 @@ const vote = (option, voterId) => {
 }
 
 const displayResults = () => {
-  let result = "Poll Results: \n";
+  let result = "Poll Results:\n";
 
   for (const [option, voters] of poll) {
     result += `${option}: ${voters.size} votes\n`;
@@ -39,3 +39,7 @@ const displayResults = () => {
 
   return result.trim();
 }
+
+vote("Turkey", "v1");
+vote("Turkey", "v2");
+vote("Beef", "v3");
