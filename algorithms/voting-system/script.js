@@ -1,15 +1,3 @@
-const optionA = {
-  name: "Turkey"
-}
-
-const optionB = {
-  name: "Beef"
-}
-
-const optionC = {
-  name: "Ham"
-}
-
 const poll = new Map();
 
 poll.set("Turkey", new Set());
@@ -43,4 +31,11 @@ const vote = (option, voterId) => {
 }
 
 const displayResults = () => {
+  let result = "Poll Results: \n";
+
+  for (const [option, voters] of poll) {
+    result += `${option}: ${voters.size} votes\n`;
+  }
+
+  return result.trim();
 }
