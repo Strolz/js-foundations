@@ -29,3 +29,6 @@ const addOption = (option) => {
 
 const vote = (option, voterId) => {
 }
+
+const displayResults = () => {
+}
