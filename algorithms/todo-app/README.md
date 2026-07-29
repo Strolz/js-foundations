@@ -18,12 +18,12 @@ You need to access more elements with the getElementById() method. This time you
 
 Step 3
 ------
-
+Next, access the discard-btn, tasks-container, and title-input elements using the getElementById() method. Save them in variables named discardBtn, tasksContainer, and titleInput, respectively.
 -------------------------------------
 
 Step 4
 ------
-
+The last set of elements you need to get from the HTML file are the date-input and description-input elements. Save them in the variables dateInput and descriptionInput respectively.
 -------------------------------------
 
 Step 5
