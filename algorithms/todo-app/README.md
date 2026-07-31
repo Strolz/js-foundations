@@ -63,5 +63,42 @@ Add a click event listener to discardBtn, then use the close() method on the con
 
 Step 10
 -------
+Now that you've worked on opening and closing the modal, it's time to get the values from the input fields, save them into the taskData array, and display them on the page.
+
+To start, add a submit event listener to your taskForm element and pass in e as the parameter of your arrow function. Inside the curly braces, use the preventDefault() method to stop the browser from refreshing the page after submitting the form.
+-------------------------------------
+
+Step 11
+-------
+
+-------------------------------------
+
+Step 12
+-------
+
+-------------------------------------
+
+Step 13
+-------
+
+-------------------------------------
+
+Step 14
+-------
+
+-------------------------------------
+
+Step 15
+-------
+
+-------------------------------------
+
+Step 16
+-------
+
+-------------------------------------
+
+Step 17
+-------
 
 -------------------------------------
