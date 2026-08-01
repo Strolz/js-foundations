@@ -129,7 +129,7 @@ Now that you have finished testing your taskObj, you can remove the console.log(
 
 Step 21
 -------
-
+Create an if statement with the condition dataArrIndex === -1. Within the if statement, use the unshift() method to add the taskObj object to the beginning of the taskData array.
 -------------------------------------
 
 Step 22
