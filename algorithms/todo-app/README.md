@@ -97,7 +97,7 @@ Update your titleInput.value to be all lowercase. You can use the toLowerCase() 
 
 Step 15
 -------
-
+chain the split method to the titleInput.value to split the string into an array of words. For the separator, use a space character(" ").
 -------------------------------------
 
 Step 16
