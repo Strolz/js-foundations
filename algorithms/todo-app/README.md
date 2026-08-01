@@ -119,7 +119,7 @@ To make the id more unique, add another hyphen and use Date.now()
 
 Step 19
 -------
-
+Retrieve the values from the titleInput, dateInput, and descriptionInput fields, and then save them in the properties title, date, and description of the taskObj object.
 -------------------------------------
 
 Step 20
