@@ -70,7 +70,9 @@ To start, add a submit event listener to your taskForm element and pass in e as 
 
 Step 11
 -------
+Use const to declare a variable called dataArrIndex and assign it the value of taskData.findIndex(). For the findIndex() method, pass in an arrow function with item as the parameter.
 
+Within the arrow function, check if the id property of item is strictly equal to the id property of currentTask.
 -------------------------------------
 
 Step 12
