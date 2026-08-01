@@ -102,7 +102,7 @@ chain the split method to the titleInput.value to split the string into an array
 
 Step 16
 -------
-
+Now that your id is an array of words, you can use the join method to turn the result back into a string. For the separator, use a hyphen(-).
 -------------------------------------
 
 Step 17
