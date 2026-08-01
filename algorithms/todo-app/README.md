@@ -134,37 +134,41 @@ Create an if statement with the condition dataArrIndex === -1. Within the if sta
 
 Step 22
 -------
+Now that you have saved the task in the taskData array, you should display the task on the page by looping through it.
 
+Use forEach() on taskData, then destructure id, title, date, description as the parameters. Don't return anything yet.  
 -------------------------------------
 
 Step 23
 -------
-
+Using arrow syntax complete the forEach callback function. Inside the callback function body use an addition assignment to set the innerHTML of tasksContainer to empty backticks.
 -------------------------------------
 
 Step 24
 -------
-
+Create a div element with the class of task. Utilize template strings to set the id attribute of the div to the id you destructured from the task data.
 -------------------------------------
 
 Step 25
 -------
-
+Create a p element and use template strings to set its content to the title you destructured. Right before the content of the p element, create a strong element with the text Title:.
 -------------------------------------
 
 Step 26
 -------
-
+Similarly to the previous step, create another p element, and interpolate the date you destructured as the text content. Inside this paragraph, create a strong element with the text Date:.
 -------------------------------------
 
 Step 27
 -------
-
+Create one more p element and interpolate the description you destructured as the text. Also, create a strong element inside the paragraph with the text Description:.
 -------------------------------------
 
 Step 28
 -------
+To allow for task management, you need to include both a delete and an edit button for each task.
 
+Create two button elements with the type attribute set to button and the class attribute set to btn. Set the text of the first button to Edit and the text of the second button to Delete.                                      
 -------------------------------------
 
 Step 29
