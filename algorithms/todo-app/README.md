@@ -107,12 +107,14 @@ Now that your id is an array of words, you can use the join method to turn the r
 
 Step 17
 -------
+place the entire value below inside an embedded expression ${}.
 
+Then wrap that value in template strings.
 -------------------------------------
 
 Step 18
 -------
-
+To make the id more unique, add another hyphen and use Date.now()
 -------------------------------------
 
 Step 19
