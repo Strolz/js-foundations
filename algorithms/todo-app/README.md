@@ -77,7 +77,8 @@ Within the arrow function, check if the id property of item is strictly equal to
 
 Step 12
 -------
-
+Create a const variable called taskObj and assign it the value of an empty object.
+Then below that, add a console statement that logs the value of taskObj to the console.
 -------------------------------------
 
 Step 13
