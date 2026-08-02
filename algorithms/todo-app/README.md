@@ -185,7 +185,9 @@ Use arrow syntax to create a reset function and set it to a pair of curly braces
 
 Step 31
 -------
+Inside the reset function, set each value of titleInput, dateInput, descriptionInput to an empty string.
 
+Also, use classList to toggle the class hidden on the taskForm and set currentTask to an empty object. That's because at this point, currentTask will be filled with the task the user might have added.
 -------------------------------------
 
 Step 32
