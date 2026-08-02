@@ -192,12 +192,12 @@ Also, use classList to toggle the class hidden on the taskForm and set currentTa
 
 Step 32
 -------
-
+Remove the existing code toggling the class of hidden on taskForm and call the reset function instead. This would clear the input fields and also hide the form modal for the user to see the added task.
 -------------------------------------
 
 Step 33
 -------
-
+Remove the existing code toggling the class hidden on taskForm inside the discardBtn event listener and call the reset function instead. That's because when you click the Discard button, everything in the input fields should go away.
 -------------------------------------
 
 Step 34
