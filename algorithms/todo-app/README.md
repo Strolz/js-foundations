@@ -178,7 +178,9 @@ After adding the task to the page, you should close the form modal to view the t
 
 Step 30
 -------
+Instead of clearing the input fields one by one, it's a good practice to create a function that handles clearing those fields. You can then call this function whenever you need to clear the input fields again.
 
+Use arrow syntax to create a reset function and set it to a pair of curly braces.
 -------------------------------------
 
 Step 31
