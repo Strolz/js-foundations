@@ -211,7 +211,7 @@ If any of those input fields has a value, then use the showModal() method on con
 
 Step 35
 -------
-
+Use arrow syntax to create an addOrUpdateTask function. Then move the dataArrIndex variable, the taskObj object, and the if statement into the addOrUpdateTask function.
 -------------------------------------
 
 Step 36
