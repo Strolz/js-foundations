@@ -202,7 +202,11 @@ Remove the existing code toggling the class hidden on taskForm inside the discar
 
 Step 34
 -------
+Remove the confirmCloseDialog.showModal(); line.
 
+Then inside the closeTaskFormBtn event listener, write some logic to check if there is a value in the titleInput, dateInput or the descriptionInput field.
+
+If any of those input fields has a value, then use the showModal() method on confirmCloseDialog. Otherwise, if there are no changes, call the reset() function to clear the input fields and hide the form modal.
 -------------------------------------
 
 Step 35
