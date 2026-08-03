@@ -216,7 +216,7 @@ Use arrow syntax to create an addOrUpdateTask function. Then move the dataArrInd
 
 Step 36
 -------
-
+Use arrow syntax to create an updateTaskContainer function. Then move the taskData.forEach() and its content from the taskForm's submit event listener into the newly created function.
 -------------------------------------
 
 Step 37
