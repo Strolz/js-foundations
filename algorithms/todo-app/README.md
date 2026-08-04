@@ -221,7 +221,7 @@ Use arrow syntax to create an updateTaskContainer function. Then move the taskDa
 
 Step 37
 -------
-
+Inside the addOrUpdateTask function, call the updateTaskContainer and reset functions.
 -------------------------------------
 
 Step 38
