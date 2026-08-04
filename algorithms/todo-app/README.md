@@ -226,7 +226,7 @@ Inside the addOrUpdateTask function, call the updateTaskContainer and reset func
 
 Step 38
 -------
-
+Now remove the reset() call inside the taskForm submit event listener and call the addOrUpdateTask function instead.
 -------------------------------------
 
 Step 39
