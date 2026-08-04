@@ -243,7 +243,7 @@ To enable editing and deleting for each task, add an onclick attribute to both b
 
 Step 41
 -------
-
+Create a deleteTask function using arrow syntax. Pass buttonEl as the parameter and define an empty set of curly braces for the function body.
 -------------------------------------
 
 Step 42
