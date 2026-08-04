@@ -238,7 +238,7 @@ Set the innerHTML of tasksContainer back to an empty string.
 
 Step 40
 -------
-
+To enable editing and deleting for each task, add an onclick attribute to both buttons. Set the value of the onclick attribute to editTask(this) for the Edit button and deleteTask(this) for the Delete button. The editTask(this) function will handle editing, while the deleteTask(this) function will handle deletion.
 -------------------------------------
 
 Step 41
