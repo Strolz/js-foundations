@@ -53,6 +53,9 @@ const deleteTask = (buttonEl) => {
     const dateArrIndex = taskData.findIndex(
         item => item.id === buttonEl.parentElement.id
     );
+
+    buttonEl.parentElement.remove();
+    taskData.splice(dataArrIndex, 1);
 }
 
 const reset = () => {

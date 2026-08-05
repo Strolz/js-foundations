@@ -255,7 +255,9 @@ Create a dataArrIndex variable and set its value using the findIndex() method on
 
 Step 43
 -------
+Use the remove() method to remove the parentElement of the buttonEl from the DOM. Then use splice() to remove the task from the taskData array. Pass in dataArrIndex and 1 as the arguments of your splice().
 
+dataArrIndex is the index to start and 1 is the number of items to remove.
 -------------------------------------
 
 Step 44
