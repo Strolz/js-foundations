@@ -50,7 +50,7 @@ const updateTaskContainer = () => {
 }
 
 const deleteTask = (buttonEl) => {
-
+    const dateArrIndex = taskData.findIndex(item => item.id === buttonEl.parentElement.id);
 }
 
 const reset = () => {
