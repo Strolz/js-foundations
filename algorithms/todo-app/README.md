@@ -262,7 +262,7 @@ dataArrIndex is the index to start and 1 is the number of items to remove.
 
 Step 44
 -------
-
+Use arrow syntax to create an editTask function. Pass in buttonEl as the parameter and add empty curly braces for the body.
 -------------------------------------
 
 Step 45
