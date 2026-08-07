@@ -292,9 +292,18 @@ Step 49
 Finally, display the form modal with the values of the input fields by using classList to toggle the hidden class on taskForm.
 -------------------------------------
 
+Step 50
+-------
+At this point, editing a task won't reflect when you submit the task. To make the editing functional, go back to the if statement inside the addOrUpdateTask function. Create an else block and set taskData[dataArrIndex] to taskObj.
+-------------------------------------
+
 Step 51
 -------
+If the user attempts to edit a task but decides not to make any changes before closing the form, there is no need to display the modal with the Cancel and Discard buttons.
 
+Inside the closeTaskFormBtn event listener, use const to create another variable named formInputValuesUpdated. Check if the user made changes while trying to edit a task by verifying that the titleInput value is not equal to currentTask.title, or the dateInput value is not equal to currentTask.date, or the descriptionInput value is not equal to currentTask.description.
+
+Then, update the if condition to also require that formInputValuesUpdated is truthy, using the && operator.
 -------------------------------------
 
 Step 52
@@ -338,11 +347,6 @@ Step 59
 -------------------------------------
 
 Step 60
--------
-
--------------------------------------
-
-Step 50
 -------
 
 -------------------------------------
