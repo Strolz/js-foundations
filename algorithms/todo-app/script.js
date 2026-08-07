@@ -71,6 +71,7 @@ const editTask = (buttonEl) => {
 
     addOrUpdateTaskBtn.innerText = `Update Task`;
 
+    taskForm.classList.toggle("hidden");
 }
 
 const reset = () => {

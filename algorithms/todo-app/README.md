@@ -289,7 +289,7 @@ Set the innerText of the addOrUpdateTaskBtn button to Update Task.
 
 Step 49
 -------
-
+Finally, display the form modal with the values of the input fields by using classList to toggle the hidden class on taskForm.
 -------------------------------------
 
 Step 51
