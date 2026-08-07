@@ -279,7 +279,7 @@ Use square bracket notation to retrieve the task to be edited from the taskData 
 
 Step 47
 -------
-
+The task to be edited is now in the currentTask object. Stage it for editing inside the input fields by setting the value of titleInput to currentTask.title, dateInput to currentTask.date, and descriptionInput to currentTask.description.
 -------------------------------------
 
 Step 48
