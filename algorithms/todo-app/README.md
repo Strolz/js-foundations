@@ -348,7 +348,9 @@ Check the console to see the difference between getTaskArr and getTaskArrObj.
 
 Step 57
 -------
+You can use localStorage.removeItem() to remove a specific item from the local storage.
 
+Remove the data item from local storage and open the console to observe the result. You should see null.
 -------------------------------------
 
 Step 58
