@@ -355,7 +355,7 @@ Remove the data item from local storage and open the console to observe the resu
 
 Step 58
 -------
-
+Remove the myTaskArr array and all of the code for localStorage because you don't need them anymore.
 -------------------------------------
 
 Step 59
