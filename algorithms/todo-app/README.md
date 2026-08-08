@@ -313,12 +313,21 @@ A myTaskArr array has been provided for you. Use the setItem() method to save it
 
 Step 53
 -------
+To view what's stored in localStorage, open the browser's developer tools and navigate to the local storage section:
 
+Chrome/Edge: Open DevTools (F12), navigate to Application > Storage and expand Local Storage. Click a domain to view its key-value pairs.
+Firefox: Open DevTools (F12), navigate to Storage and expand Local Storage. Click a domain to view its key-value pairs.
+Safari: Choose Safari > Settings, and click Advanced. At the bottom of the pane, select the Show Develop menu in menu bar checkbox. Once the developer tools are enabled, right-click on the page within browser, select Inspect element, go to the Storage tab, then select Local Storage. Click a domain to view its key-value pairs.
+The data stored with the key data should be visible. Examine it and note what the values look like.
+
+Click the "Check Your Code" button to proceed to the next step.
 -------------------------------------
 
 Step 54
 -------
+When you inspect the stored value, you may notice entries that look like [object Object],[object Object],[object Object]. This happens because localStorage can only store values as strings.
 
+To fix this, convert data to a string before saving it by using JSON.stringify(). After storing it again, recheck localStorage to see how the data now appears.
 -------------------------------------
 
 Step 55
