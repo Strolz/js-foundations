@@ -308,7 +308,7 @@ Then, update the if condition to also require that formInputValuesUpdated is tru
 
 Step 52
 -------
-
+A myTaskArr array has been provided for you. Use the setItem() method to save it with a key of data.
 -------------------------------------
 
 Step 53
