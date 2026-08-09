@@ -400,7 +400,9 @@ Fix that by adding a check at the beginning of the function for if !titleInput.v
 -------------------------------------
 Step 65
 -------
+It is time to work on the final issue. If there is a to-do task with a special character like a quote inside of the name or description of the item, the application breaks. While it appears otherwise, the correct item will appear missing.
 
+In order to fix this, we need to create a function called removeSpecialChars that takes a string as input and removes all special characters.
 -------------------------------------
 Step 66
 -------
