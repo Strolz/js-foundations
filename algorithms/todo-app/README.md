@@ -382,7 +382,9 @@ Set taskData to the retrieval of data from local storage or an empty array. Make
 -------------------------------------
 Step 62
 -------
+You've retrieved the task item(s) now, but they still don't reflect in the UI when the page loads. However, they appear when you add a new task.
 
+Check if there's a task inside taskData, then call the updateTaskContainer() inside the if statement block.
 -------------------------------------
 Step 63
 -------
