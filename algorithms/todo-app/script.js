@@ -17,6 +17,11 @@ const taskData = JSON.parse(localStorage.getItem("data")) || [];
 let currentTask = {};
 
 const addOrUpdateTask = () => {
+    if(!titleInput.value.trim()) {
+        alert("Please provide a title");
+        return;
+    }
+
     const dataArrIndex = taskData.findIndex((item) => item.id === currentTask.id);
 
     const taskObj = {
