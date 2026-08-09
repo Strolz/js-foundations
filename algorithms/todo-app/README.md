@@ -376,7 +376,9 @@ Use setItem() to save the taskData array again. Pass in data as the key and ensu
 
 Step 61
 -------
+If you add, update, or remove a task, it should reflect in the UI. However, that's not happening now because you have yet to retrieve the tasks. To do this, you need to modify your initial taskData to load data from localStorage. If there is nothing in localStorage it should be assigned an empty array.
 
+Set taskData to the retrieval of data from local storage or an empty array. Make sure you parse the data coming with JSON.parse() because you saved it as a string.
 -------------------------------------
 Step 62
 -------
