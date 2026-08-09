@@ -406,5 +406,9 @@ In order to fix this, we need to create a function called removeSpecialChars tha
 -------------------------------------
 Step 66
 -------
+Finally, it is time to call the removeSpecialChars function on the id property in your taskObj.
 
+This will help prevent issues caused by special characters in HTML element IDs.
+
+With that you have completed the project.
 -------------------------------------
