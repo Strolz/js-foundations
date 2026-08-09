@@ -32,6 +32,8 @@ const addOrUpdateTask = () => {
         taskData[dataArrIndex] = taskObj;
     }
 
+    localStorage.setItem("data", JSON.stringify(taskData));
+    
     updateTaskContainer();
     reset();
 }
@@ -120,4 +122,3 @@ taskForm.addEventListener("submit", (e) => {
     e.preventDefault();
     addOrUpdateTask();
 });
-
