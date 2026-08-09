@@ -13,9 +13,13 @@ const titleInput = document.getElementById("title-input");
 const dateInput = document.getElementById("date-input");
 const descriptionInput = document.getElementById("description-input");
 
+// load existing tasks from localStorage or start with an empty array
 const taskData = JSON.parse(localStorage.getItem("data")) || [];
+
+// holds the task currently being edited
 let currentTask = {};
 
+// sanitize input by removing special characters (used for generating safe IDs)
 const removeSpecialChars = (val) => {
   return val.trim().replace(/[^A-Za-z0-9\-\s]/g, "");
 };
@@ -47,6 +51,7 @@ const addOrUpdateTask = () => {
     reset();
 }
 
+// rebuild the task list UI from taskData
 const updateTaskContainer = () => {
     tasksContainer.innerHTML = "";
     taskData.forEach(({ id, title, date, description }) => {
