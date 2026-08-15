@@ -16,3 +16,9 @@ const addBookmarkFormBtn = document.getElementById("add-bookmark-button-form");
 const categoryList = document.getElementById("category-list");
 const closeListBtn = document.getElementById("close-list-button");
 const deleteBookmarkBtn = document.getElementById("delete-bookmark-button");
+
+viewCategoryBtn.addEventListener("click", () => {
+    listSection.classList.remove("hidden");
+    mainSection.classList.add("hidden");
+    categoryName.textContent = categoryDropdown.value;
+})
