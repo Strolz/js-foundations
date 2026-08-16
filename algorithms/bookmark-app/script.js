@@ -27,6 +27,8 @@ const getBookmarks = () => {
     return JSON.parse(stored);
 }
 
+const bookmarks = getBookmarks();
+
 const displayOrCloseForm = () => {
     formSection.classList.toggle("hidden");
     mainSection.classList.toggle("hidden");
