@@ -37,3 +37,9 @@ closeFormBtn.addEventListener("click", () => {
     formSection.classList.add("hidden");
     mainSection.classList.remove("hidden");
 })
+
+formSection.addEventListener("submit", (e) => {
+    e.preventDefault();
+    formSection.classList.add("hidden");
+    listSection.classList.remove("hidden");
+})
