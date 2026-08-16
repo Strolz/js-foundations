@@ -38,8 +38,7 @@ closeListBtn.addEventListener("click", () => {
 })
 
 addBookmarkBtn.addEventListener("click", () => {
-    formSection.classList.remove("hidden");
-    mainSection.classList.add("hidden");
+    displayOrCloseForm();
 })
 
 closeFormBtn.addEventListener("click", () => {
