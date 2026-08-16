@@ -22,3 +22,8 @@ viewCategoryBtn.addEventListener("click", () => {
     mainSection.classList.add("hidden");
     categoryName.textContent = categoryDropdown.value;
 })
+
+closeListBtn.addEventListener("click", () => {
+    listSection.classList.add("hidden");
+    mainSection.classList.remove("hidden");
+})
