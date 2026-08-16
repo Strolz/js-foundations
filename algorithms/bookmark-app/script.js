@@ -17,6 +17,10 @@ const categoryList = document.getElementById("category-list");
 const closeListBtn = document.getElementById("close-list-button");
 const deleteBookmarkBtn = document.getElementById("delete-bookmark-button");
 
+const getBookmarks = () => {
+    return [];
+}
+
 const displayOrCloseForm = () => {
     formSection.classList.toggle("hidden");
     mainSection.classList.toggle("hidden");
