@@ -55,6 +55,7 @@ closeListBtn.addEventListener("click", () => {
 })
 
 addBookmarkBtn.addEventListener("click", () => {
+    categoryName.innerText = categoryDropdown.value;
     displayOrCloseForm();
 })
 
