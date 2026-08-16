@@ -32,3 +32,8 @@ addBookmarkBtn.addEventListener("click", () => {
     formSection.classList.remove("hidden");
     mainSection.classList.add("hidden");
 })
+
+closeFormBtn.addEventListener("click", () => {
+    formSection.classList.add("hidden");
+    mainSection.classList.remove("hidden");
+})
