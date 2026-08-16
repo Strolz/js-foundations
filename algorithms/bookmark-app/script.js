@@ -29,6 +29,11 @@ const getBookmarks = () => {
 
 const bookmarks = getBookmarks();
 
+const newBookmark = {
+    name: `${nameInput.value}`,
+    url: `${urlInput.value}`,
+} 
+
 const displayOrCloseForm = () => {
     formSection.classList.toggle("hidden");
     mainSection.classList.toggle("hidden");
