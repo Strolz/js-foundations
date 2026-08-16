@@ -18,7 +18,13 @@ const closeListBtn = document.getElementById("close-list-button");
 const deleteBookmarkBtn = document.getElementById("delete-bookmark-button");
 
 const getBookmarks = () => {
-    return [];
+    const stored = localStorage.getItem("bookmarks");
+
+    if (!stored) {
+        return [];
+    }
+
+    return JSON.parse(stored);
 }
 
 const displayOrCloseForm = () => {
