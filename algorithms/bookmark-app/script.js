@@ -36,6 +36,8 @@ const newBookmark = {
 
 bookmarks.push(newBookmark);
 
+localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+
 const displayOrCloseForm = () => {
     formSection.classList.toggle("hidden");
     mainSection.classList.toggle("hidden");
