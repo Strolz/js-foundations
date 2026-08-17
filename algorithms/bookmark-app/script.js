@@ -72,6 +72,20 @@ addBookmarkBtn.addEventListener("click", () => {
     displayOrCloseForm();
 })
 
+addBookmarkFormBtn.addEventListener("click", () => {
+     const bookmarks = getBookmarks();
+
+    const newBookmark = {
+        name: nameInput.value,
+        category: categoryDropdown.value,
+        url: urlInput.value,
+    }
+
+    bookmarks.push(newBookmark);
+
+    localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+})
+
 closeFormBtn.addEventListener("click", () => {
     formSection.classList.add("hidden");
     mainSection.classList.remove("hidden");
