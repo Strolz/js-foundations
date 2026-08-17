@@ -73,7 +73,7 @@ addBookmarkBtn.addEventListener("click", () => {
 })
 
 addBookmarkFormBtn.addEventListener("click", () => {
-     const bookmarks = getBookmarks();
+    const bookmarks = getBookmarks();
 
     const newBookmark = {
         name: nameInput.value,
@@ -84,6 +84,11 @@ addBookmarkFormBtn.addEventListener("click", () => {
     bookmarks.push(newBookmark);
 
     localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+    
+    nameInput.value = "";
+    urlInput.value = "";
+    
+    displayOrCloseForm();
 })
 
 closeFormBtn.addEventListener("click", () => {
