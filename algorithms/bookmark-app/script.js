@@ -66,6 +66,13 @@ viewCategoryBtn.addEventListener("click", () => {
   mainSection.classList.add("hidden");
   categoryName.textContent = categoryDropdown.value;
 
+  const bookmarks = getBookmarks();
+  const matches = bookmarks.filter(b => b.category === categoryDropdown.value)
+  
+  if(matches.length === 0) {
+    categoryList.innerHTML = `<p> No Bookmarks Found </p>`;
+    return;
+  }
 })
 
 closeListBtn.addEventListener("click", () => {
