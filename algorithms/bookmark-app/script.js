@@ -57,7 +57,8 @@ const displayOrCloseForm = () => {
 }
 
 const displayOrHideCategory = () => {
-
+  mainSection.classList.toggle("hidden");
+  listSection.classList.toggle("hidden");
 }
 
 viewCategoryBtn.addEventListener("click", () => {
