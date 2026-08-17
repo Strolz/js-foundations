@@ -18,25 +18,38 @@ const closeListBtn = document.getElementById("close-list-button");
 const deleteBookmarkBtn = document.getElementById("delete-bookmark-button");
 
 const getBookmarks = () => {
-    const stored = localStorage.getItem("bookmarks");
+  const stored = localStorage.getItem("bookmarks");
 
-    if (!stored) {
-        return [];
-    }
+  if (!stored) {
+    return [];
+  }
 
-    return JSON.parse(stored);
-}
+  let parsed;
 
-const bookmarks = getBookmarks();
+  try {
+    parsed = JSON.parse(stored);
+  } catch {
+    return [];
+  }
 
-const newBookmark = {
-    name: `${nameInput.value}`,
-    url: `${urlInput.value}`,
-}
+  if (!Array.isArray(parsed)) {
+    return [];
+  }
 
-bookmarks.push(newBookmark);
+  const valid = parsed.every(item =>
+    item &&
+    typeof item === "object" &&
+    "name" in item &&
+    "category" in item &&
+    "url" in item
+  );
 
-localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  if (!valid) {
+    return [];
+  }
+
+  return parsed;
+};
 
 const displayOrCloseForm = () => {
     formSection.classList.toggle("hidden");
