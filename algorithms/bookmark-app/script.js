@@ -52,8 +52,8 @@ const getBookmarks = () => {
 };
 
 const displayOrCloseForm = () => {
-    formSection.classList.toggle("hidden");
-    mainSection.classList.toggle("hidden");
+  formSection.classList.toggle("hidden");
+  mainSection.classList.toggle("hidden");
 }
 
 const displayOrHideCategory = () => {
@@ -62,47 +62,48 @@ const displayOrHideCategory = () => {
 }
 
 viewCategoryBtn.addEventListener("click", () => {
-    listSection.classList.remove("hidden");
-    mainSection.classList.add("hidden");
-    categoryName.textContent = categoryDropdown.value;
+  listSection.classList.remove("hidden");
+  mainSection.classList.add("hidden");
+  categoryName.textContent = categoryDropdown.value;
+
 })
 
 closeListBtn.addEventListener("click", () => {
-    listSection.classList.add("hidden");
-    mainSection.classList.remove("hidden");
+  listSection.classList.add("hidden");
+  mainSection.classList.remove("hidden");
 })
 
 addBookmarkBtn.addEventListener("click", () => {
-    categoryName.innerText = categoryDropdown.value;
-    displayOrCloseForm();
+  categoryName.innerText = categoryDropdown.value;
+  displayOrCloseForm();
 })
 
 addBookmarkFormBtn.addEventListener("click", () => {
-    const bookmarks = getBookmarks();
+  const bookmarks = getBookmarks();
 
-    const newBookmark = {
-        name: nameInput.value,
-        category: categoryDropdown.value,
-        url: urlInput.value,
-    }
+  const newBookmark = {
+    name: nameInput.value,
+    category: categoryDropdown.value,
+    url: urlInput.value,
+  }
 
-    bookmarks.push(newBookmark);
+  bookmarks.push(newBookmark);
 
-    localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
-    
-    nameInput.value = "";
-    urlInput.value = "";
-    
-    displayOrCloseForm();
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  
+  nameInput.value = "";
+  urlInput.value = "";
+  
+  displayOrCloseForm();
 })
 
 closeFormBtn.addEventListener("click", () => {
-    formSection.classList.add("hidden");
-    mainSection.classList.remove("hidden");
+  formSection.classList.add("hidden");
+  mainSection.classList.remove("hidden");
 })
 
 formSection.addEventListener("submit", (e) => {
-    e.preventDefault();
-    formSection.classList.add("hidden");
-    listSection.classList.remove("hidden");
+  e.preventDefault();
+  formSection.classList.add("hidden");
+  listSection.classList.remove("hidden");
 })
