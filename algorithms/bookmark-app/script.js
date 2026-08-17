@@ -73,6 +73,12 @@ viewCategoryBtn.addEventListener("click", () => {
     categoryList.innerHTML = `<p> No Bookmarks Found </p>`;
     return;
   }
+
+  const radios = matches.map(b => {
+  return `<input type="radio" id="${b.name}" value="${b.name}" name="bookmark"></input>`;
+  });
+
+  categoryList.innerHTML = radios.join("");
 })
 
 closeListBtn.addEventListener("click", () => {
