@@ -126,3 +126,7 @@ formSection.addEventListener("submit", (e) => {
   formSection.classList.add("hidden");
   listSection.classList.remove("hidden");
 })
+
+deleteBookmarkBtn.addEventListener("click", () => {
+  
+})
