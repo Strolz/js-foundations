@@ -70,7 +70,7 @@ viewCategoryBtn.addEventListener("click", () => {
   const matches = bookmarks.filter(b => b.category === categoryDropdown.value)
   
   if(matches.length === 0) {
-    categoryList.innerHTML = `<p> No Bookmarks Found </p>`;
+    categoryList.innerHTML = `<p>No Bookmarks Found</p>`;
     return;
   }
 
@@ -79,6 +79,12 @@ viewCategoryBtn.addEventListener("click", () => {
   });
 
   categoryList.innerHTML = radios.join("");
+
+  const radioLink = matches.map(b => {
+    return `<label for="${b.name}"><a href="${b.url}">${b.name}</a></label>`;
+  });
+
+  categoryList.innerHTML += radioLink.join("");
 })
 
 closeListBtn.addEventListener("click", () => {
