@@ -75,7 +75,7 @@ viewCategoryBtn.addEventListener("click", () => {
   }
 
   const radios = matches.map(b => {
-  return `<input type="radio" id="${b.name}" value="${b.name}" name="bookmark"></input>`;
+  return `<input type="radio" id="${b.name}" value="${b.name}" name="bookmark">`;
   });
 
   categoryList.innerHTML = radios.join("");
@@ -128,5 +128,19 @@ formSection.addEventListener("submit", (e) => {
 })
 
 deleteBookmarkBtn.addEventListener("click", () => {
-  
+  const selected = document.querySelector("input[name='bookmark']:checked");
+
+  const bookmarks = getBookmarks()
+  const updated = bookmarks.filter(b => b.name !== selected.value);
+  localStorage.setItem("bookmarks", JSON.stringify(updated));
+
+  categoryList.innerHTML = "";
+  categoryList.innerHTML = updated.map(b => {
+    return `
+    <label>
+    <input type="radio" name="bookmark" value="${b.name}">
+    <a href="${b.url}">${b.name}</a>
+    </label>
+    `;
+  }).join("");
 })
