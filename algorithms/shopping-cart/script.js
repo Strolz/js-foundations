@@ -14,4 +14,13 @@ const showHideCartSpan = document.getElementById("show-hide-cart");
 
 let isCartShowing = false;
 
+class Dessert {
+    constructor(id, name, price, category) {
+        this.id = id
+        this.name = name 
+        this.price = price
+        this.category = category
+    }
+}
+
 const products = [];

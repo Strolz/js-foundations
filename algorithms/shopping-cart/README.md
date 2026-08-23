@@ -35,7 +35,7 @@ A shopping cart does not serve much purpose without products. Declare a products
 
 Step 6
 ======
-
+Before you start adding products, create a class named Dessert. Give it a constructor that takes four parameters in this order: id, name, price, and category. Inside the constructor, assign each parameter to a property of the same name on this.
 ---------------------------------
 
 Step 7
