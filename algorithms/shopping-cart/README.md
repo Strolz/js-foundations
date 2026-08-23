@@ -40,7 +40,7 @@ Before you start adding products, create a class named Dessert. Give it a constr
 
 Step 7
 ======
-
+Add a single value to your products array by calling new Dessert() with these arguments, in order: the number 1, the string "Vanilla Cupcakes (6 Pack)", the number 12.99, and the string "Cupcake".
 ---------------------------------
 
 Step 8

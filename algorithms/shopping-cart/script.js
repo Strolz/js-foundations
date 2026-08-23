@@ -23,4 +23,6 @@ class Dessert {
     }
 }
 
-const products = [];
+const products = [
+    new Dessert(1, "Vanilla Cupcakes (6 Pack)", 12.99, "Cupcake");
+];
