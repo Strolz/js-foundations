@@ -18,7 +18,7 @@ Now you need to get your two buttons. Continuing the pattern, get the #cart-btn 
 
 Step 3
 ======
-
+Next is to get your totals. Get the #total-items, #subtotal, #taxes, and #total elements. Store them in variables named totalNumberOfItems, cartSubTotal, cartTaxes, and cartTotal, respectively.
 ---------------------------------
 
 Step 4
