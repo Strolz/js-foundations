@@ -13,7 +13,7 @@ Since these will not change, remember to use const to declare them.
 
 Step 2
 ======
-
+Now you need to get your two buttons. Continuing the pattern, get the #cart-btn and #clear-cart-btn elements. Store them in variables named cartBtn and clearCartBtn, respectively.
 ---------------------------------
 
 Step 3
