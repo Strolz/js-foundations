@@ -23,7 +23,9 @@ Next is to get your totals. Get the #total-items, #subtotal, #taxes, and #total 
 
 Step 4
 ======
+The last element to get is the #show-hide-cart element. Store it in a variable named showHideCartSpan.
 
+Then, use let to declare a variable named isCartShowing and set it to false.
 ---------------------------------
 
 Step 5
