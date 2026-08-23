@@ -6,7 +6,7 @@ You will be building a shopping cart application. The HTML and CSS are already p
 
 Step 1
 ======
-To start, you will need to get some of your elements from the DOM. Start by using document.getElementById() to get the#cart-container, #products-container, and #dessert-card-container elements. Store them in variables named cartContainer, productsContainer, and dessertCards, respectively.
+To start, you will need to get some of your elements from the DOM. Start by using document.getElementById() to get the #cart-container, #products-container, and #dessert-card-container elements. Store them in variables named cartContainer, productsContainer, and dessertCards, respectively.
 
 Since these will not change, remember to use const to declare them.
 ---------------------------------
