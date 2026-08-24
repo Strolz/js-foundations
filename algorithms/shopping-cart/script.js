@@ -37,3 +37,7 @@ const products = [
     new Dessert(11, "Vanilla Macarons (5 Pack)", 11.99, "Macaron"),
     new Dessert(12, "Lemon Cupcakes (4 Pack)", 12.99, "Cupcake"),
 ];
+
+products.forEach(() => {
+
+});
