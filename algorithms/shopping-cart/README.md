@@ -75,7 +75,7 @@ For the first parameter of your callback function, destructure the name, id, pri
 
 Step 11
 =======
-
+You need to display the available products in your HTML. Start by using the addition assignment operator to add an empty template literal string to the innerHTML property of the dessertCards variable
 ---------------------------------
 
 Step 12
