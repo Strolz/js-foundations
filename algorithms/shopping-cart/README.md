@@ -90,7 +90,7 @@ After your h2 element, create two p elements. Give the first a class of dessert-
 
 Step 14
 =======
-
+Finally, after your p elements, create a button element. Give it an id set to the value of the id variable, a class of btn add-to-cart-btn, and use "Add to cart" for the text.
 ---------------------------------
 
 Step 15
