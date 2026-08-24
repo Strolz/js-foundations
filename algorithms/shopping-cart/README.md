@@ -45,7 +45,20 @@ Add a single value to your products array by calling new Dessert() with these ar
 
 Step 8
 ======
+Add the remaining products from this table (in order) to your products array using new Dessert(...). Increment the id for each product, counting up.
 
+        name	price	category
+French Macaron	3.99	Macaron
+Pumpkin Cupcake	3.99	Cupcake
+Chocolate Cupcake	5.99	Cupcake
+Chocolate Pretzels (4 Pack)	10.99	Pretzel
+Strawberry Ice Cream	2.99	Ice Cream
+Chocolate Macarons (4 Pack)	9.99	Macaron
+Strawberry Pretzel	4.99	Pretzel
+Butter Pecan Ice Cream	2.99	Ice Cream
+Rocky Road Ice Cream	2.99	Ice Cream
+Vanilla Macarons (5 Pack)	11.99	Macaron
+Lemon Cupcakes (4 Pack)	12.99	Cupcake
 ---------------------------------
 
 Step 9

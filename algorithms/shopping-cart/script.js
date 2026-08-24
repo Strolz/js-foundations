@@ -24,5 +24,16 @@ class Dessert {
 }
 
 const products = [
-    new Dessert(1, "Vanilla Cupcakes (6 Pack)", 12.99, "Cupcake");
+    new Dessert(1, "Vanilla Cupcakes (6 Pack)", 12.99, "Cupcake"),
+    new Dessert(2, "French Macaron", 3.99, "Macaron"),
+    new Dessert(3, "Pumpkin Cupcake", 3.99, "Cupcake"),
+    new Dessert(4, "Chocolate Cupcake", 5.99, "Cupcake"),
+    new Dessert(5, "Chocolate Pretzels (4 Pack)", 10.99, "Pretzel"),
+    new Dessert(6, "Strawberry Ice Cream", 2.99, "Ice Cream"),
+    new Dessert(7, "Chocolate Macarons (4 Pack)", 9.99, "Macaron"),
+    new Dessert(8, "Strawberry Pretzel", 4.99, "Pretzel"),
+    new Dessert(9, "Butter Pecan Ice Cream", 2.99, "Ice Cream"),
+    new Dessert(10, "Rocky Road Ice Cream", 2.99, "Ice Cream"),
+    new Dessert(11, "Vanilla Macarons (5 Pack)", 11.99, "Macaron"),
+    new Dessert(12, "Lemon Cupcakes (4 Pack)", 12.99, "Cupcake"),
 ];
