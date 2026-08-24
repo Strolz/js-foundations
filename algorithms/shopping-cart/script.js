@@ -50,3 +50,7 @@ products.forEach(
     `;
   }
 );
+
+class ShoppingCart {
+
+}

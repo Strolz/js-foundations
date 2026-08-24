@@ -95,7 +95,7 @@ Finally, after your p elements, create a button element. Give it an id set to th
 
 Step 15
 =======
-
+Now that you have created a Dessert class, create a ShoppingCart class.
 ---------------------------------
 
 Step 16
