@@ -70,7 +70,7 @@ Start by calling the .forEach method of your products array. Use arrow syntax to
 
 Step 10
 =======
-
+For the first parameter of your callback function, destructure the name, id, price, and category properties from the Dessert instance passed in.
 ---------------------------------
 
 Step 11

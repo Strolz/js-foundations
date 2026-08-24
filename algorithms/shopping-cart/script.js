@@ -38,6 +38,8 @@ const products = [
     new Dessert(12, "Lemon Cupcakes (4 Pack)", 12.99, "Cupcake"),
 ];
 
-products.forEach(() => {
-
-});
+products.forEach(
+  ({ name, id, price, category }) => {
+    
+  }
+);
