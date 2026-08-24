@@ -80,7 +80,7 @@ You need to display the available products in your HTML. Start by using the addi
 
 Step 12
 =======
-
+In your template literal, create a div element with a class of dessert-card. In that div, create an h2 element and give it the text of the name variable.
 ---------------------------------
 
 Step 13
