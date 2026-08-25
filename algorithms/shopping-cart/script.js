@@ -52,5 +52,7 @@ products.forEach(
 );
 
 class ShoppingCart {
+  constructor() {
 
+  }
 }

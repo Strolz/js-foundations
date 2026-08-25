@@ -100,7 +100,7 @@ Now that you have created a Dessert class, create a ShoppingCart class.
 
 Step 16
 =======
-
+Add an empty constructor method to the ShoppingCart class.
 ---------------------------------
 
 Step 17
