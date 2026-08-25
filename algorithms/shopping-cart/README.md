@@ -122,7 +122,7 @@ For the callback to .find(), pass a function that takes a single parameter item,
 
 Step 20
 =======
-
+Use const and destructuring to extract name and price variables from product.
 ---------------------------------
 
 Step 21
