@@ -110,7 +110,7 @@ In your constructor, use the this keyword to set the items property to an empty 
 
 Step 18
 =======
-
+The first parameter, id, is the id of the product the user has added to their cart. The second parameter, products, is an array of Dessert instances. By using a parameter instead of directly referencing your existing products array, this method will be more flexible if you wanted to add additional product lists in the future.
 ---------------------------------
 
 Step 19
