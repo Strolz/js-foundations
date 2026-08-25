@@ -127,7 +127,7 @@ Use const and destructuring to extract name and price variables from product.
 
 Step 21
 =======
-
+Now you need to push the product into the cart's items array. Remember to use the this keyword.
 ---------------------------------
 
 Step 22
