@@ -105,7 +105,7 @@ Add an empty constructor method to the ShoppingCart class.
 
 Step 17
 =======
-
+In your constructor, use the this keyword to set the items property to an empty array. Also, set the total property to 0, and the taxRate property to 8.25.
 ---------------------------------
 
 Step 18
