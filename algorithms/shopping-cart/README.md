@@ -156,7 +156,7 @@ In the forEach callback, wrap the right-hand assignment totalCountPerProduct[des
 
 Step 26
 =======
-
+Now you need to get prepared to update the display with the new product the user added. Declare a currentProductCount variable, and assign it the value of the totalCountPerProduct object's property matching the id of product.
 ---------------------------------
 
 Step 27
