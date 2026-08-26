@@ -137,7 +137,7 @@ Declare a totalCountPerProduct variable, and assign it an empty object.
 
 Step 23
 =======
-
+Use the .forEach() method to loop through the items array. Pass an empty callback function that takes a single parameter dessert.
 ---------------------------------
 
 Step 24
