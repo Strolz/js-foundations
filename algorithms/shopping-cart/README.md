@@ -142,7 +142,11 @@ Use the .forEach() method to loop through the items array. Pass an empty callbac
 
 Step 24
 =======
+You can use the || (logical OR) operator to provide a default value.
 
+Now, let's apply this concept to your totalCountPerProduct object in the forEach callback. Make sure that each dessert.id property is initialized properly.
+
+Initialize totalCountPerProduct[dessert.id] with a default value of 0 using the || operator.
 ---------------------------------
 
 Step 25
