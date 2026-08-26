@@ -151,7 +151,7 @@ Initialize totalCountPerProduct[dessert.id] with a default value of 0 using the 
 
 Step 25
 =======
-
+In the forEach callback, wrap the right-hand assignment totalCountPerProduct[dessert.id] || 0 in parentheses () to ensure proper evaluation, then increment the value by one
 ---------------------------------
 
 Step 26
