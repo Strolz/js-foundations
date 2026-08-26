@@ -132,7 +132,7 @@ Now you need to push the product into the cart's items array. Remember to use th
 
 Step 22
 =======
-
+Declare a totalCountPerProduct variable, and assign it an empty object.
 ---------------------------------
 
 Step 23
