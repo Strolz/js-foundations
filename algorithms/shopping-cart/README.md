@@ -161,7 +161,11 @@ Now you need to get prepared to update the display with the new product the user
 
 Step 27
 =======
+You haven't written the code to generate the HTML yet, but if a product has already been added to the user's cart then there will be a matching element which you'll need.
 
+Use .getElementById() to get the matching element - you'll be setting the id value to product-count-for-id${product.id}, so use a template literal to query that value.
+
+Assign your query to a currentProductCountSpan variable.
 ---------------------------------
 
 Step 28
