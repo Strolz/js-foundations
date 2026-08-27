@@ -73,7 +73,7 @@ class ShoppingCart {
     const currentProductCountSpan = document.getElementById(`product-count-for-id${product.id}`);
 
     currentProductCount 
-    ? undefined
+    ? currentProductCountSpan.textContent = `${currentProductCount}x`
     : undefined
   }
 }

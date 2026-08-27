@@ -175,7 +175,7 @@ The behavior of the addItem method needs to change if the product is already in 
 
 Step 29
 =======
-
+For your truthy expression, removing the undefined, you need to update the textContent of the currentProductCountSpan to be the currentProductCount followed by an x. Use a template literal to do so.
 ---------------------------------
 
 Step 30
