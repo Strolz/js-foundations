@@ -185,7 +185,7 @@ For your falsy expression, you'll need to add new HTML to your productsContainer
 
 Step 31
 =======
-
+Inside your div, add two p elements. Set the text of the second p element to be a dollar sign followed by the value of the price variable.
 ---------------------------------
 
 Step 32
