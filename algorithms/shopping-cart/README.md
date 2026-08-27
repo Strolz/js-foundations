@@ -170,7 +170,7 @@ Assign your query to a currentProductCountSpan variable.
 
 Step 28
 =======
-
+The behavior of the addItem method needs to change if the product is already in the cart or not. Create a ternary that checks if the current product is already in the cart. Use undefined for both the truthy and falsy expressions to avoid a syntax error.
 ---------------------------------
 
 Step 29
