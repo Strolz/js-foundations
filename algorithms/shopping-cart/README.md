@@ -180,7 +180,7 @@ For your truthy expression, removing the undefined, you need to update the textC
 
 Step 30
 =======
-
+For your falsy expression, you'll need to add new HTML to your productsContainer. Start by removing the undefined, then use the addition assignment operator and template literal syntax to add a div with the class set to product and the id set to dessert${id} to the innerHTML property of the productsContainer.
 ---------------------------------
 
 Step 31
