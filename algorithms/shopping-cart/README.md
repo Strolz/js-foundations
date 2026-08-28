@@ -205,7 +205,7 @@ You need to get all of the Add to cart buttons that you added to the DOM earlier
 
 Step 35
 =======
-
+Use the spread operator on the addToCartBtns variable to convert it into an array. Then, use the forEach method to iterate through the array. Do not pass a callback function yet.
 ---------------------------------
 
 Step 36
