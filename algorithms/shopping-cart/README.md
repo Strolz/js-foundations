@@ -190,7 +190,7 @@ Inside your div, add two p elements. Set the text of the second p element to be 
 
 Step 32
 =======
-
+In your first p element, add a span element. Give the span a class of product-count and an id of product-count-for-id${id}. Then, after the span, give your p element the text of the name variable.
 ---------------------------------
 
 Step 33
