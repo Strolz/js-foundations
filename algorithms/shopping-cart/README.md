@@ -195,7 +195,7 @@ In your first p element, add a span element. Give the span a class of product-co
 
 Step 33
 =======
-
+Declare a cart variable, and assign it a new ShoppingCart object. Note the use of the new keyword when instantiating the object.
 ---------------------------------
 
 Step 34
