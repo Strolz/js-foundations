@@ -200,7 +200,7 @@ Declare a cart variable, and assign it a new ShoppingCart object. Note the use o
 
 Step 34
 =======
-
+You need to get all of the Add to cart buttons that you added to the DOM earlier. Declare an addToCartBtns variable, and assign it the value of calling the getElementsByClassName() method on the document object, passing in the string "add-to-cart-btn".
 ---------------------------------
 
 Step 35
