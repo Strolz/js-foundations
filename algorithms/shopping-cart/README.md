@@ -215,7 +215,9 @@ Add your callback function to the forEach method. It should take a btn parameter
 
 Step 37
 =======
+In your event listener callback, call the .addItem() method of your cart object, and pass in the event.target.id. Remember that the id here will be a string, so you need to convert it to a number.
 
+Pass your products array as the second argument.
 ---------------------------------
 
 Step 38
