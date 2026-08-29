@@ -251,7 +251,7 @@ Add a getCounts method to the ShoppingCart class. It should return the number of
 
 Step 43
 =======
-
+Now you can update the total number of items on the webpage. Assign the value of your cart object's .getCounts() method to the textContent of the totalNumberOfItems variable.
 ---------------------------------
 
 Step 44
