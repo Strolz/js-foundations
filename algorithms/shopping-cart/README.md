@@ -244,7 +244,9 @@ Now you should be able to see your cart and add items to it.
 
 Step 42
 =======
+You need a way to access the total number of items in the cart. The best way to do this is to add another method to your ShoppingCart class, rather than accessing the items array directly.
 
+Add a getCounts method to the ShoppingCart class. It should return the number of items in the items array.
 ---------------------------------
 
 Step 43
