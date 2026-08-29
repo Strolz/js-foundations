@@ -232,7 +232,7 @@ Start by inverting the value of isCartShowing. Remember that you can use the log
 
 Step 40
 =======
-
+Now assign the textContent of the showHideCartSpan variable the result of a ternary expression which checks if isCartShowing is true. If it is, set the textContent to "Hide", otherwise set it to "Show".
 ---------------------------------
 
 Step 41
