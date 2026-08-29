@@ -237,7 +237,9 @@ Now assign the textContent of the showHideCartSpan variable the result of a tern
 
 Step 41
 =======
+Finally, update the display property of the style object of the cartContainer variable to another ternary which checks if isCartShowing is true. If it is, set the display property to "block", otherwise set it to "none".
 
+Now you should be able to see your cart and add items to it.
 ---------------------------------
 
 Step 42
