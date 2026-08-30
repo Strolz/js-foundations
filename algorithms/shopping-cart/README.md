@@ -349,7 +349,7 @@ In the if statement, set the items property back to an empty array, then set the
 
 Step 59
 =======
-
+You also need to start clearing the HTML. Set the innerHTML property of the productsContainer back to an empty string.
 ---------------------------------
 
 Step 60
