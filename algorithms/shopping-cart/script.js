@@ -102,6 +102,10 @@ class ShoppingCart {
     return this.total;
   }
 
+  clearCart() {
+  
+  }
+
 }
 
 const cart = new ShoppingCart();
