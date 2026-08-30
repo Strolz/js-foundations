@@ -1,6 +1,6 @@
 const cartContainer = document.getElementById("cart-container");
 const productsContainer = document.getElementById("products-container");
-const dessertContainer = document.getElementById("dessert-card-container");
+const dessertCards = document.getElementById("dessert-card-container");
 
 const cartBtn = document.getElementById("cart-btn");
 const clearCartBtn = document.getElementById("clear-cart-btn");
@@ -72,7 +72,7 @@ class ShoppingCart {
     const currentProductCount = totalCountPerProduct[product.id];
     const currentProductCountSpan = document.getElementById(`product-count-for-id${product.id}`);
 
-    currentProductCount 
+    currentProductCount > 1
     ? currentProductCountSpan.textContent = `${currentProductCount}x`
     : productsContainer.innerHTML += `
         <div class="product" id="dessert${id}">
@@ -138,4 +138,3 @@ cartBtn.addEventListener("click", () => {
 });
 
 clearCartBtn.addEventListener("click", cart.clearCart.bind(cart));
-
