@@ -296,7 +296,7 @@ Declare a variable tax and assign it the value of calling your new .calculateTax
 
 Step 50
 =======
-
+Update the total value to be the sum of the subTotal and tax values.
 ---------------------------------
 
 Step 51
