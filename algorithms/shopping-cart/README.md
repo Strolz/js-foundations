@@ -354,7 +354,7 @@ You also need to start clearing the HTML. Set the innerHTML property of the prod
 
 Step 60
 =======
-
+Set the textContent of the totalNumberOfItems element to 0, and the textContent of the cartSubTotal, cartTaxes, and cartTotal elements to "$0". 
 ---------------------------------
 
 Step 61
