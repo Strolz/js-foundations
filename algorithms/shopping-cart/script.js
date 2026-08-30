@@ -12,8 +12,9 @@ const cartTotal = document.getElementById("total");
 
 const showHideCartSpan = document.getElementById("show-hide-cart");
 
-let isCartShowing = false;
+let isCartShowing = false; // Tracks cart visibility state
 
+// Dessert class models each product
 class Dessert {
     constructor(id, name, price, category) {
         this.id = id
@@ -38,6 +39,7 @@ const products = [
     new Dessert(12, "Lemon Cupcakes (4 Pack)", 12.99, "Cupcake"),
 ];
 
+// Render dessert cards to the page
 products.forEach(
   ({ name, id, price, category }) => {
     dessertCards.innerHTML += `
@@ -51,6 +53,7 @@ products.forEach(
   }
 );
 
+// Shopping cart class handles cart state + UI updates
 class ShoppingCart {
   constructor() {
     this.items = []
@@ -58,11 +61,13 @@ class ShoppingCart {
     this.taxRate = 8.25
   }
 
+  // Add item to cart and update UI
   addItem(id, products) {
     const product = products.find(item => item.id === id);
     const {name, price} = product;
     this.items.push(product);
 
+    // Build count map for all items in cart
     const totalCountPerProduct = {}
 
     this.items.forEach((dessert) => {
@@ -72,6 +77,8 @@ class ShoppingCart {
     const currentProductCount = totalCountPerProduct[product.id];
     const currentProductCountSpan = document.getElementById(`product-count-for-id${product.id}`);
 
+    // If product already exists in DOM, update count
+    // If first time adding, create DOM entry
     currentProductCount > 1
     ? currentProductCountSpan.textContent = `${currentProductCount}x`
     : productsContainer.innerHTML += `
@@ -83,15 +90,17 @@ class ShoppingCart {
         </div>
       `
   }
-
+  // Return total number of items in cart
   getCounts() {
     return this.items.length
   }
 
+  // Calculate tax amount
   calculateTaxes(amount) {
     return parseFloat(((this.taxRate / 100) * amount).toFixed(2));
   }
 
+  // Calculate subtotal, tax, and total; update UI
   calculateTotal() {
     const subTotal = this.items.reduce((total, item) => total + item.price, 0);
     const tax = this.calculateTaxes(subTotal);
@@ -102,6 +111,7 @@ class ShoppingCart {
     return this.total;
   }
 
+  // Clear cart items and reset UI
   clearCart() {
     if(!this.items.length) {
       alert("Your shopping cart is already empty");
@@ -123,6 +133,8 @@ class ShoppingCart {
 }
 
 const cart = new ShoppingCart();
+
+// Clear cart items and reset UI
 const addToCartBtns = document.getElementsByClassName("add-to-cart-btn");
 
 [...addToCartBtns].forEach((btn) => btn.addEventListener("click", (event) => {
@@ -131,10 +143,12 @@ const addToCartBtns = document.getElementsByClassName("add-to-cart-btn");
   cart.calculateTotal();
 }));
 
+// Clear cart items and reset UI
 cartBtn.addEventListener("click", () => {
   isCartShowing = !isCartShowing;
   showHideCartSpan.textContent = isCartShowing ? "Hide" : "Show";
   cartContainer.style.display = isCartShowing ? "block" : "none";
 });
 
+// Bind clearCart so `this` always refers to the cart instance
 clearCartBtn.addEventListener("click", cart.clearCart.bind(cart));
