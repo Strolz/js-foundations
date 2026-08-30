@@ -6,7 +6,7 @@ const cartBtn = document.getElementById("cart-btn");
 const clearCartBtn = document.getElementById("clear-cart-btn");
 
 const totalNumberOfItems = document.getElementById("total-items");
-const subTotal = document.getElementById("subtotal");
+const cartSubTotal = document.getElementById("subtotal");
 const cartTaxes = document.getElementById("taxes");
 const cartTotal = document.getElementById("total");
 
@@ -96,6 +96,7 @@ class ShoppingCart {
     const subTotal = this.items.reduce((total, item) => total + item.price, 0);
     const tax = this.calculateTaxes(subTotal);
     this.total = subTotal + tax;
+    cartSubTotal.textContent = `$${subTotal.toFixed(2)}`;
   }
 
 }

@@ -301,7 +301,7 @@ Update the total value to be the sum of the subTotal and tax values.
 
 Step 51
 =======
-
+You're going to update the HTML in this method as well. Set the textContent of the cartSubTotal to be the value of subTotal to a fixed 2 decimal places. Use template literal syntax to add the dollar sign to the beginning of the value.
 ---------------------------------
 
 Step 52
