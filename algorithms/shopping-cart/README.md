@@ -291,7 +291,7 @@ Pass your .toFixed() call to parseFloat().
 
 Step 49
 =======
-
+Declare a variable tax and assign it the value of calling your new .calculateTaxes() method, passing subTotal as the argument.
 ---------------------------------
 
 Step 50
