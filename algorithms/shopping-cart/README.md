@@ -342,7 +342,9 @@ Declare a variable isCartCleared and assign it the value of calling confirm() wi
 
 Step 58
 =======
+You only want to clear the cart if the user confirms the prompt. Create an if statement that checks if the user confirmed the prompt.
 
+In the if statement, set the items property back to an empty array, then set the total property to 0.   
 ---------------------------------
 
 Step 59
