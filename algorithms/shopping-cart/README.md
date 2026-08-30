@@ -306,7 +306,7 @@ You're going to update the HTML in this method as well. Set the textContent of t
 
 Step 52
 =======
-
+Following the same pattern as your cartSubTotal, update the cartTaxes to display the tax value, and your cartTotal to display the total property.
 ---------------------------------
 
 Step 53
