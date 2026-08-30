@@ -311,7 +311,7 @@ Following the same pattern as your cartSubTotal, update the cartTaxes to display
 
 Step 53
 =======
-
+Finally, return the value of the total property. Remember your this keyword.
 ---------------------------------
 
 Step 54
