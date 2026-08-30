@@ -270,7 +270,9 @@ Part of the total cost will include the tax, so you need to calculate that as we
 
 Step 46
 =======
+Your calculateTaxes method should return the value of the taxRate (divided by 100, to convert it to a percent) multiplied by the amount parameter.
 
+For clarity, wrap the taxRate / 100 calculation in parentheses.
 ---------------------------------
 
 Step 47

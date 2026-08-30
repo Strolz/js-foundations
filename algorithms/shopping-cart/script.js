@@ -89,7 +89,7 @@ class ShoppingCart {
   }
 
   calculateTaxes(amount) {
-
+    return (this.taxRate / 100) * amount;
   }
 
   calculateTotal() {
