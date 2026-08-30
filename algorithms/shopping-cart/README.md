@@ -326,7 +326,11 @@ Your last feature is to allow users to clear their cart. Add a clearCart() metho
 
 Step 56
 =======
+The first thing you should do is check if the items array is empty. If it is, display an alert to the user with the text Your shopping cart is already empty, then return from the function.
 
+Remember that 0 is a falsy value, so you can use the ! operator to check if the array is empty.
+
+After displaying the alert, return from the function to stop execution.
 ---------------------------------
 
 Step 57
