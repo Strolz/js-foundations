@@ -316,7 +316,7 @@ Finally, return the value of the total property. Remember your this keyword.
 
 Step 54
 =======
-
+Now call your .calculateTotal() method inside your forEach loop.        
 ---------------------------------
 
 Step 55
