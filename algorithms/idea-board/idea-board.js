@@ -18,5 +18,8 @@ class ProjectIdea {
 }
 
 class ProjectIdeaBoard {
-
+    constructor(title) {
+        this.title = title
+        this.ideas = []
+    }
 }
