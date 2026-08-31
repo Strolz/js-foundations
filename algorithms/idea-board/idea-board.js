@@ -27,8 +27,8 @@ class ProjectIdeaBoard {
         this.ideas.push(project);
     }
 
-    unpin () {
-
+    unpin (project) {
+        this.ideas = this.ideas.filter(p => p !== project);
     }
 
     count() {
