@@ -39,5 +39,13 @@ class ProjectIdeaBoard {
         if (this.ideas.length === 0) {
         return `${this.title} has 0 idea(s)\n`;
         }
+        
+        const summary = `${this.title} has ${this.count()} idea(s)\n`;
+
+        const formattedIdeas = this.ideas
+          .map(idea => `${idea.title} (${idea.status.description}) - ${idea.description}\n`)
+          .join("");
+        
+        return summary + formattedIdeas;
     }
 }
