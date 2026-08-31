@@ -32,7 +32,7 @@ class ProjectIdeaBoard {
     }
 
     count() {
-
+        return this.ideas.length
     }
 
     formatToString() {
