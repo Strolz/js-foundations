@@ -36,6 +36,8 @@ class ProjectIdeaBoard {
     }
 
     formatToString() {
-
+        if (this.ideas.length === 0) {
+        return `${this.title} has 0 idea(s)\n`;
+        }
     }
 }
