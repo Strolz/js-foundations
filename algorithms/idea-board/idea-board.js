@@ -11,8 +11,8 @@ class ProjectIdea {
         this.status = projectStatus.PENDING;
     }
 
-    updateProjectStatus() {
-    
+    updateProjectStatus(status) {
+        this.status = status;
     }
 
 }
