@@ -10,4 +10,9 @@ class ProjectIdea {
         this.description = description;
         this.status = projectStatus.PENDING;
     }
+
+    updateProjectStatus() {
+    
+    }
+
 }
