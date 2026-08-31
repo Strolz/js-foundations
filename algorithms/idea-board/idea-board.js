@@ -22,4 +22,20 @@ class ProjectIdeaBoard {
         this.title = title
         this.ideas = []
     }
+
+    pin() {
+
+    }
+
+    unpin () {
+
+    }
+
+    count() {
+
+    }
+
+    formatToString() {
+
+    }
 }
