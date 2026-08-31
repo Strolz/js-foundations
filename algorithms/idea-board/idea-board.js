@@ -23,8 +23,8 @@ class ProjectIdeaBoard {
         this.ideas = []
     }
 
-    pin() {
-
+    pin(project) {
+        this.ideas.push(project);
     }
 
     unpin () {
