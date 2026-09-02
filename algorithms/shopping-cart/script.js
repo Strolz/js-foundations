@@ -134,7 +134,6 @@ class ShoppingCart {
 
 const cart = new ShoppingCart();
 
-// Clear cart items and reset UI
 const addToCartBtns = document.getElementsByClassName("add-to-cart-btn");
 
 [...addToCartBtns].forEach((btn) => btn.addEventListener("click", (event) => {
@@ -143,7 +142,6 @@ const addToCartBtns = document.getElementsByClassName("add-to-cart-btn");
   cart.calculateTotal();
 }));
 
-// Clear cart items and reset UI
 cartBtn.addEventListener("click", () => {
   isCartShowing = !isCartShowing;
   showHideCartSpan.textContent = isCartShowing ? "Hide" : "Show";
