@@ -7,4 +7,8 @@ class BankAccount {
     deposit(amount) {
       
     }
+
+    withdraw(amount) {
+
+    }
 }
