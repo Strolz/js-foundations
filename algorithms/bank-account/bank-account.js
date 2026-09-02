@@ -5,7 +5,12 @@ class BankAccount {
     }
 
     deposit(amount) {
-      
+      if(amount > 0) {
+        const deposit = {type: `Deposit`, amount: `${amount}`};
+        this.transactions.push(deposit);
+        this.balance += amount
+        return `Successfully deposited ${amount}. New balance: ${this.balance}`
+      }
     }
 
     withdraw(amount) {
