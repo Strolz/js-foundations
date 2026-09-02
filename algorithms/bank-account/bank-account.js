@@ -11,4 +11,8 @@ class BankAccount {
     withdraw(amount) {
 
     }
+
+    checkBalance() {
+        return this.balance;
+    }
 }
