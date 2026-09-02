@@ -3,4 +3,8 @@ class BankAccount {
         this.balance = 0;
         this.transactions = [];
     }
+
+    deposit(amount) {
+      
+    }
 }
