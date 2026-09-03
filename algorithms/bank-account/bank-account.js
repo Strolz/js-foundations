@@ -5,6 +5,7 @@ class BankAccount {
     }
 
     deposit(amount) {
+      if(amount <= 0) return `Deposit amount must be greater than zero.`;
       if(amount > 0) {
         const deposit = {type: `Deposit`, amount: `${amount}`};
         this.transactions.push(deposit);
