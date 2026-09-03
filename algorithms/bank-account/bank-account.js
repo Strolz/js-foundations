@@ -28,6 +28,10 @@ class BankAccount {
         return `Current balance: $${this.balance}`;
     }
 
+    listAllDeposits() {
+      return this.transactions.forEach(trans => trans.type === "deposit");
+    }
+
     listAllWithdrawals() {
       return this.transactions.forEach(trans => trans.type === "withdraw");
     }
