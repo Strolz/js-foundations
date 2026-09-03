@@ -25,7 +25,7 @@ class BankAccount {
     }
 
     checkBalance() {
-        return this.balance;
+        return `Current balance: $${this.balance}`;
     }
 
     listAllWithdrawals() {
