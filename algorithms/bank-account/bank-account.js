@@ -21,4 +21,8 @@ class BankAccount {
     checkBalance() {
         return this.balance;
     }
+
+    listAllDeposits() {
+      return this.transactions.forEach(trans => trans.type === "deposit");
+    }
 }
