@@ -42,3 +42,5 @@ class BankAccount {
       return `Withdrawals: ${withdrawal.join(",")}`;
     }
 }
+
+const myAccont = new BankAccount;
