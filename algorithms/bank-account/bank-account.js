@@ -36,6 +36,9 @@ class BankAccount {
     }
 
     listAllWithdrawals() {
-      return this.transactions.forEach(trans => trans.type === "withdraw");
+      const withdrawal = this.transactions
+        .filter(trans => trans.type === "withdraw")
+        .map(trans => trans.amount)
+      return `Withdrawals: ${withdrawal.join(",")}`;
     }
 }
