@@ -10,7 +10,10 @@ Start by creating an empty function named countup that takes a single parameter.
 
 Step 2
 ======
+Add an if statement inside your countup function.
 
+Check if number is less than 1 and return an empty array.
+This will serve as the base case for your recursion.
 ---------------------------------
 
 Step 3
