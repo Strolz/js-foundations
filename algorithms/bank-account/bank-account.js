@@ -43,7 +43,7 @@ class BankAccount {
     }
 }
 
-const myAccount = new BankAccount;
+const myAccount = new BankAccount();
 
 myAccount.deposit(100);
 myAccount.deposit(35);
