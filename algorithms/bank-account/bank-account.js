@@ -43,4 +43,10 @@ class BankAccount {
     }
 }
 
-const myAccont = new BankAccount;
+const myAccount = new BankAccount;
+
+myAccount.deposit(100);
+myAccount.deposit(35);
+myAccount.deposit(10);
+myAccount.withdraw(25);
+myAccount.withdraw(15);
