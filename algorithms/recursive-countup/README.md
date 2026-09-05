@@ -35,5 +35,9 @@ This ensures the recursion eventually reaches the base case and terminates.
 
 Step 5
 ======
+Finally, test your countup function by calling it with the argument 5 inside a console.log() statement.
 
+The output should be [1, 2, 3, 4, 5].
+
+With that, the countup function workshop is complete
 ---------------------------------

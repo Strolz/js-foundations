@@ -8,3 +8,5 @@ function countup(number) {
         return countArray;
     }
 }
+
+console.log(countup(5));
