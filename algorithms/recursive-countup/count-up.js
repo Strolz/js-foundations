@@ -1,5 +1,10 @@
 function countup(number) {
-    const countArray = []
-    if(number < 1)
-    return [];
+    let countArray = [];
+    if(number < 1) {
+        return [];
+    } else { 
+        countArray = countup(number - 1);
+        countArray.push(number);
+        return countArray;
+    }
 }

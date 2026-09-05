@@ -25,7 +25,12 @@ This array will store the value of number at each function call.
 
 Step 4
 ======
+Step 4
+For all numbers greater than or equal to 1, create an else block and inside it, call the countup function with number - 1 and assign the result to countArray.
 
+Then use .push() to add number to countArray, and finally return countArray.
+
+This ensures the recursion eventually reaches the base case and terminates.
 ---------------------------------
 
 Step 5
