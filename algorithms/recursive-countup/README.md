@@ -18,7 +18,9 @@ This will serve as the base case for your recursion.
 
 Step 3
 ======
+Declare an empty array named countArray inside the countup function just above your if statement.
 
+This array will store the value of number at each function call.
 ---------------------------------
 
 Step 4
