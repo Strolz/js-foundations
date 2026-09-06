@@ -53,12 +53,18 @@ First, pass e as a parameter to your callback function. Remember that e is a com
 
 Step 7
 ======
+If you open your browser's console and type in the number input, you'll see event objects logged to the browser. And if you take a closer look at one of those event objects, you'll see helpful properties like type and target.
 
+Since you want to perform an action when the Enter key is pressed, the most helpful property is key, which tells you the string value of the key that was pressed.
+
+Remove the console.log() statement from the callback function and add an if statement that checks if e.key is equal to the string "Enter". Leave the body of your if statement empty for now.
+
+Note: Since the Enter and Return keys have similar functions, they both have the same string value of "Enter".
 ---------------------------------
 
 Step 8
 ======
-
+Next, within the body of the if statement, call the checkUserInput() function. After this, if you enter numbers into the number input and press the Enter / Return key, you should see numbers logged to the console.
 ---------------------------------
 
 Step 9
