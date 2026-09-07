@@ -87,12 +87,18 @@ Update the condition in your if statement to use the logical NOT operator to che
 
 Step 11
 =======
-
+Add a logical OR operator (||) after the first condition in your if statement. Then, pass the value of numberInput into the parseInt() function as the second condition of your if statement.
 ---------------------------------
 
 Step 12
 =======
+Next, you need to check if the value returned by the parseInt() function is a number or not.
 
+To do that, you can use the isNaN() function. This function takes in a string or number as an argument, and returns true if it evaluates to NaN.
+
+Update the second condition in your if statement to use the isNaN() function to check if the value returned by parseInt() is NaN.
+
+Also, as mentioned in step 1, only positive numbers are considered, so add a third condition to the if statement to check whether the number is less than 0 (i.e., negative numbers).
 ---------------------------------
 
 Step 13
