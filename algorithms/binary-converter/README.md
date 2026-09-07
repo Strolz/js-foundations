@@ -103,12 +103,18 @@ Also, as mentioned in step 1, only positive numbers are considered, so add a thi
 
 Step 13
 =======
+Now you can alert the user if they don't enter a number, or the number is invalid before you attempt to convert it into binary.
 
+In the body of the if statement, use the alert() method to display the text "Please provide a decimal number greater than or equal to 0".
+
+Note that alert() is a method on the window object in the browser, so you can use either window.alert() or alert().
 ---------------------------------
 
 Step 14
 =======
+After alerting the user if the number input is empty or the value is not a number, you can use the return keyword to break out of this function early. This will prevent future code in this function from running.
 
+Add the return keyword after alert().
 ---------------------------------
 
 Step 15
