@@ -310,7 +310,7 @@ To fix this, add an if statement to check if input is equal to 0. Leave the body
 
 Step 35
 =======
-
+Within the body of the if statement, set the innerText property of result equal to the string "0". Then, use an early return statement to break out of the function early.
 ---------------------------------
 
 Step 36
