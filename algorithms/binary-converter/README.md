@@ -198,7 +198,7 @@ Remove the return statement from your decimalToBinary function. Then, declare va
 
 Step 22
 =======
-
+Set input equal to the number 0 for now. We'll change this in the next few steps.
 ---------------------------------
 
 Step 23
