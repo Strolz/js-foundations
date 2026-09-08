@@ -274,12 +274,14 @@ Use .push() to append the quotient variable to the quotients array. Also, append
 
 Step 31
 =======
+Now's a good time to check your work.
 
+Log the text "Inputs: ", followed by a comma, followed by the inputs array to the console.
 ---------------------------------
 
 Step 32
 =======
-
+Next, log the text "Quotients: ", followed by a comma, followed by the quotients array to the console. Also, log the text "Remainders: ", followed by a comma, followed by the remainders array.
 ---------------------------------
 
 Step 33
