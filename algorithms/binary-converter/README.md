@@ -329,7 +329,9 @@ Since you'll want to display the result of the conversion, assign the binary var
 
 Step 38
 =======
+Create a while loop that runs as long as input is greater than 0. Inside the loop, assign 0 to input for now.
 
+Note: Be careful not to trigger the decimalToBinary function before you set input equal to 0 inside the loop. Otherwise, you could cause an infinite loop.
 ---------------------------------
 
 Step 39
@@ -338,6 +340,56 @@ Step 39
 ---------------------------------
 
 Step 40
+=======
+
+---------------------------------
+
+Step 41
+=======
+
+---------------------------------
+
+Step 42
+=======
+
+---------------------------------
+
+Step 43
+=======
+
+---------------------------------
+
+Step 44
+=======
+
+---------------------------------
+
+Step 45
+=======
+
+---------------------------------
+
+Step 46
+=======
+
+---------------------------------
+
+Step 47
+=======
+
+---------------------------------
+
+Step 48
+=======
+
+---------------------------------
+
+Step 49
+=======
+
+---------------------------------
+
+Step 50
 =======
 
 ---------------------------------
