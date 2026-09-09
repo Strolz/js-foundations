@@ -3,7 +3,9 @@ const convertBtn = document.getElementById("convert-btn");
 const result = document.getElementById("result");
 
 const decimalToBinary = (input) => {
-  let binary = "";
+    let binary = "";
+
+    result.innerText = binary;
 }
 
 const checkUserInput = () => {
