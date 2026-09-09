@@ -354,7 +354,7 @@ First, use the remainder operator (%) to set binary equal to the remainder of in
 
 Step 41
 =======
-
+Then, use the addition operator to add the current value of binary to the end of the equation input % 2. This is what will build the binary string from right to left.
 ---------------------------------
 
 Step 42
