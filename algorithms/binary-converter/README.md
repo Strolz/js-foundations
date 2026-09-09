@@ -378,7 +378,9 @@ Create a function named a that returns the following: "freeCodeCamp " + b().
 
 Step 45
 =======
+Next, create a function named b that returns the following: "is " + c().
 
+Also, create a function named c that returns the following: "awesome!".
 ---------------------------------
 
 Step 46
