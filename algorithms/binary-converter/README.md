@@ -385,7 +385,7 @@ Also, create a function named c that returns the following: "awesome!".
 
 Step 46
 =======
-
+Finally, call a() from within a console.log() statement to log the output to the console.
 ---------------------------------
 
 Step 47
