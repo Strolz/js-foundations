@@ -419,7 +419,9 @@ Remember that the call stack is a LIFO data structure, so the last function is a
 
 Step 50
 =======
+And since b() calls c(), the function c() is added to the call stack.
 
+Add the following string to your callStack array: 'c(): returns "awesome!"'.
 ---------------------------------
 
 Step 51
