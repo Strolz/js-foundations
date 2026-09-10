@@ -447,7 +447,9 @@ Now that b() has executed, pop it off the call stack. Then, update your mock cal
 
 Step 54
 =======
+Finally, a() returns the concatenated string "freeCodeCamp is awesome!".
 
+Pop a() off the top of the call stack.
 ---------------------------------
 
 Step 55
