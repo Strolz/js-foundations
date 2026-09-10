@@ -470,7 +470,9 @@ Create a new function named countdown with number as a parameter. Leave the func
 
 Step 57
 =======
+The first thing you need to do is log the current value of number to the console to act as the countdown.
 
+Use console.log() to log number to the console.
 ---------------------------------
 
 Step 58
