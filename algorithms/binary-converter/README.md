@@ -549,7 +549,7 @@ Use an if statement to check if input is equal to 0. If it is, return an empty s
 
 Step 68
 =======
-
+For the recursive case, add an else statement and return the result of calling decimalToBinary(). Pass in input divided by 2 rounded down with Math.floor() as the argument.
 ---------------------------------
 
 Step 69
