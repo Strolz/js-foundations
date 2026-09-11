@@ -486,7 +486,9 @@ Use an if statement to check if number is equal to 0. If it is, use the return k
 
 Step 59
 =======
+Recursive functions also have a recursive case, which is where the function calls itself.
 
+First, convert your if statement into an if...else statement. Leave the body of your else statement empty for now.
 ---------------------------------
 
 Step 60
