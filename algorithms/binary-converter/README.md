@@ -504,7 +504,7 @@ Inside the else block, call countdown() and pass it number - 1 as an argument.
 
 Step 61
 =======
-
+It's time to test your function. Call countdown() with an argument of 3 to see if it works.
 ---------------------------------
 
 Step 62
