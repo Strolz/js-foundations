@@ -712,7 +712,9 @@ Next, clear out your showAnimation() function by removing all of your setTimeout
 
 Step 89
 =======
+Now you'll start building the animation itself.
 
+First, set the innerText property of result to "Call Stack Animation".
 ---------------------------------
 
 Step 90
