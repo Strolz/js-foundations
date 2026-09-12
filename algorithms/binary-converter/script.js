@@ -1,6 +1,7 @@
 const numberInput = document.getElementById("number-input");
 const convertBtn = document.getElementById("convert-btn");
 const result = document.getElementById("result");
+const animationContainer = document.getElementById("animation-container");
 
 const animationData = [
     {
@@ -12,8 +13,8 @@ const animationData = [
         addElDelay: 1500
     },
     {
-    inputVal: 1,
-    addElDelay: 2000
+        inputVal: 1,
+        addElDelay: 2000
     },
 
 ];
