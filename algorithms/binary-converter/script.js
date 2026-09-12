@@ -2,6 +2,8 @@ const numberInput = document.getElementById("number-input");
 const convertBtn = document.getElementById("convert-btn");
 const result = document.getElementById("result");
 
+let animationData = [];
+
 const decimalToBinary = (input) => {
   if (input === 0 || input === 1) {
     return String(input);
