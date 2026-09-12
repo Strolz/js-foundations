@@ -695,7 +695,7 @@ Treat your animationData array as a stack and add a new object to it. Your new o
 
 Step 86
 =======
-
+Add another object to the animationData array. Your new object should have the properties inputVal, and addElDelay set to 1, and 2000, respectively. Remember to treat the animationData array as a stack and add the new object to the top of the stack.
 ---------------------------------
 
 Step 87
