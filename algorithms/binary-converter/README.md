@@ -627,7 +627,7 @@ Create a new variable called inputInt and assign it the number converted from nu
 
 Step 78
 =======
-
+Replace all instances of parseInt(numberInput.value) with inputInt.
 ---------------------------------
 
 Step 79
