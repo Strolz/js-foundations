@@ -31,10 +31,12 @@ const showAnimation = () => {
   result.innerText = "Call Stack Animation";
 
   animationData.forEach((obj) => {
-        nimationContainer.innerHTML += `<p id=""></p>`;
     setTimeout(() => {
+      animationContainer.innerHTML += `
+        <p id="${obj.inputVal}"></p>
+      `;
     }, obj.addElDelay);
-  })
+  });
 };
 
 const checkUserInput = () => {

@@ -741,7 +741,7 @@ Within the template literal, add a paragraph element with the id attribute equal
 
 Step 94
 =======
-
+Next, use string interpolation to set the id attribute to the inputVal property of the current object, obj.
 ---------------------------------
 
 Step 95
