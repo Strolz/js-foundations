@@ -746,7 +746,7 @@ Next, use string interpolation to set the id attribute to the inputVal property 
 
 Step 95
 =======
-
+Add a class attribute set to "animation-frame".
 ---------------------------------
 
 Step 96
