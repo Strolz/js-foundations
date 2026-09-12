@@ -770,7 +770,7 @@ Set the value of the msg property to the following string:
 
 Step 99
 =======
-
+Next, add the property showMsgDelay with the value 5000 and removeElDelay with the value 10000.
 ---------------------------------
 
 Step 100
