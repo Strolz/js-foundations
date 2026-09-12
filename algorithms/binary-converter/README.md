@@ -632,7 +632,9 @@ Replace all instances of parseInt(numberInput.value) with inputInt.
 
 Step 79
 =======
+Now that your showAnimation() function is set up, it's time to do some testing.
 
+Add three console.log() statements in the showAnimation() function to log the text "free", "Code", and "Camp" to the console. You should see that text in the console when you enter 5 into the number input and click the Convert button.
 ---------------------------------
 
 Step 80
