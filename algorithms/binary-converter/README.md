@@ -736,7 +736,7 @@ Then, use the compound assignment operator (+=) to set the innerHTML property of
 
 Step 93
 =======
-
+Within the template literal, add a paragraph element with the id attribute equal to an empty string.
 ---------------------------------
 
 Step 94

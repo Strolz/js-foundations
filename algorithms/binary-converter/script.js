@@ -31,7 +31,7 @@ const showAnimation = () => {
   result.innerText = "Call Stack Animation";
 
   animationData.forEach((obj) => {
-        animationContainer.innerHTML += ``;
+        nimationContainer.innerHTML += `<p id=""></p>`;
     setTimeout(() => {
     }, obj.addElDelay);
   })
