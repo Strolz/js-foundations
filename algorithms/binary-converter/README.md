@@ -611,7 +611,7 @@ Use an if statement to check if the value attribute of numberInput is equal to t
 
 Step 76
 =======
-
+If the value of numberInput is equal to 5, call the showAnimation() function, then return early.
 ---------------------------------
 
 Step 77
