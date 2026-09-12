@@ -2,7 +2,12 @@ const numberInput = document.getElementById("number-input");
 const convertBtn = document.getElementById("convert-btn");
 const result = document.getElementById("result");
 
-let animationData = [];
+let animationData = [
+{
+  inputVal: 5,
+  addElDelay: 1000
+}
+];
 
 const decimalToBinary = (input) => {
   if (input === 0 || input === 1) {
