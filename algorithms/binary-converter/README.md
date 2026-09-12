@@ -639,5 +639,5 @@ Add three console.log() statements in the showAnimation() function to log the te
 
 Step 80
 =======
-
+Use the setTimeout function to add a one second delay before the text "Code" is logged to the console. Then see what happens after you enter 5 into the number input and click the Convert button.
 ---------------------------------
