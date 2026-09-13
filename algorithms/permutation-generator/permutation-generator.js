@@ -8,6 +8,8 @@ const permuteString = (str, prefix = "", results = [] ) => {
         const currentChar = str[i];
         const newPrefix = prefix + currentChar;
         const newRemaining = str.slice(0, i) + str.slice(i + 1);
+
+        permuteString(newRemaining, newPrefix, results);
     }
 
 }
