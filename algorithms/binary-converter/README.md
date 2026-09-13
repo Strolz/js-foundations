@@ -800,7 +800,9 @@ Add another setTimeout() function. Pass in an empty callback function as the fir
 
 Step 103
 ========  
+You have set the id attribute for your paragraph elements to the obj.inputVal property.
 
+Now, use getElementById to select the element with that attribute value, again using the obj.inputVal property. You should pass the obj.inputVal value directly to your getElementById call.
 ---------------------------------
 
 Step 104
