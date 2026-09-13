@@ -12,4 +12,6 @@ const permuteString = (str, prefix = "", results = [] ) => {
         permuteString(newRemaining, newPrefix, results);
     }
 
+    return results;
+
 }
