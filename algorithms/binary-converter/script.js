@@ -47,6 +47,9 @@ const showAnimation = () => {
         </p>
       `;
     }, obj.addElDelay);
+    setTimeout(() => {
+
+    }, obj.addElDelay);
   });
 };
 
