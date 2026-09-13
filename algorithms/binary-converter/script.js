@@ -10,7 +10,10 @@ const animationData = [
     },
     {
         inputVal: 2,
-        addElDelay: 1500
+        addElDelay: 1500,
+        msg: "decimalToBinary(2) returns '1' + 0 (2 % 2) and gives that value to the stack below. Then it pops off the stack.",
+        showMsgDelay: 10000,
+        removeElDelay: 15000
     },
     {
         inputVal: 1,
