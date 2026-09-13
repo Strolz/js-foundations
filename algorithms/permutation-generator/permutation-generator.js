@@ -1,5 +1,5 @@
 const permuteString = (str, prefix = "", results = [] ) => {
-    if(str === "") {
+    if(str.length === 0) {
         results.push(prefix)
         return results;
     };
