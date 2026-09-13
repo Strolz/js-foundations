@@ -807,7 +807,9 @@ Now, use getElementById to select the element with that attribute value, again u
 
 Step 104
 ========  
+Now that you've targeted the correct element, you can update its text after the delay you specified earlier.
 
+Set the textContent property of the targeted element equal to the msg property of the current object by using property chaining on your .getElementById() method directly.
 ---------------------------------
 
 Step 105
