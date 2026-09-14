@@ -8,3 +8,7 @@ const initList = () => {
 const isEmpty = (list) => {
   return list.length === 0;
 }
+
+function add(list, element) {
+
+}

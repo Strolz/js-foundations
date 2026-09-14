@@ -16,7 +16,8 @@ To do that, create a function named isEmpty that takes a list parameter. Inside 
 
 Step 3
 ======
-
+Now you will work on the function that will add a node to the list.
+Create an add function with list and element parameters.
 
 Step 4
 ======
