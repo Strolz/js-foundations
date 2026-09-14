@@ -27,7 +27,9 @@ Inside the add function, create an object named node, it should have a property 
 
 Step 5
 ======
+At this point, you should test the linked list for better understanding.
 
+Create a myList variable and set it to initList(). Under it, log a call of isEmpty() using myList as the parameter to the console. Then, after that, call add with myList and a number of your choice, then log myList to the console. Under that, log another call of isEmpty() to the console using myList as the parameter again.le
 
 Step 6
 ======

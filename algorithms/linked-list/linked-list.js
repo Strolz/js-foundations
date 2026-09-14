@@ -15,3 +15,9 @@ function add(list, element) {
     next: null
   }
 }
+
+const myList = initList();
+console.log(isEmpty(myList));
+add(myList, 5);
+console.log(myList);
+console.log(isEmpty(myList));
