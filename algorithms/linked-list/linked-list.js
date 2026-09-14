@@ -10,5 +10,8 @@ const isEmpty = (list) => {
 }
 
 function add(list, element) {
-
+  let node = {
+    element: element,
+    next: null
+  }
 }

@@ -21,7 +21,9 @@ Create an add function with list and element parameters.
 
 Step 4
 ======
+This node would need two properties, the element to add, and a pointer to the next node.
 
+Inside the add function, create an object named node, it should have a property named element, and a next property set to null, which is the pointer to the next element of the list.
 
 Step 5
 ======
