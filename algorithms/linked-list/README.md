@@ -33,7 +33,9 @@ Create a myList variable and set it to initList(). Under it, log a call of isEmp
 
 Step 6
 ======
+Notice the true, { head: null, length: 0 }, and true results in the console? This happens because you've not assigned anything to the list myList, and you've not incremented the length property.
 
+Go ahead and assign node to list.head, and under that, increment the length property of list.
 
 Step 7
 ======

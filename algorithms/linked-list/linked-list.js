@@ -10,10 +10,13 @@ const isEmpty = (list) => {
 }
 
 function add(list, element) {
-  let node = {
+  const node = {
     element: element,
     next: null
-  }
+  };
+
+  list.head = node;
+  list.length ++
 }
 
 const myList = initList();
