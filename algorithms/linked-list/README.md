@@ -10,7 +10,9 @@ This is the function you will call to initialize a linked list. The head represe
 
 Step 2
 ======
+The next thing you will work on is a function that lets you check if the list is empty.
 
+To do that, create a function named isEmpty that takes a list parameter. Inside the function, return a check to see if the length property of list is strictly equal to 0.
 
 Step 3
 ======

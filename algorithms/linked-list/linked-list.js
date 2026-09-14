@@ -4,3 +4,7 @@ const initList = () => {
     length: 0
   }
 }
+
+const isEmpty = (list) => {
+  return list.length === 0;
+}
