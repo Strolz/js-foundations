@@ -39,7 +39,11 @@ Go ahead and assign node to list.head, and under that, increment the length prop
 
 Step 7
 ======
+Now, the log should show something like { head: { element: 42, next: null }, length: 1 } in the console.
 
+However, this is not how you would handle a case where the added node is the first element in the list, that is, the head.
+
+To do that properly, use an if statement to check if the list is empty by calling the isEmpty function with the list. If that's true, then move your list.head = node line into the body of the if statement.
 
 Step 8
 ======

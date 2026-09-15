@@ -15,8 +15,11 @@ function add(list, element) {
     next: null
   };
 
-  list.head = node;
-  list.length ++
+  if(isEmpty(list)) {
+    list.head = node;
+  }
+  
+  list.length++;
 }
 
 const myList = initList();
