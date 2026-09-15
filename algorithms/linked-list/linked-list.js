@@ -30,7 +30,11 @@ function add(list, element) {
 
 function remove(list, element) {
   let previous = null;
-  let current = list.head;  
+  let current = list.head;
+
+  while(current !== null && current.element !== element) {
+    
+  }
 }
 
 const myList = initList();

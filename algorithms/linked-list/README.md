@@ -83,7 +83,9 @@ This is important when removing a node because you must update the next value of
 
 Step 15
 =======
+Now, create a while loop that checks if current is not strictly null and current.element is not strictly equal to element.
 
+This means the loop should continue traversing the list until the end of the list is reached or the element to remove is found.
 
 Step 17
 =======
