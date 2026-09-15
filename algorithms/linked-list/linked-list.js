@@ -17,6 +17,8 @@ function add(list, element) {
 
   if(isEmpty(list)) {
     list.head = node;
+  } else {
+    let current = list.head;
   }
   
   list.length++;

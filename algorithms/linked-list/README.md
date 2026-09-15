@@ -47,7 +47,9 @@ To do that properly, use an if statement to check if the list is empty by callin
 
 Step 8
 ======
+If the list is not empty, then you want to find its end, add the new element there, and make it point to null. This means you have to loop through the list from the head.
 
+To start that, open up an else clause. Inside it, use let to create a current variable and set it to list.head.
 
 Step 9
 ======
