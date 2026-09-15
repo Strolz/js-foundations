@@ -29,7 +29,8 @@ function add(list, element) {
 }
 
 function remove(list, element) {
-
+  let previous = null;
+  let current = list.head;  
 }
 
 const myList = initList();

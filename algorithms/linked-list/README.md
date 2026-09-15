@@ -75,7 +75,11 @@ Create a remove function with list and element parameters.
 
 Step 14
 =======
+Inside the remove function, use let to create a previous variable set to null, and let again to create a current variable set to list.head. These are the variables you will use in the loop that will traverse the list.
 
+current tracks the node currently being checked in the list, starting at the head and moving forward one node at a time. previous, on the other hand, keeps track of the node right before the current one.
+
+This is important when removing a node because you must update the next value of the previous node so it points to the node after the one being removed, in order to keep the list connected.
 
 Step 15
 =======
