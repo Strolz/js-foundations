@@ -20,7 +20,7 @@ function add(list, element) {
   } else {
     let current = list.head;
     while(current.next !== null) {
-      
+      current = current.next;
     };
   }
   

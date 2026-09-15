@@ -57,7 +57,7 @@ Now, create a while loop with current.next !== null as the condition. This means
 
 Step 10
 =======
-
+Inside the while loop, update current to current.next so the loop moves forward through the list one node at a time, and stops when it reaches the node with a next property of null, that is, the end of the list.
 
 Step 11
 =======
