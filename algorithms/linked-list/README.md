@@ -87,6 +87,10 @@ Now, create a while loop that checks if current is not strictly null and current
 
 This means the loop should continue traversing the list until the end of the list is reached or the element to remove is found.
 
+Step 16
+=======
+
+
 Step 17
 =======
 
