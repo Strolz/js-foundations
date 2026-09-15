@@ -28,6 +28,10 @@ function add(list, element) {
   list.length++;
 }
 
+function remove(list, element) {
+
+}
+
 const myList = initList();
 console.log(isEmpty(myList));
 add(myList, 42);

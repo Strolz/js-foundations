@@ -69,7 +69,9 @@ That's all you need to add an element to the list. To see what things look like,
 
 Step 13
 =======
+Now, you will work on a function to remove a node from the list.
 
+Create a remove function with list and element parameters.
 
 Step 14
 =======
