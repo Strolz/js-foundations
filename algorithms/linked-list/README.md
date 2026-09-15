@@ -53,7 +53,7 @@ To start that, open up an else clause. Inside it, use let to create a current va
 
 Step 9
 ======
-
+Now, create a while loop with current.next !== null as the condition. This means the loop should keep running as long as the current node has another node after it.
 
 Step 10
 =======

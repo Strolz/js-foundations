@@ -19,6 +19,9 @@ function add(list, element) {
     list.head = node;
   } else {
     let current = list.head;
+    while(current.next !== null) {
+      
+    };
   }
   
   list.length++;
