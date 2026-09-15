@@ -65,7 +65,7 @@ After finding the last node, you need to attach the new node to it. To do that, 
 
 Step 12
 =======
-
+That's all you need to add an element to the list. To see what things look like, add two more numbers of your choice to the myList list.
 
 Step 13
 =======
