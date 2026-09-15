@@ -22,6 +22,7 @@ function add(list, element) {
     while(current.next !== null) {
       current = current.next;
     };
+    current.next = node;
   }
   
   list.length++;

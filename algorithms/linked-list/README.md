@@ -61,7 +61,7 @@ Inside the while loop, update current to current.next so the loop moves forward 
 
 Step 11
 =======
-
+After finding the last node, you need to attach the new node to it. To do that, set current.next to node under the while loop but still within the else clause.
 
 Step 12
 =======
