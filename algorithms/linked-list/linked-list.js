@@ -36,9 +36,14 @@ function remove(list, element) {
     previous = current;
     current = current.next
   }
+
   if(current === null) {
     return;
   }
+
+  if (previous !== null) {
+    previous.next = current.next
+  } 
 }
 
 const myList = initList();

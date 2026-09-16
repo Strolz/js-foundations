@@ -97,7 +97,9 @@ Create an if statement that checks if current is strictly equal to null. Inside 
 
 Step 18
 =======
+If previous is not null, this means the element to be removed is not at the head but somewhere within the list, so the current node should be bypassed by linking the previous node directly to the next node.
 
+To do that, create another if statement that checks if previous is strictly not null. If that's the case, set previous.next to current.next.
 
 Step 19
 =======
