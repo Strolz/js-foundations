@@ -45,7 +45,9 @@ function remove(list, element) {
     previous.next = current.next
   } else {
     list.head = current.next;
-  } 
+  }
+
+  list.length--;
 }
 
 const myList = initList();

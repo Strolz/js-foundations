@@ -109,7 +109,7 @@ To do that, add an else clause. Inside it, set list.head to current.next.
 
 Step 20
 =======
-
+Now, you need to decrement length in the remove function to keep track of the actual number of elements remaining in the list after removing one.
 
 Step 21
 =======
