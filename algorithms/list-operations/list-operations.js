@@ -49,3 +49,7 @@ function remove(list, element) {
 
   list.length--;
 }
+
+function contains(list, element) {
+  
+}
