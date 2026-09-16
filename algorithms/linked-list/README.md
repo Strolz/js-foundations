@@ -93,7 +93,7 @@ Inside the loop, reassign previous to current, and current to current.next. This
 
 Step 17
 =======
-
+Create an if statement that checks if current is strictly equal to null. Inside the if statement, use return to exit the function.
 
 Step 18
 =======
