@@ -57,3 +57,5 @@ add(myList, 3);
 add(myList, 5);
 console.log(myList);
 console.log(isEmpty(myList));
+remove(myList, 42);
+console.log(JSON.stringify(myList, null, 2));

@@ -113,3 +113,8 @@ Now, you need to decrement length in the remove function to keep track of the ac
 
 Step 21
 =======
+Now, you should test out the remove function.
+
+Remove any of the numbers from the list by calling the remove function with myList and the number to remove, then log myList to the console using console.log(JSON.stringify(myList, null, 2)) to see the complete updated list.
+
+With that, your linked list workshop is complete!
