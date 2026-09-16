@@ -33,7 +33,8 @@ function remove(list, element) {
   let current = list.head;
 
   while(current !== null && current.element !== element) {
-    
+    previous = current;
+    current = current.next
   }
 }
 

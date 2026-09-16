@@ -89,7 +89,7 @@ This means the loop should continue traversing the list until the end of the lis
 
 Step 16
 =======
-
+Inside the loop, reassign previous to current, and current to current.next. This means current checks the next node, and previous always stays one node behind.
 
 Step 17
 =======
