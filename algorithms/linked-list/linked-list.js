@@ -43,6 +43,8 @@ function remove(list, element) {
 
   if (previous !== null) {
     previous.next = current.next
+  } else {
+    list.head = current.next;
   } 
 }
 

@@ -103,7 +103,9 @@ To do that, create another if statement that checks if previous is strictly not 
 
 Step 19
 =======
+If previous is null, this means the element to be removed is at the head of the list, so you should update the head to point to the next node in order to remove the first element.
 
+To do that, add an else clause. Inside it, set list.head to current.next.
 
 Step 20
 =======
