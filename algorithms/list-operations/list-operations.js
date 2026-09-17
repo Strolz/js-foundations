@@ -72,3 +72,7 @@ function getAt(list, index) {
 
   return current.element;
 }
+
+function insertAt(list, index, element) {
+  
+}
