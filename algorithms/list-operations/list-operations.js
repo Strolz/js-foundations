@@ -79,4 +79,8 @@ function insertAt(list, index, element) {
   
   const node = { element, next: null };
 
+  if (index === 0) {
+    node.next = current;
+    current = node;
+  }
 }
