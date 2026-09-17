@@ -82,6 +82,9 @@ function insertAt(list, index, element) {
   if (index === 0) {
     node.next = current;
     list.head = node;
-  } 
-
+  } else {
+    for (let i = 0; i < index - 1; i++) {
+      current = current.next;
+    }
   }
+}
