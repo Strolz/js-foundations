@@ -60,3 +60,7 @@ function contains(list, element) {
 
   return false;
 }
+
+function getAt(list, index) {
+
+}
