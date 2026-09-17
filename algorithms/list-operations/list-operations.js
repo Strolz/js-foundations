@@ -63,7 +63,9 @@ function contains(list, element) {
 
 function getAt(list, index) {
     let current = list.head;
-  
+
+    if (index < 0 || index >= list.length) return undefined;
+
     for (let i = 0; i < index; i++) {
         current = current.next;
     }
