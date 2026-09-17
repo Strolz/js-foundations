@@ -74,5 +74,8 @@ function getAt(list, index) {
 }
 
 function insertAt(list, index, element) {
+  if (index < 0 || index > list.length) return undefined;
+  
+  const node = { element, next: null };
 
 }
