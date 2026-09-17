@@ -90,4 +90,6 @@ function insertAt(list, index, element) {
     current.next = node;
   }
 
+  list.length++;
+  return;
 }
