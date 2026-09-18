@@ -3,3 +3,6 @@ const initStack = () => {
     collection: []
   }
 }
+
+const stack = initStack();
+
