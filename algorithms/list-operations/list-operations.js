@@ -108,4 +108,7 @@ function removeAt(list, index) {
     }
       current.next = current.next.next;
   }
+  
+  list.length--;
+  return;
 }
