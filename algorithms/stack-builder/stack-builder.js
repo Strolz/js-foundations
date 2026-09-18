@@ -6,3 +6,6 @@ const initStack = () => {
 
 const stack = initStack();
 
+const push = (stack, element) => {
+  stack.collection.push(element);
+}
