@@ -112,3 +112,8 @@ function removeAt(list, index) {
   list.length--;
   return;
 }
+
+function clear(list) {
+  list.head = null;
+  list.length = 0;
+}
