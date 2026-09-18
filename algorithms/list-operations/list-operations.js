@@ -97,4 +97,8 @@ function insertAt(list, index, element) {
 function removeAt(list, index) {
   let current = list.head;
   if (index < 0 || index > list.length) return undefined;
+
+  if(index === 0) {
+    list.head = list.head.next;
+  }
 }
