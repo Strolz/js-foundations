@@ -102,5 +102,10 @@ function removeAt(list, index) {
     list.head = list.head.next;
     list.length--;
     return;
+  } else {
+    for (let i = 0; i < index - 1; i++) {
+      current = current.next; 
+    }
+      current.next = current.next.next;
   }
 }
