@@ -93,3 +93,7 @@ function insertAt(list, index, element) {
   list.length++;
   return;
 }
+
+function removeAt(list, index) {
+ 
+}
