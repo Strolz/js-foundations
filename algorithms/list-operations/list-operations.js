@@ -100,5 +100,7 @@ function removeAt(list, index) {
 
   if(index === 0) {
     list.head = list.head.next;
+    list.length--;
+    return;
   }
 }
