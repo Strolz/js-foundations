@@ -3,3 +3,7 @@ function initQueue() {
     collection: []
   };
 }
+
+function print(queue) {
+  console.log(queue.collection);
+}
