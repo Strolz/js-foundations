@@ -17,3 +17,7 @@ const pop = (stack) => {
 const peek = (stack) => {
   return stack.collection[stack.collection.length - 1];
 }
+
+const isEmpty = (stack) => {
+  return !stack.collection.length;
+}
