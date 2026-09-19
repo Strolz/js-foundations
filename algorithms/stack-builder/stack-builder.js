@@ -21,3 +21,7 @@ const peek = (stack) => {
 const isEmpty = (stack) => {
   return !stack.collection.length;
 }
+
+const clear = (stack) => {
+  stack.collection = [];  
+}
