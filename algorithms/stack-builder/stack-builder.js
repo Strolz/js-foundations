@@ -10,6 +10,6 @@ const push = (stack, element) => {
   stack.collection.push(element);
 }
 
-const pop = (stack, element) => {
+const pop = (stack) => {
   return stack.collection.pop()
 }
