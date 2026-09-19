@@ -13,3 +13,7 @@ const push = (stack, element) => {
 const pop = (stack) => {
   return stack.collection.pop()
 }
+
+const peek = (stack) => {
+  return stack.collection[stack.collection.length - 1];
+}
