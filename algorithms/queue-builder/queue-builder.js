@@ -15,3 +15,7 @@ function enqueue(queue, element) {
 function dequeue(queue) {
   return queue.collection.shift();
 }
+
+function front(queue) {
+  return queue.collection[0];
+}
