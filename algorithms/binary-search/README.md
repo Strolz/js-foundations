@@ -47,6 +47,10 @@ Within your while loop, declare a mid variable set to the average of low and hig
 Step 6
 =======
 
+Now that you've calculated the mid index, you need to actually retrieve the value from the searchList at that index. This value is what you will compare against your value parameter, which is the target you are searching for.
+
+Create a valueAtMiddle variable and assign it the element from searchList that is located at the mid index.
+
 Step 7
 =======
 
