@@ -11,6 +11,8 @@ searchList is the array of elements the function will search within, and value i
 Step 2
 =======
 
+Inside your binarySearch function, create a pathToTarget variable and initialize it to an empty array, for a start.
+
 Step 3
 =======
 
