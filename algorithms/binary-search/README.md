@@ -38,6 +38,12 @@ Inside the binarySearch function, create a while loop with a condition that chec
 Step 5
 =======
 
+To get started with the loop, you need to find the middle index of the current search space.
+
+You can get the middle index by calculating the average of the low and high variables. You will have to use floor division to get the average after adding the two values, so the answer would always be an integer rounded down, as the indices must be integers.
+
+Within your while loop, declare a mid variable set to the average of low and high.
+
 Step 6
 =======
 
