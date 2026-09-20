@@ -54,7 +54,9 @@ Create a valueAtMiddle variable and assign it the element from searchList that i
 Step 7
 =======
 
+Now, include valueAtMiddle in the pathToTarget array to track the steps taken during the search, regardless of whether it's the target. You can do this with the push() method.
 Step 8
+
 =======
 
 Step 9

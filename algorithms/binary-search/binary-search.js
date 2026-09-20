@@ -5,6 +5,7 @@ const binarySearch = (searchList, value) => {
 
     while(low <= high) {
         const mid = Math.floor((low + high)/ 2);
-        const valueAtMiddle = searchList[mid]; 
+        const valueAtMiddle = searchList[mid];
+        pathToTarget.push(valueAtMiddle);  
     }
 }
