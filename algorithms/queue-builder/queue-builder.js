@@ -11,3 +11,7 @@ function print(queue) {
 function enqueue(queue, element) {
  return queue.collection.push(element);
 }
+
+function dequeue(queue) {
+  return queue.collection.shift();
+}
