@@ -25,6 +25,16 @@ To account for those two, you have to consider the entire array being searched. 
 Step 4
 =======
 
+Now that you've defined the boundaries of your search, it's time to create the loop that will perform the binary search algorithm.
+
+Binary search works by repeatedly narrowing down the search space. This process continues as long as there is a valid range of elements to check.
+
+You can express this with a while loop that will continue as long as your low pointer is less than or equal to your high pointer.
+
+If low ever becomes greater than high, it means the search space has become empty, and the value is not in the array.
+
+Inside the binarySearch function, create a while loop with a condition that checks if low is less than or equal to high.
+
 Step 5
 =======
 
