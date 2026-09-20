@@ -23,3 +23,7 @@ function front(queue) {
 function size(queue) {
   return queue.collection.length;
 }
+
+function isEmpty(queue) {
+  return !queue.collection.length;
+}
