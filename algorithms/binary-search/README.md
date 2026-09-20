@@ -16,6 +16,12 @@ Inside your binarySearch function, create a pathToTarget variable and initialize
 Step 3
 =======
 
+In binary search, there is the lowest possible index and the highest possible index.
+
+The lowest possible index represents the leftmost boundary in the current portion of the values being searched within, in this case, searchList. The highest possible index, on the other hand, represents the rightmost boundary in the values being searched.
+
+To account for those two, you have to consider the entire array being searched. So, inside the binarySearch function, declare a low variable with a value of 0, and a high variable with a value that accounts for the last index in the array being searched.
+
 Step 4
 =======
 
