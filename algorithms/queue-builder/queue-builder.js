@@ -19,3 +19,7 @@ function dequeue(queue) {
 function front(queue) {
   return queue.collection[0];
 }
+
+function size(queue) {
+  return queue.collection.length;
+}
