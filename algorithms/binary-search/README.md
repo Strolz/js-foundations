@@ -55,9 +55,13 @@ Step 7
 =======
 
 Now, include valueAtMiddle in the pathToTarget array to track the steps taken during the search, regardless of whether it's the target. You can do this with the push() method.
-Step 8
 
+Step 8
 =======
+
+The next thing to do is to create a condition that will check if the target value is in the middle.
+
+Inside the while loop, create an if statement that checks if the target value is equal to valueAtMiddle. If it is, return the pathToTarget variable.
 
 Step 9
 =======
