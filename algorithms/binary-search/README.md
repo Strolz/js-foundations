@@ -75,6 +75,10 @@ Just after the if statement, use the break keyword to break out of the while loo
 Step 10
 =======
 
+Recall that the function takes an array called searchList and the value you're looking for.
+
+Now, call the function with binarySearch([1, 2, 3, 4, 5], 3) and binarySearch([1, 2, 3, 4, 5, 9], 4) and log both statements to the console.
+
 Step 11
 =======
 
