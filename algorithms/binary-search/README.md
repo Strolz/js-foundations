@@ -66,6 +66,12 @@ Inside the while loop, create an if statement that checks if the target value is
 Step 9
 =======
 
+You need to test out things so you will understand the flow of the algorithm at this initial stage.
+
+To do that, you need to first break out of the loop. That's because the current implementation will only allow one iteration, so if the condition is not met, there will be an infinite loop.
+
+Just after the if statement, use the break keyword to break out of the while loop. Then, after the while loop, return an empty array to signify that the value was not found.
+
 Step 10
 =======
 

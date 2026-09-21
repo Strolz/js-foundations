@@ -11,6 +11,7 @@ const binarySearch = (searchList, value) => {
     if(value === valueAtMiddle) {
         return pathToTarget;
     }
-
+    break
     }
+    return [];
 }
