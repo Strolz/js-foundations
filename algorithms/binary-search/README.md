@@ -91,6 +91,10 @@ To allow the binary search to continue narrowing its search, add an else if stat
 Step 12
 =======
 
+If the condition in the else if is true, update the value of the low variable by adding 1 to the mid variable.
+
+This will extend the search to the right half of the current search areas in the list, because if the value is greater than valueAtMiddle, it means the value must be in the right half of the current search area.
+
 Step 13
 =======
 
