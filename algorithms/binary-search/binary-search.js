@@ -12,10 +12,9 @@ const binarySearch = (searchList, value) => {
             return pathToTarget;
         } else if (value > valueAtMiddle) {
             low = (mid + 1);
+        } else {
+            high = mid - 1;
         }
-
-        break
-
     }
     return [];
 }

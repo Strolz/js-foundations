@@ -98,6 +98,10 @@ This will extend the search to the right half of the current search areas in the
 Step 13
 =======
 
+Finally, if the value is not found at the middle and is also not greater than valueAtMiddle, then the value must be less than valueAtMiddle, and must be on the left. The final else block will handle this.
+
+So, finish up the loop by removing the break keyword and adding an else block. Inside it, update the high variable by subtracting 1 from mid.
+
 Step 14
 =======
 
