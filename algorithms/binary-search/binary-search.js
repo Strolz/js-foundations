@@ -8,10 +8,14 @@ const binarySearch = (searchList, value) => {
         const valueAtMiddle = searchList[mid];
         pathToTarget.push(valueAtMiddle);  
 
-    if(value === valueAtMiddle) {
-        return pathToTarget;
-    }
-    break
+        if(value === valueAtMiddle) {
+            return pathToTarget;
+        } else if (value > valueAtMiddle) {
+      
+        }
+
+        break
+
     }
     return [];
 }
