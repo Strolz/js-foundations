@@ -26,6 +26,9 @@ Use the slice syntax to extract the left half of array and assign it to a variab
 Step 4
 =======
 
+After slicing the left half, you still need the right side to complete the merge step.
+Use the slice syntax to extract the right half of array and assign it to a variable named rightPart.
+
 Step 5
 =======
 
