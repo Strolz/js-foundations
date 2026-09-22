@@ -20,6 +20,9 @@ First, inside the mergeSort function, declare a variable middlePoint using const
 Step 3
 =======
 
+You already have a middlePoint value. Use it to split the array into two halves and keep the left portion ready for sorting.
+Use the slice syntax to extract the left half of array and assign it to a variable named leftPart.
+
 Step 4
 =======
 
