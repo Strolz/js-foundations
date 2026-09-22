@@ -114,5 +114,7 @@ To test the function again, call it with [1, 3, 5, 9, 14, 22], 10 and log it to 
 Step 15
 =======
 
+You can see that the last call prints an empty array. To further specify that the value is not in the searched array, update the return statement to return an array containing two elements: an empty array, and the string Value not found.
+
 Step 16
 =======

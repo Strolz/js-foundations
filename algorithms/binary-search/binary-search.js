@@ -16,7 +16,7 @@ const binarySearch = (searchList, value) => {
             high = mid - 1;
         }
     }
-    return [];
+    return [[], "Value not found"];
 }
 
 console.log(binarySearch([1, 2, 3, 4, 5], 3));
