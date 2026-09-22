@@ -21,3 +21,4 @@ const binarySearch = (searchList, value) => {
 
 console.log(binarySearch([1, 2, 3, 4, 5], 3));
 console.log(binarySearch([1, 2, 3, 4, 5, 9], 4));
+console.log(binarySearch([1, 3, 5, 9, 14, 22], 10));
