@@ -8,6 +8,15 @@ Begin by creating a function called mergeSort that takes the parameter array.
 Step 2
 =======
 
+The merge sort algorithm performs three actions:
+
+Divide an unsorted sequence of items into sub-parts
+Sort the items in the sub-parts
+Merge the sorted sub-parts
+The above happens recursively until the sub-parts are merged into the complete sorted sequence. Start by dividing the sequence.
+
+First, inside the mergeSort function, declare a variable middlePoint using const and assign it Math.floor(array.length / 2) so you can split the sequence in half before recursing.
+
 Step 3
 =======
 
