@@ -4,5 +4,6 @@ function mergeSort(array) {
     let rightPart = array.slice(middlePoint);
 
     mergeSort(leftPart);
+    mergeSort(rightPart);
 
 }

@@ -39,6 +39,8 @@ To do that, recursively call mergeSort inside your function and pass leftPart as
 Step 6
 =======
 
+At the bottom of your function body, call the mergeSort() function again. This time, pass in rightPart as the argument to the function call.
+
 Step 7
 =======
 
