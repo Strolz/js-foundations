@@ -118,3 +118,9 @@ You can see that the last call prints an empty array. To further specify that th
 
 Step 16
 =======
+
+One final small enhancement you can add is to also show the index at which the target value is found.
+
+So, instead of returning only pathToTarget in the if statement, return an array containing pathToTarget and a template literal with the message Value found at index ${mid}.
+
+With that, your binary search algorithm workshop is complete!

@@ -9,7 +9,7 @@ const binarySearch = (searchList, value) => {
         pathToTarget.push(valueAtMiddle);  
 
         if(value === valueAtMiddle) {
-            return pathToTarget;
+            return [pathToTarget, `Value found at index ${mid}`];
         } else if (value > valueAtMiddle) {
             low = (mid + 1);
         } else {
