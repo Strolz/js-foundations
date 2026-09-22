@@ -32,6 +32,10 @@ Use the slice syntax to extract the right half of array and assign it to a varia
 Step 5
 =======
 
+Now that you've divided the array list into two separate lists, you'll keep dividing each list until every element stands alone in its own list. A list with a single number is always sorted.
+
+To do that, recursively call mergeSort inside your function and pass leftPart as the argument to the call.
+
 Step 6
 =======
 
