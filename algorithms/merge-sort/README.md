@@ -94,6 +94,12 @@ Still within the else block, increment rightArrayIndex by 1.
 Step 14
 =======
 
+The if and else statements you created in the previous steps will assign elements to the sorted array.
+
+Each element assigned to the sorted array takes up an index in the list. So you have to move to the next index in the sorted array after each assignment.
+
+Below the if/else block, but still within the while loop, increment sortedIndex by 1.
+
 Step 15
 =======
 

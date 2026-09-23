@@ -18,6 +18,8 @@ function mergeSort(array) {
             array[sortedIndex] = rightPart[rightArrayIndex];
             rightArrayIndex++
         }
+
+        sortedIndex++;
     }
 
 }
