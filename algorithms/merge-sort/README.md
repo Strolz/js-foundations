@@ -66,6 +66,12 @@ Add an if block that checks if the current element in leftPart is less than the 
 Step 10
 =======
 
+When the if condition evaluates to true, it means that the element in the leftPart list is smaller than the element it is being compared to in the rightPart list.
+
+In that case, you can put the element found at leftArrayIndex in leftPart within the sorted array.
+
+Inside the if block, assign leftPart[leftArrayIndex] to array[sortedIndex].
+
 Step 11
 =======
 
