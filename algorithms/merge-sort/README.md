@@ -103,6 +103,12 @@ Below the if/else block, but still within the while loop, increment sortedIndex 
 Step 15
 =======
 
+The while loop you created compares one element from leftPart with another in rightPart, then adds the smaller element to the main array list.
+
+It will continue this operation until there are no elements left to be compared. But leftPart may still have elements left while rightPart has none, and vice versa.
+
+Create another while loop that runs when leftArrayIndex is less than the length of leftPart. In the next steps, you'll use it to copy the remaining elements in leftPart into the array list.
+
 Step 16
 =======
 

@@ -22,4 +22,8 @@ function mergeSort(array) {
         sortedIndex++;
     }
 
+    while (leftArrayIndex < leftPart.length) {
+    
+    }
+
 }
