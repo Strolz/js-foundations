@@ -9,4 +9,9 @@ function mergeSort(array) {
     let leftArrayIndex = 0;
     let rightArrayIndex = 0;
     let sortedIndex = 0;
+
+    while (leftArrayIndex < leftPart.length && rightArrayIndex < rightPart.length) {
+
+    }
+
 }

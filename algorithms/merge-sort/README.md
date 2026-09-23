@@ -53,6 +53,10 @@ Create three variables: leftArrayIndex, rightArrayIndex, and sortedIndex, and se
 Step 8
 =======
 
+Next, you need to create a loop that continues as long as there are elements remaining in both leftPart and rightPart.
+
+For that, create a while loop with two conditions: one that checks whether the leftArrayIndex is less than the length of leftPart and another condition that checks whether rightArrayIndex is less than the length of rightPart.
+
 Step 9
 =======
 
