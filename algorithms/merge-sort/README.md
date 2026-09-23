@@ -139,6 +139,12 @@ To do this, add a while loop that runs as long as rightArrayIndex is less than r
 Step 20
 =======
 
+Before testing the mergeSort() function, you need to create a base case that stops the function execution when the length of array is less than or equal to 1.
+
+This base case will stop the recursion call. Without it, the merge sort operation would continue to run even when the list has been sorted or has no elements in it.
+
+Right after the function declaration, create an if statement that checks if array.length is less than or equal to 1. Within the body of the if statement, add a return statement to stop the execution of the function.
+
 Step 21
 =======
 
