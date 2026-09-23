@@ -13,6 +13,7 @@ function mergeSort(array) {
     while (leftArrayIndex < leftPart.length && rightArrayIndex < rightPart.length) {
         if(leftPart[leftArrayIndex] < rightPart[rightArrayIndex]) {
             array[sortedIndex] = leftPart[leftArrayIndex];
+            leftArrayIndex++
         }
     }
 

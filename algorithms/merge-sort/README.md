@@ -75,6 +75,8 @@ Inside the if block, assign leftPart[leftArrayIndex] to array[sortedIndex].
 Step 11
 =======
 
+After assigning the element in leftPart to the sorted array, increment leftArrayIndex by 1.
+
 Step 12
 =======
 
