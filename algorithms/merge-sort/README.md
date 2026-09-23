@@ -112,8 +112,12 @@ Create another while loop that runs when leftArrayIndex is less than the length 
 Step 16
 =======
 
+Copy the remaining left values into array by assigning leftPart[leftArrayIndex] to array[sortedIndex].
+
 Step 17
 =======
+
+Still within the while loop, increment the value of leftArrayIndex by 1.
 
 Step 18
 =======

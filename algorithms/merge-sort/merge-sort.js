@@ -23,7 +23,8 @@ function mergeSort(array) {
     }
 
     while (leftArrayIndex < leftPart.length) {
-    
+        array[sortedIndex] = leftPart[leftArrayIndex];
+        leftArrayIndex++;
     }
 
 }
