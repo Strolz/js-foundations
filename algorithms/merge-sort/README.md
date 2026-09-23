@@ -44,6 +44,12 @@ At the bottom of your function body, call the mergeSort() function again. This t
 Step 7
 =======
 
+Now it's time to sort and merge the lists (leftPart and rightPart) into the original array.
+
+You can do this by comparing elements on both lists, and merging the smaller element to the main list. You are going to do this comparison for all the indexes in leftPart and rightPart.
+
+Create three variables: leftArrayIndex, rightArrayIndex, and sortedIndex, and set their values to 0. These variables will help you keep track of each index during the sorting process.
+
 Step 8
 =======
 

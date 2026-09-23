@@ -6,4 +6,7 @@ function mergeSort(array) {
     mergeSort(leftPart);
     mergeSort(rightPart);
 
+    let leftArrayIndex = 0;
+    let rightArrayIndex = 0;
+    let sortedIndex = 0;
 }
