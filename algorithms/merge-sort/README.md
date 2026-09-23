@@ -60,6 +60,9 @@ For that, create a while loop with two conditions: one that checks whether the l
 Step 9
 =======
 
+Inside the loop, start comparing the current elements from each half so you can merge the smaller value first.
+Add an if block that checks if the current element in leftPart is less than the current element in rightPart.
+
 Step 10
 =======
 

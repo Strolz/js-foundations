@@ -11,7 +11,9 @@ function mergeSort(array) {
     let sortedIndex = 0;
 
     while (leftArrayIndex < leftPart.length && rightArrayIndex < rightPart.length) {
-
+        if(leftPart[leftArrayIndex] < rightPart[rightArrayIndex]) {
+            
+        }
     }
 
 }
