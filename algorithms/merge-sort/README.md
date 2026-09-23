@@ -122,6 +122,13 @@ Still within the while loop, increment the value of leftArrayIndex by 1.
 Step 18
 =======
 
+The last thing to do for the while loop is to move to the next index in the sorted array.
+
+Add 1 to the value of sortedIndex.
+
+Note that the increment should be done after assigning the left part element to the sorted array.
+
+
 Step 19
 =======
 
