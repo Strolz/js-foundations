@@ -28,4 +28,10 @@ function mergeSort(array) {
         sortedIndex++;
     }
 
+    while (rightArrayIndex < rightPart.length) {
+        array[sortedIndex] = rightPart[rightArrayIndex];
+        rightArrayIndex++;
+        sortedIndex++;
+    }
+
 }

@@ -132,6 +132,10 @@ Note that the increment should be done after assigning the left part element to 
 Step 19
 =======
 
+Finally, you should copy any remaining values from the right half into array.
+
+To do this, add a while loop that runs as long as rightArrayIndex is less than rightPart.length, assigns rightPart[rightArrayIndex] into array[sortedIndex], and increments both rightArrayIndex and sortedIndex.
+
 Step 20
 =======
 
