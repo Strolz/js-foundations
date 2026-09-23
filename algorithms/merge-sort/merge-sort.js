@@ -14,6 +14,8 @@ function mergeSort(array) {
         if(leftPart[leftArrayIndex] < rightPart[rightArrayIndex]) {
             array[sortedIndex] = leftPart[leftArrayIndex];
             leftArrayIndex++
+        } else {
+            array[sortedIndex] = rightPart[rightArrayIndex];
         }
     }
 

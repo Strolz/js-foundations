@@ -80,6 +80,12 @@ After assigning the element in leftPart to the sorted array, increment leftArray
 Step 12
 =======
 
+In a previous step, you assigned the element in the leftPart to the array list because it was smaller. But this will not always be the case. In some comparison cases, the element on the right could be smaller.
+
+Create an else clause to execute when the element in leftPart is not less than the element in rightPart.
+
+Inside the else block, assign rightPart[rightArrayIndex] to array[sortedIndex].
+
 Step 13
 =======
 
