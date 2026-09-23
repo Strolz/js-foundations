@@ -16,6 +16,7 @@ function mergeSort(array) {
             leftArrayIndex++
         } else {
             array[sortedIndex] = rightPart[rightArrayIndex];
+            rightArrayIndex++
         }
     }
 

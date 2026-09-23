@@ -89,6 +89,8 @@ Inside the else block, assign rightPart[rightArrayIndex] to array[sortedIndex].
 Step 13
 =======
 
+Still within the else block, increment rightArrayIndex by 1.
+
 Step 14
 =======
 
