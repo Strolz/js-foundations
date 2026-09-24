@@ -153,6 +153,8 @@ Outside the function definition, create an array numbers with the following valu
 Step 22
 =======
 
+Log the string 'Unsorted array: ' to the console.
+
 Step 23
 =======
 
