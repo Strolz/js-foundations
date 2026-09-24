@@ -167,3 +167,7 @@ After logging the unsorted array, call the mergeSort function and pass in the nu
 
 Step 25
 =======
+
+Now that numbers is sorted, log 'Sorted array: ' to the console followed by the numbers array.
+
+With that, the merge sort algorithm is complete.
