@@ -148,6 +148,8 @@ Right after the function declaration, create an if statement that checks if arra
 Step 21
 =======
 
+Outside the function definition, create an array numbers with the following values: [4, 10, 6, 14, 2, 1, 8, 5].
+
 Step 22
 =======
 

@@ -39,3 +39,5 @@ function mergeSort(array) {
     }
 
 }
+
+let numbers = [4, 10, 6, 14, 2, 1, 8, 5];
