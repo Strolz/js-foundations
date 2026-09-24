@@ -158,6 +158,8 @@ Log the string 'Unsorted array: ' to the console.
 Step 23
 =======
 
+After printing the string, log the numbers array itself so the unsorted list appears next.conso
+
 Step 24
 =======
 
