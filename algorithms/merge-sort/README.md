@@ -163,5 +163,7 @@ After printing the string, log the numbers array itself so the unsorted list app
 Step 24
 =======
 
+After logging the unsorted array, call the mergeSort function and pass in the numbers array as an argument.mergeSort()
+
 Step 25
 =======
