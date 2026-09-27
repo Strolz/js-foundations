@@ -14,4 +14,7 @@ function quicksort(arr) {
             right.push(arr[i]);
         }
     }
+
+    return [...quicksort(left), pivot, ...quicksort(right)];
+
 }
