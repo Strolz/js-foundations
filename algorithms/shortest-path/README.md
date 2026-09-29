@@ -40,6 +40,9 @@ Give the targetNode parameter a default value of null.
 Step 5
 =======
 
+You need to store the number of nodes in the graph.
+Inside the shortestPath function, create a variable named n and assign it matrix.length.
+
 Step 6
 =======
 
