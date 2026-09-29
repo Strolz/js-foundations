@@ -75,6 +75,10 @@ Still within the shortestPath function, create a variable named paths and assign
 Step 9
 =======
 
+As the algorithm runs, you need to track which nodes have already been processed so you don't revisit them.
+
+Create a variable named visited and assign it new Array(n).fill(false).
+
 Step 10
 =======
 
