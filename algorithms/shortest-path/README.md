@@ -25,6 +25,11 @@ Example Code
 Step 3
 =======
 
+Now you will create the main function that does all the work.
+Create a function named shortestPath that takes three parameters: matrix, startNode, and targetNode.
+
+Over the next few steps, you will build out the logic for this function.
+
 Step 4
 =======
 
