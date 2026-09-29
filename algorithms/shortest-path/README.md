@@ -91,6 +91,12 @@ At the start of the loop body, using let, declare two variables minDistance and 
 Step 11
 =======
 
+Inside the loop, you need to scan every node to find the one with the smallest known distance that hasn't been visited yet.
+
+Add a for loop inside the main loop that iterates through each node. Use nodeNo as the loop variable going from 0 to n.
+
+Leave the body empty for now.
+
 Step 12
 =======
 
