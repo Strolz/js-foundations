@@ -62,6 +62,16 @@ After the distances array, set distances[startNode] to 0.
 Step 8
 =======
 
+You also need to track the actual path taken to reach each node. You will store a list of paths where each entry is an array of node indices representing the route taken.
+
+Initially, each node's path will just contain itself. You can create this structure using Array.from():
+
+Example Code
+Array.from({ length: n }, (_, i) => [i]);
+This creates an array of n elements, where the element at index i is [i].
+
+Still within the shortestPath function, create a variable named paths and assign it Array.from({ length: n }, (_, i) => [i]).
+
 Step 9
 =======
 

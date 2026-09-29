@@ -12,4 +12,5 @@ function shortestPath(matrix, startNode, targetNode = null) {
   const n = matrix.length;
   const distances = new Array(n).fill(INF);
   distances[startNode] = 0;
+  const paths = Array.from({ length: n }, (_, i) => [i]);
 }
