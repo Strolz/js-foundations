@@ -11,5 +11,5 @@ const adjMatrix = [
 function shortestPath(matrix, startNode, targetNode = null) {
   const n = matrix.length;
   const distances = new Array(n).fill(INF);
-
+  distances[startNode] = 0;
 }

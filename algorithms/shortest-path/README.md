@@ -55,6 +55,10 @@ Inside the shortestPath function, create a variable named distances and assign i
 Step 7
 =======
 
+The distance from the starting node to itself is always 0. You have to update the distances array to reflect this.
+
+After the distances array, set distances[startNode] to 0.
+
 Step 8
 =======
 
