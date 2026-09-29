@@ -7,6 +7,8 @@ const adjMatrix = [
   [11, INF, 5, 9, 0, INF],
   [INF, 2, INF, 3, INF, 0],
 ];
+
 function shortestPath(matrix, startNode, targetNode) {
+  targetNode = null;
 
 }

@@ -33,6 +33,10 @@ Over the next few steps, you will build out the logic for this function.
 Step 4
 =======
 
+The targetNode parameter is optional. When not provided, the function will compute shortest paths from startNode to all other nodes in the graph.
+
+Give the targetNode parameter a default value of null.
+
 Step 5
 =======
 
