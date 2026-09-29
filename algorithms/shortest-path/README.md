@@ -46,6 +46,12 @@ Inside the shortestPath function, create a variable named n and assign it matrix
 Step 6
 =======
 
+You need to keep track of the shortest known distance from the start node to every other node. To begin, you'll assume every node is infinitely far away.
+
+In JavaScript, you can create an array pre-filled with a value using new Array(n).fill(value). For example, new Array(3).fill(0) creates [0, 0, 0].
+
+Inside the shortestPath function, create a variable named distances and assign it new Array(n).fill(INF).
+
 Step 7
 =======
 
