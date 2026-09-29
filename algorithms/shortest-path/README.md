@@ -82,6 +82,12 @@ Create a variable named visited and assign it new Array(n).fill(false).
 Step 10
 =======
 
+Now you'll add the main loop that drives the algorithm. It runs once for each node in the graph, selecting the closest unvisited node each time.
+
+Inside the shortestPath function, add a for loop that runs n times using i as the loop variable.
+
+At the start of the loop body, using let, declare two variables minDistance and current set to INF, and -1 respectively. These will track the closest unvisited node found in each iteration.
+
 Step 11
 =======
 
