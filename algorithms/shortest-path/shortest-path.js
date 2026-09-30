@@ -30,6 +30,11 @@ function shortestPath(matrix, startNode, targetNode = null) {
       break;
     }
     visited[current] = true;
+
+    for (let nodeNo = 0; nodeNo < n; nodeNo++) {
+      const distance = matrix[current][nodeNo];
+      
+    }
   }
 
 }

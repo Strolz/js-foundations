@@ -130,6 +130,12 @@ After the if statement with the condition current === -1, set visited[current] t
 Step 16
 =======
 
+Now that the current node is marked as visited, you need to look at all its neighbors to see if you can reach them more efficiently through the current node.
+
+After visited[current] = true, add a neighbor for loop that iterates through each nodeNo from 0 to n. Note that this is another inner loop on the same level as the first.
+
+Inside the loop, declare a variable named distance and assign it matrix[current][nodeNo]. This gives you the edge weight between the current node and its neighbor.
+
 Step 17
 =======
 
