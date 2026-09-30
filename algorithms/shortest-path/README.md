@@ -123,6 +123,10 @@ After the inner for loop, but still inside the outer loop, add an if statement t
 Step 15
 =======
 
+Once you've confirmed a valid node was found, mark it as visited so the algorithm won't process it again.
+
+After the if statement with the condition current === -1, set visited[current] to true.
+
 Step 16
 =======
 

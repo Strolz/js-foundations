@@ -29,7 +29,7 @@ function shortestPath(matrix, startNode, targetNode = null) {
     if (current === -1) {
       break;
     }
-
+    visited[current] = true;
   }
 
 }
