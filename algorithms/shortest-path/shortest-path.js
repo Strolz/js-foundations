@@ -21,7 +21,8 @@ function shortestPath(matrix, startNode, targetNode = null) {
     
     for (let nodeNo = 0; nodeNo < n; nodeNo++) {
       if(!visited[nodeNo] && distances[nodeNo] < minDistance) {
-
+        minDistance = distances[nodeNo];
+        current = nodeNo;
       }
     }   
   }

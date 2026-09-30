@@ -109,6 +109,10 @@ Leave the body empty for now.
 Step 13
 =======
 
+If the condition is true, the current node is the best unvisited candidate found so far. You need to update your tracking variables to reflect that.
+
+Inside the if statement, update minDistance to distances[nodeNo] and current to nodeNo.
+
 Step 14
 =======
 
