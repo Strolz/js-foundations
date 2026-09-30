@@ -100,6 +100,12 @@ Leave the body empty for now.
 Step 12
 =======
 
+Inside the inner for loop, you need to check whether the current node is unvisited and closer than the best you've found so far.
+
+Add an if statement that checks if nodeNo has not been visited and distances[nodeNo] is less than minDistance.
+
+Leave the body empty for now.
+
 Step 13
 =======
 
