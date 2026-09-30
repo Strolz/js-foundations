@@ -116,6 +116,10 @@ Inside the if statement, update minDistance to distances[nodeNo] and current to 
 Step 14
 =======
 
+After scanning all nodes to find the closest unvisited one, you need to handle the case where no valid node is found. This happens when all remaining nodes are unreachable.
+
+After the inner for loop, but still inside the outer loop, add an if statement that checks if current is strictly equal to -1. If that is true, use break inside the if block to stop the outer loop early.
+
 Step 15
 =======
 

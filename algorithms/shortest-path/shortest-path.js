@@ -24,7 +24,12 @@ function shortestPath(matrix, startNode, targetNode = null) {
         minDistance = distances[nodeNo];
         current = nodeNo;
       }
-    }   
+    }
+
+    if (current === -1) {
+      break;
+    }
+
   }
 
 }
