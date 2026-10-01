@@ -167,6 +167,14 @@ Inside the nested if block, update paths[nodeNo] to be the path to the current n
 Step 20
 =======
 
+Once the main loop finishes, you need to decide which node(s) to display results for.
+
+If a specific targetNode was provided, only show results for that node. Otherwise, show results for all nodes.
+
+In JavaScript, you can get all indices of an array as an iterable using [...Array(n).keys()].
+
+After the outer for loop, create a variable named targets. Using a ternary expression, if targetNode is strictly not null, assign [targetNode], otherwise assign [...Array(n).keys()].
+
 Step 21
 =======
 
