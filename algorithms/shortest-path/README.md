@@ -155,6 +155,15 @@ Inside the existing if block, add a nested if statement that checks if newDistan
 Step 19
 =======
 
+When you find a shorter path to a neighbor, you also need to update the recorded path to reach it.
+
+In JavaScript, you can create a new array combining an existing array and a new element using the spread operator:
+
+Example Code
+const newPath = [...existingArray, newElement];
+
+Inside the nested if block, update paths[nodeNo] to be the path to the current node with nodeNo appended at the end using spread syntax like so: [...paths[current], nodeNo].
+
 Step 20
 =======
 
