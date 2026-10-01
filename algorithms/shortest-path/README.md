@@ -148,6 +148,10 @@ Inside the if block, declare a variable newDistance assigned to distances[curren
 Step 18
 =======
 
+Now you should check whether going through the current node gives a shorter route to the neighbor. If newDistance is better than what's already stored, then you should update it.
+
+Inside the existing if block, add a nested if statement that checks if newDistance is less than distances[nodeNo]. Inside that nested if block, update distances[nodeNo] to newDistance.
+
 Step 19
 =======
 
