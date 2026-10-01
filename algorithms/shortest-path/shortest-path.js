@@ -33,7 +33,9 @@ function shortestPath(matrix, startNode, targetNode = null) {
 
     for (let nodeNo = 0; nodeNo < n; nodeNo++) {
       const distance = matrix[current][nodeNo];
-      
+      if (distance !== INF && !visited[nodeNo]) {
+          const newDistance = distances[current] + distance;
+      }
     }
   }
 

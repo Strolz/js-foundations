@@ -139,6 +139,12 @@ Inside the loop, declare a variable named distance and assign it matrix[current]
 Step 17
 =======
 
+Before updating distances, you need to verify the neighbor is worth considering. There must be an actual edge to it (distance !== INF) and it must not have been visited yet.
+
+Inside the neighbor for loop, add an if statement that checks if distance is not strictly equal to INF and if nodeNo is not visited.
+
+Inside the if block, declare a variable newDistance assigned to distances[current] + distance. This is the total cost of reaching the neighbor through the current node.
+
 Step 18
 =======
 
