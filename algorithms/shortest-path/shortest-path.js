@@ -43,9 +43,12 @@ function shortestPath(matrix, startNode, targetNode = null) {
       }
     }
   }
+
   const targets = targetNode !== null ? [targetNode] : [...Array(n).keys()];
   
   for(const nodeNo of targets) {
-
+    if(nodeNo === startNode || distances[nodeNo] === INF) {
+      continue;
+    }
   }
 }

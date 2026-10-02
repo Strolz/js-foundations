@@ -185,6 +185,10 @@ Add a for...of loop that iterates over targets using nodeNo as the loop variable
 Step 22
 =======
 
+You only want to display results for nodes that are reachable and different from the start node.
+
+Inside the for...of loop, add an if statement that checks if nodeNo is strictly equal to startNode or distances[nodeNo] is strictly equal to INF. If either is true, use continue inside the if block to skip to the next iteration.
+
 Step 23
 =======
 
