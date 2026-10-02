@@ -201,6 +201,18 @@ Inside the for...of loop, after the if statement with continue, declare a variab
 Step 24
 =======
 
+Now, you should print the result for each reachable node.
+
+After the path variable, add a console.log() call with a template literal that outputs:
+
+Example Code
+\n{startNode}-{nodeNo} distance: {distances[nodeNo]}\nPath: {path}
+For example, if startNode is 0 and nodeNo is 3, the output should look like this:
+
+Example Code
+0-3 distance: 4
+Path: 0 -> 2 -> 3
+
 Step 25
 =======
 
