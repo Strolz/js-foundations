@@ -53,4 +53,5 @@ function shortestPath(matrix, startNode, targetNode = null) {
     const path = paths[nodeNo].join(' -> ');
     console.log(`\n${startNode}-${nodeNo} distance: ${distances[nodeNo]}\nPath: ${path}`);
   }
+  return [distances, paths];
 }

@@ -216,5 +216,9 @@ Path: 0 -> 2 -> 3
 Step 25
 =======
 
+The function should return the computed data so callers can use it programmatically.
+
+After the for...of loop, add a return statement that returns an array containing distances and paths, in that order.
+
 Step 26
 =======
