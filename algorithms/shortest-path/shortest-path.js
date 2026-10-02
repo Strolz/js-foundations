@@ -29,6 +29,7 @@ function shortestPath(matrix, startNode, targetNode = null) {
     if (current === -1) {
       break;
     }
+
     visited[current] = true;
 
     for (let nodeNo = 0; nodeNo < n; nodeNo++) {
@@ -43,4 +44,8 @@ function shortestPath(matrix, startNode, targetNode = null) {
     }
   }
   const targets = targetNode !== null ? [targetNode] : [...Array(n).keys()];
+  
+  for(const nodeNo of targets) {
+
+  }
 }

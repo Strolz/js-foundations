@@ -178,6 +178,10 @@ After the outer for loop, create a variable named targets. Using a ternary expre
 Step 21
 =======
 
+Now loop through the target nodes to display results for each one.
+
+Add a for...of loop that iterates over targets using nodeNo as the loop variable. Leave the body empty for now.
+
 Step 22
 =======
 
