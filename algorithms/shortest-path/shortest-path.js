@@ -50,5 +50,6 @@ function shortestPath(matrix, startNode, targetNode = null) {
     if(nodeNo === startNode || distances[nodeNo] === INF) {
       continue;
     }
+    const path = paths[nodeNo].join(' -> ');
   }
 }

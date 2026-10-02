@@ -192,6 +192,12 @@ Inside the for...of loop, add an if statement that checks if nodeNo is strictly 
 Step 23
 =======
 
+Now that you know the node is reachable and not the start, format its path into a readable string.
+
+The paths[nodeNo] array holds the sequence of node indices visited to reach nodeNo. You can turn that into a human-readable string like 0 -> 2 -> 3 using the .join() method.
+
+Inside the for...of loop, after the if statement with continue, declare a variable named path and assign it the value paths[nodeNo].join(' -> ').
+
 Step 24
 =======
 
