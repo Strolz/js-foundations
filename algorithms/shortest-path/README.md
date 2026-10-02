@@ -222,3 +222,10 @@ After the for...of loop, add a return statement that returns an array containing
 
 Step 26
 =======
+The function is complete. Now call it to see the results.
+
+At the bottom of the file (outside the function), call shortestPath with adjMatrix as the matrix, 0 as the start node, and 5 as the target node.
+
+This will print the shortest path from node 0 to node 5 in the adjacency matrix.
+
+With that, your shortest path algorithm workshop is complete!

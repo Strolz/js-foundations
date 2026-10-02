@@ -55,3 +55,5 @@ function shortestPath(matrix, startNode, targetNode = null) {
   }
   return [distances, paths];
 }
+
+shortestPath(adjMatrix, 0, 5);
