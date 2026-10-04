@@ -8,4 +8,13 @@ function adjacencyListToMatrix(obj) {
     const matrix = Array.from({ length: numNodes }, () =>
         new Array(numNodes).fill(0)
     );
+
+    for (const fromNodeStr in obj) {
+        const fromNode = Number(fromNodeStr);
+        const neighbors = obj[fromNodeStr];
+
+        for (const toNode of neighbors) {
+            matrix[fromNode][toNode] = 1;
+            }
+    }
 }
