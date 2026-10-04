@@ -4,4 +4,8 @@ function adjacencyListToMatrix(obj) {
     const allNodes = new Set([...keys, ...values]);
 
     const numNodes = allNodes.size;
+
+    const matrix = Array.from({ length: numNodes }, () =>
+        new Array(numNodes).fill(0)
+    );
 }
