@@ -17,4 +17,10 @@ function adjacencyListToMatrix(obj) {
             matrix[fromNode][toNode] = 1;
             }
     }
+
+    for (const row of matrix) {
+        console.log(row);
+    }
+
+    return matrix;
 }
