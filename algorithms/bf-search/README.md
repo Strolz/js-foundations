@@ -31,6 +31,13 @@ Update your return statement to return result instead of an empty array.
 Step 5
 =======
 
+For the breadth-first search approach, you'll use a queue to track different states as you build the parentheses combinations. Each state will be represented as an array containing three elements:
+
+The current string being built
+The number of opening parentheses used so far
+The number of closing parentheses used so far
+Create a variable named queue and initialize it to an array containing one array: ['', 0, 0]. This represents the starting state with an empty string and zero parentheses used.
+
 Step 6
 =======
 

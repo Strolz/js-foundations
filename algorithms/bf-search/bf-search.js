@@ -7,7 +7,9 @@ function genParentheses(pairs) {
         return 'The number of pairs should be at least 1'
     }
   
-    const result = []
+    let queue = [['', 0, 0]];  
+    let result = [];
+
     return result;
 
 }
