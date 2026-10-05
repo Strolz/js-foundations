@@ -1,0 +1,3 @@
+function genParentheses(pairs) {
+  return [];
+}
