@@ -6,7 +6,8 @@ function genParentheses(pairs) {
     if (pairs < 1) {
         return 'The number of pairs should be at least 1'
     }
-
-    return [];
+  
+    const result = []
+    return result;
 
 }

@@ -24,6 +24,10 @@ Add another if statement to check if pairs is less than 1. If this condition is 
 Step 4
 =======
 
+Now you'll set up the data structure to store your results. Create a variable named result and initialize it to an empty array. This array will store all the valid parentheses combinations you generate.
+
+Update your return statement to return result instead of an empty array.
+
 Step 5
 =======
 
