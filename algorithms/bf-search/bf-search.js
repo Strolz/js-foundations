@@ -10,6 +10,10 @@ function genParentheses(pairs) {
     let queue = [['', 0, 0]];  
     let result = [];
 
+    while (queue.length > 0) {
+        console.log(queue);
+    }
+
     return result;
 
 }

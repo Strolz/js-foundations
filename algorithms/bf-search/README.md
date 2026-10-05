@@ -41,6 +41,10 @@ Create a variable named queue and initialize it to an array containing one array
 Step 6
 =======
 
+Now you'll implement the main BFS loop. Create a while loop that continues as long as the queue is not empty, that is, queue.length is greater than 0.
+
+Inside the loop, log queue to the console.
+
 Step 7
 =======
 
