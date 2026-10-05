@@ -12,6 +12,7 @@ function genParentheses(pairs) {
 
     while (queue.length > 0) {
         console.log(queue);
+        let [current, opensUsed, closesUsed] = queue.shift();
     }
 
     return result;

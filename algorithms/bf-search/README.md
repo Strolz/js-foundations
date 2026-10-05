@@ -48,6 +48,10 @@ Inside the loop, log queue to the console.
 Step 7
 =======
 
+Inside your while loop, use queue.shift() to remove and get the first element from the queue. This implements the first-in-first-out (FIFO) behavior characteristic of BFS.
+
+Destructure this array into three variables: current, opensUsed, and closesUsed.
+
 Step 8
 =======
 
