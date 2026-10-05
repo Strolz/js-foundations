@@ -55,6 +55,8 @@ Destructure this array into three variables: current, opensUsed, and closesUsed.
 Step 8
 =======
 
+Before you keep working on the BFS logic, call genParentheses(1) and log the result to the console.
+
 Step 9
 =======
 

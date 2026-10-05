@@ -18,3 +18,5 @@ function genParentheses(pairs) {
     return result;
 
 }
+
+console.log(genParentheses(1));
