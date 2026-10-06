@@ -90,5 +90,7 @@ Your function is now complete. Test it again by logging genParentheses(2) instea
 Step 13
 =======
 
+Now you don't need to log the queue anymore. So remove console.log(queue) from your while loop.
+
 Step 14
 =======
