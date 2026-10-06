@@ -20,6 +20,9 @@ function genParentheses(pairs) {
             if (opensUsed < pairs) {
                 queue.push([current + '(', opensUsed + 1, closesUsed])
             }
+            if (closesUsed < opensUsed) {
+                queue.push([current + ')', opensUsed, closesUsed + 1]);
+            }
         }
     }
 

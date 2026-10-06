@@ -76,6 +76,12 @@ If this condition is true, push a new array to the queue: [current + '(', opensU
 Step 11
 =======
 
+Now you need to handle adding closing parentheses. The key rule is that you can only add a closing parenthesis if it maintains balance, meaning there must be more opening parentheses used than closing parentheses.
+
+Still within the else block, add a second if statement to check if closesUsed is less than opensUsed.
+
+If this condition is true, push another new array to the queue: [current + ')', opensUsed, closesUsed + 1]. This represents the state after adding a closing parenthesis.
+
 Step 12
 =======
 
