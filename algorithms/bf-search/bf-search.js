@@ -13,6 +13,10 @@ function genParentheses(pairs) {
     while (queue.length > 0) {
         console.log(queue);
         let [current, opensUsed, closesUsed] = queue.shift();
+        
+        if (current.length === 2 * pairs) {
+            result.push(current);
+        }
     }
 
     return result;

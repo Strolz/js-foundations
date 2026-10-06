@@ -60,6 +60,10 @@ Before you keep working on the BFS logic, call genParentheses(1) and log the res
 Step 9
 =======
 
+Now you need to identify when you've built a complete parentheses combination. A complete combination has a length equal to twice the number of pairs (since each pair contributes one opening and one closing parenthesis).
+
+Inside your while loop, add an if statement to check if current.length === 2 * pairs. When this condition is true, push current to the result array.
+
 Step 10
 =======
 
