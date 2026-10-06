@@ -30,3 +30,4 @@ function genParentheses(pairs) {
 }
 
 console.log(genParentheses(2));
+console.log(genParentheses(3));

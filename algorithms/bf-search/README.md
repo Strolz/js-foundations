@@ -94,3 +94,7 @@ Now you don't need to log the queue anymore. So remove console.log(queue) from y
 
 Step 14
 =======
+
+Finally, call genParentheses with 3 as its argument to generate all five valid combinations of three pairs of parentheses and log the result to the console.
+
+With that, your breadth-first search workshop is complete.
