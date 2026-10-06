@@ -16,6 +16,10 @@ function genParentheses(pairs) {
         
         if (current.length === 2 * pairs) {
             result.push(current);
+        } else {
+            if (opensUsed < pairs) {
+                queue.push([current + '(', opensUsed + 1, closesUsed])
+            }
         }
     }
 

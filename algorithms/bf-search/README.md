@@ -67,6 +67,12 @@ Inside your while loop, add an if statement to check if current.length === 2 * p
 Step 10
 =======
 
+If the current string isn't complete yet, you need to explore the next possible states. Add an else clause for the current if statement.
+
+Inside the else block, you'll handle adding opening parentheses. Add an if statement to check if opensUsed is less than pairs. This ensures you don't use more opening parentheses than allowed.
+
+If this condition is true, push a new array to the queue: [current + '(', opensUsed + 1, closesUsed]. This represents the state after adding an opening parenthesis.
+
 Step 11
 =======
 
