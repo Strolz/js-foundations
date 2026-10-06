@@ -85,6 +85,8 @@ If this condition is true, push another new array to the queue: [current + ')', 
 Step 12
 =======
 
+Your function is now complete. Test it again by logging genParentheses(2) instead of genParentheses(1).
+
 Step 13
 =======
 
