@@ -20,4 +20,6 @@ function dfs(graph, root) {
             }
         }
     }
+
+    return result;
 }
