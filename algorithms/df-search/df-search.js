@@ -9,5 +9,9 @@ function dfs(graph, root) {
         if (visited[node]) {
             continue;
         }
+
+        visited[node] = true;
+
+        result.push(node);
     }
 }
