@@ -13,5 +13,11 @@ function dfs(graph, root) {
         visited[node] = true;
 
         result.push(node);
+
+        for (let neighbor = 0; neighbor < graph.length; neighbor++) {
+            if (graph[node][neighbor] === 1 && !visited[neighbor]) {
+                stack.push(neighbor);
+            }
+        }
     }
 }
