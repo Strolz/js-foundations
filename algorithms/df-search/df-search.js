@@ -5,5 +5,9 @@ function dfs(graph, root) {
 
     while (stack.length > 0) {
         const node = stack.pop();
+    
+        if (visited[node]) {
+            continue;
+        }
     }
 }
