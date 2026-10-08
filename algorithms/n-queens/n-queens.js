@@ -1,3 +1,5 @@
 function dfsNQueens(n) {
-
+    if (n < 1 ) {
+        return [];
+    }
 }
