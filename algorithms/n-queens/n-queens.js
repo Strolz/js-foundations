@@ -4,4 +4,5 @@ function dfsNQueens(n) {
     }
 
     const solutions = [];
+    const current = []; 
 }
