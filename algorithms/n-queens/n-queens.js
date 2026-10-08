@@ -5,4 +5,8 @@ function dfsNQueens(n) {
 
     const solutions = [];
     const current = []; 
+
+    function isSafe(row, col) {
+        return true;
+    }
 }
