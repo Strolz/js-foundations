@@ -12,6 +12,13 @@ function dfsNQueens(n) {
                 return false;
             }
         }
+        
+        for (let r = 0; r < row; r++) {
+            if (Math.abs(row - r) === Math.abs(col - current[r])) {
+                return false;
+            }
+        }
+
         return true;
     }
 
