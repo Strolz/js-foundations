@@ -33,6 +33,10 @@ function dfsNQueens(n) {
             solutions.push([...current]);
             return;
         }
+
+        for (let col = 0; col < n; col++) {
+
+        }
     }
 
     dfs(0);
