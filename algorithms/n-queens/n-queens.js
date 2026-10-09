@@ -35,7 +35,9 @@ function dfsNQueens(n) {
         }
 
         for (let col = 0; col < n; col++) {
-
+            if(!isSafe(row, col)) {
+                continue;
+            }
         }
     }
 
