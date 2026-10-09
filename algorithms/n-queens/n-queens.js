@@ -41,6 +41,8 @@ function dfsNQueens(n) {
 
             current[row] = col;
 
+            dfs(row + 1);
+
         }
     }
 
