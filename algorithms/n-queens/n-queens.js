@@ -29,7 +29,10 @@ function dfsNQueens(n) {
     }
 
     function dfs(row) {
-    
+        if (row === n) {
+            solutions.push([...current]);
+            return;
+        }
     }
 
     dfs(0);
