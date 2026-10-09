@@ -7,6 +7,11 @@ function dfsNQueens(n) {
     const current = []; 
 
     function isSafe(row, col) {
+        for (let r = 0; r < row; r++) {
+            if (current[r] === col) {
+                return false;
+            }
+        }
         return true;
     }
 
