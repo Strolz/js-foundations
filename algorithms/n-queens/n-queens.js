@@ -38,6 +38,9 @@ function dfsNQueens(n) {
             if(!isSafe(row, col)) {
                 continue;
             }
+
+            current[row] = col;
+
         }
     }
 
