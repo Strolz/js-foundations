@@ -9,4 +9,8 @@ function dfsNQueens(n) {
     function isSafe(row, col) {
         return true;
     }
+
+    function dfs(row) {
+    
+    }
 }
