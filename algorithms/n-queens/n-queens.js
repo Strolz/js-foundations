@@ -13,4 +13,8 @@ function dfsNQueens(n) {
     function dfs(row) {
     
     }
+
+    dfs(0);
+
+    return solutions;
 }
