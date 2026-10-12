@@ -10,6 +10,8 @@ Start by declaring an empty conversionTable object.
 Step 2
 ------------
 
+Give your conversionTable a cup property, and assign it an object with a gram property set to 240, an ounce property set to 8.0, and a teaspoon property set to 48.
+
 Step 3
 ------------
 
