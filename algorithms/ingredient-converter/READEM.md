@@ -1,0 +1,59 @@
+Step 1
+------------
+
+In this workshop, you will apply the functional programming concepts you have learned in previous lessons to build an ingredient converter app.
+
+The HTML and CSS have already been provided for you.
+
+Start by declaring an empty conversionTable object.
+
+Step 2
+------------
+
+Step 3
+------------
+
+Step 4
+------------
+
+Step 5
+------------
+
+Step 6
+------------
+
+Step 7
+------------
+
+Step 8
+------------
+
+Step 9
+------------
+
+Step 10
+------------
+
+Step 11
+------------
+
+Step 12
+------------
+
+Step 13
+------------
+
+Step 14
+------------
+
+Step 15
+------------
+
+Step 16
+------------
+
+Step 17
+------------
+
+Step 18
+------------
