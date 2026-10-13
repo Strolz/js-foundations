@@ -48,6 +48,14 @@ Now, following the syntax above, update your convertQuantity function to return 
 Step 8
 ------------
 
+Example Code
+
+const tikkaMasala = (spice) => (protein) => (vegetable) => {
+  return "Yum!";
+}
+
+Finally, update your inner function to return a third function. This third function should also accept a single argument named quantity, and have an empty body.
+
 Step 9
 ------------
 

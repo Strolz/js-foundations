@@ -25,6 +25,6 @@ const conversionTable = {
 
 };
 
-const convertQuantity = (fromUnit) => (toUnit) => {
+const convertQuantity = (fromUnit) => (toUnit) => (quantity) => {
   
 }
