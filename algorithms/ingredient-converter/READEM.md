@@ -68,8 +68,23 @@ Return the result of multiplying that conversion value with the quantity value.
 Step 10
 ------------
 
+Time to see your curried function in action. Here's how you might call our example function:
+
+Example Code
+
+const dinner = tikkaMasala("curry powder")("tofu")("onion");
+Declare a gramsResult variable, and assign it the result of using your curried function to convert 2 units of the measure cup to gram.
+
+Log that value to the console.
+
 Step 11
 ------------
+
+You'll need to adjust for the number of servings being calculated. This is a great chance to use another curried function.
+
+Declare an adjustForServings function, which accepts a baseQuantity argument. It should return a second function which accepts a newServings argument.
+
+The inner function should return the result of multiplying the baseQuantity and newServings.
 
 Step 12
 ------------

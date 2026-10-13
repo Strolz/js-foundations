@@ -28,3 +28,10 @@ const conversionTable = {
 const convertQuantity = (fromUnit) => (toUnit) => (quantity) => {
     return conversionTable[fromUnit][toUnit] * quantity;
 }
+
+const gramsResult = convertQuantity("cup")("gram")(2);
+console.log(gramsResult);
+
+const adjustForServings = (baseQuantity) => (newServings) => {
+    return baseQuantity * newServings;
+}
