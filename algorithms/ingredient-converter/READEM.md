@@ -30,6 +30,10 @@ Finally, give your conversionTable a teaspoon object with a cup property set to 
 Step 6
 ------------
 
+Now you'll need to create your first curried function. Remember that a curried function is a function that returns another function.
+
+Start by declaring a convertQuantity function. It should have a single fromUnit parameter, and should be empty.
+
 Step 7
 ------------
 
