@@ -20,6 +20,8 @@ Give your conversionTable a gram property, and assign it an object with a cup pr
 Step 4
 ------------
 
+Give your conversionTable an ounce property, and assign it an object with a cup property set to 0.125, a gram property set to 28.35, and a teaspoon property set to 6.
+
 Step 5
 ------------
 
