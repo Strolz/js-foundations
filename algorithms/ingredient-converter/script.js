@@ -16,4 +16,11 @@ const conversionTable = {
         gram: 28.35,
         teaspoon: 6
     },
+
+    teaspoon: { 
+        cup: 1/48, 
+        gram: 5, 
+        ounce: 0.167
+    },
+
 };
