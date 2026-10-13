@@ -37,6 +37,14 @@ Start by declaring a convertQuantity function. It should have a single fromUnit 
 Step 7
 ------------
 
+Example Code
+
+const tikkaMasala = (spice) => (protein) => (vegetable) => {
+  return "Yum!";
+}
+
+Now, following the syntax above, update your convertQuantity function to return a second function. This inner function should accept a toUnit argument, and should be empty.
+
 Step 8
 ------------
 
