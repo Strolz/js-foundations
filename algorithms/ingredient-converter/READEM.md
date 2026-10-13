@@ -59,6 +59,12 @@ Finally, update your inner function to return a third function. This third funct
 Step 9
 ------------
 
+Your innermost curried function will hold the logic for converting the value.
+
+First, use the fromUnit argument to access your conversionTable object, then use the toUnit argument to access the nested object.
+
+Return the result of multiplying that conversion value with the quantity value.
+
 Step 10
 ------------
 

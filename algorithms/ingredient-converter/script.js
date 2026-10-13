@@ -26,5 +26,5 @@ const conversionTable = {
 };
 
 const convertQuantity = (fromUnit) => (toUnit) => (quantity) => {
-  
+    return conversionTable[fromUnit][toUnit] * quantity;
 }
