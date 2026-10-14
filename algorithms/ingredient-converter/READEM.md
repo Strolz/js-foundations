@@ -110,6 +110,10 @@ You can finally start hooking your logic into the user interface. You'll need to
 Step 15
 ------------
 
+You'll need to keep a list of the units your app supports.
+
+Declare a units array, and give it the string values "cup", "gram", "ounce", and "teaspoon".
+
 Step 16
 ------------
 

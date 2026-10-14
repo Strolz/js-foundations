@@ -40,10 +40,10 @@ const servingsResult = adjustForServings(4)(6);
 console.log(servingsResult);
 
 const processIngredient = (baseQuantity, baseUnit, newUnit, newServings) => {
-  let base = adjustForServings(baseQuantity)(newServings);
-  let convert = convertQuantity(baseUnit)(newUnit)(base)
+    let base = adjustForServings(baseQuantity)(newServings);
+    let convert = convertQuantity(baseUnit)(newUnit)(base)
 
-  return convert.toFixed(2)
+    return convert.toFixed(2)
 }
 
 const ingredientName = document.getElementById("ingredient");
@@ -52,3 +52,5 @@ const unitToConvert = document.getElementById("unit");
 const numberOfServings = document.getElementById("servings");
 const recipeForm = document.getElementById("recipe-form");
 const resultList = document.getElementById("result-list");
+
+const units = ["cup", "gram", "ounce", "teaspoon"];
