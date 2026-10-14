@@ -89,6 +89,10 @@ The inner function should return the result of multiplying the baseQuantity and 
 Step 12
 ------------
 
+You'll need to test your new curried function. Declare a servingsResult variable, and assign it the result of adjusting from a base quantity of 4 to a serving of 6.
+
+Log that variable to the console.
+
 Step 13
 ------------
 
