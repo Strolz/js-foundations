@@ -45,3 +45,10 @@ const processIngredient = (baseQuantity, baseUnit, newUnit, newServings) => {
 
   return convert.toFixed(2)
 }
+
+const ingredientName = document.getElementById("ingredient");
+const ingredientQuantity = document.getElementById("quantity");
+const unitToConvert = document.getElementById("unit");
+const numberOfServings = document.getElementById("servings");
+const recipeForm = document.getElementById("recipe-form");
+const resultList = document.getElementById("result-list");

@@ -105,6 +105,8 @@ If you get stuck, refer to your example function calls that you logged. You can 
 Step 14
 ------------
 
+You can finally start hooking your logic into the user interface. You'll need to query the DOM to get a few elements by ID. Get the elements with the ingredient, quantity, unit, servings, recipe-form, and result-list IDs, and assign them to the variables ingredientName, ingredientQuantity, unitToConvert, numberOfServings, recipeForm, and resultList, respectively.
+
 Step 15
 ------------
 
