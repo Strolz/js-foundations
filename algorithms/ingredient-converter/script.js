@@ -58,3 +58,8 @@ const units = ["cup", "gram", "ounce", "teaspoon"];
 const updateResultsList = () => {
   resultList.innerHTML = "";
 }
+
+recipeForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    updateResultsList();
+});

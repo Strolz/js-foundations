@@ -124,5 +124,11 @@ To start, the function should clear the HTML from the resultList element.
 Step 17
 ------------
 
+In this step, attach a submit event listener to recipeForm so that when the Convert button is clicked, the updateResultsList() function is called.
+
+Attach a submit event listener to recipeForm. When the form is submitted, call event.preventDefault() to stop the default behavior, and then call updateResultsList().
+
+This will allow you to trigger the function through the UI by filling in the form and pressing Convert, useful for debugging while adding the conversion logic in the next step.
+
 Step 18
 ------------
