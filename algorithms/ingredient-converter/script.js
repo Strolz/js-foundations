@@ -38,3 +38,10 @@ const adjustForServings = (baseQuantity) => (newServings) => {
 
 const servingsResult = adjustForServings(4)(6);
 console.log(servingsResult);
+
+const processIngredient = (baseQuantity, baseUnit, newUnit, newServings) => {
+  let base = adjustForServings(baseQuantity)(newServings);
+  let convert = convertQuantity(baseUnit)(newUnit)(base)
+
+  return convert.toFixed(2)
+}

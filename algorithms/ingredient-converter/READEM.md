@@ -96,6 +96,12 @@ Log that variable to the console.
 Step 13
 ------------
 
+Now it's time to use your functions. Declare a new processIngredient function which accepts four arguments: baseQuantity, baseUnit, newUnit, and newServings.
+
+Your function should adjust the servings for the base quantity to the new servings, convert that adjusted quantity from the base unit into the new unit, and return the converted quantity as a fixed string with two decimal places.
+
+If you get stuck, refer to your example function calls that you logged. You can change the values in both of those examples to explore.
+
 Step 14
 ------------
 
