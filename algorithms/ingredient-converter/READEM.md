@@ -117,6 +117,10 @@ Declare a units array, and give it the string values "cup", "gram", "ounce", and
 Step 16
 ------------
 
+You'll need a function that actually updates the DOM. Declare an updateResultsList function.
+
+To start, the function should clear the HTML from the resultList element.
+
 Step 17
 ------------
 

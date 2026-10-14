@@ -54,3 +54,7 @@ const recipeForm = document.getElementById("recipe-form");
 const resultList = document.getElementById("result-list");
 
 const units = ["cup", "gram", "ounce", "teaspoon"];
+
+const updateResultsList = () => {
+  resultList.innerHTML = "";
+}
