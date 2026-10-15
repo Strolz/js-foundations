@@ -132,3 +132,18 @@ This will allow you to trigger the function through the UI by filling in the for
 
 Step 18
 ------------
+
+In this step, you will complete the updateResultsList function.
+
+Now iterate through the units array. For each value, check if it is not equal to the current unit (unitToConvert.value).
+
+If the condition is true, convert the existing unit to the current unit and add a new list item to resultList in the format:
+
+ingredient: quantity unit
+
+For example, if the input is flour, 5, and gram, the result should be:
+
+Example Code
+flour: 0.02 cup
+flour: 0.18 ounce
+flour: 1.00 teaspoon

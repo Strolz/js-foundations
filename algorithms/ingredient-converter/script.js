@@ -56,7 +56,14 @@ const resultList = document.getElementById("result-list");
 const units = ["cup", "gram", "ounce", "teaspoon"];
 
 const updateResultsList = () => {
-  resultList.innerHTML = "";
+    resultList.innerHTML = "";
+    units.forEach((item) => {
+        if (item !== unitToConvert.value) {
+            const processed = processIngredient(ingredientQuantity.value, unitToConvert.value, item, numberOfServings.value);
+
+            resultList.innerHTML += `<li>${ingredientName.value}: ${processed} ${item}</li>`;
+        }
+    })
 }
 
 recipeForm.addEventListener("submit", (event) => {
