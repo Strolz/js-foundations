@@ -6,4 +6,8 @@ function addTogether(a, b) {
     if (b !== undefined && b !== "number") {
       return undefined;
     }
+
+    if (typeof b === "number") {
+      return a + b;
+    }
 }
