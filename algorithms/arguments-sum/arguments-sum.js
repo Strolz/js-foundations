@@ -3,7 +3,7 @@ function addTogether(a, b) {
     return undefined;
   }
 
-  if (b !== undefined && typeof b !== "number") {
+  if (arguments.length > 1 && typeof b !== "number") {
     return undefined;
   }
 
