@@ -23,3 +23,15 @@ function fillArrContainer(el, arr) {
 function isOrdered(intOne, intTwo) {
     return intOne <= intTwo;
 }
+
+function highlightCurrentEls(el, index) {
+    const children = el.children;
+
+    children[index].style.borderStyle = "dashed";
+    children[index].style.borderColor = "red";
+    children[index].style.borderWidth = "2px";
+
+    children[index + 1].style.borderStyle = "dashed";
+    children[index + 1].style.borderColor = "red";
+    children[index + 1].style.borderWidth = "2px";
+}
