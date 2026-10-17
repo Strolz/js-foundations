@@ -12,4 +12,10 @@ function gernerateContainer() {
 
 function fillArrContainer(el, arr) {
     el.innerHTML = "";
+
+    arr.forEach(num => {
+        const span = document.createElement("span");
+        span.textContent = num;
+        el.appendChild(span);
+    })
 }
