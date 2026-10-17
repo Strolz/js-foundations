@@ -19,3 +19,7 @@ function fillArrContainer(el, arr) {
         el.appendChild(span);
     })
 }
+
+function isOrdered(intOne, intTwo) {
+    return intOne <= intTwo;
+}
