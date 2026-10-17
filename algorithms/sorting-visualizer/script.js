@@ -5,3 +5,7 @@ function generateElement() {
 function generateArray() {
     return Array.from({length: 5}, generateElement)
 }
+
+function gernerateContainer() {
+    return document.createElement("div");
+}
