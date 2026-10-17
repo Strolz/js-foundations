@@ -11,5 +11,5 @@ function gernerateContainer() {
 }
 
 function fillArrContainer(el, arr) {
-    
+    el.innerHTML = "";
 }
