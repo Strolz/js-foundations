@@ -9,3 +9,7 @@ function generateArray() {
 function gernerateContainer() {
     return document.createElement("div");
 }
+
+function fillArrContainer(el, arr) {
+    
+}
