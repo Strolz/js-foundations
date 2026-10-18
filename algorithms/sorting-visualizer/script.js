@@ -58,3 +58,18 @@ arrayContainerEl.appendChild(startingArrayEl);
 
 let currentArr = [...arr];
 const n = currentArr.length;
+
+for (let i = 0; i < n - 1; i++) {
+    for (let j = 0; j < n - 1 - i; j++) {
+
+        swapElements(currentArr, j);
+
+        const stepContainer = generateContainer();
+        fillArrContainer(stepContainer, currentArr);
+
+        highlightCurrentEls(stepContainer, j);
+
+        arrayContainerEl.appendChild(stepContainer);
+
+    }
+}
