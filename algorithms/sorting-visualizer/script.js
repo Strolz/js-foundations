@@ -39,3 +39,11 @@ function highlightCurrentEls(el, index) {
 const generateBtn = document.getElementById("generate-btn");
 const startingArrayEl = document.getElementById("starting-array");
 const arrayContainerEl = document.getElementById("array-container");
+
+generateBtn.addEventListener("click", () => {
+    const arr = generateArray();
+
+    fillArrContainer(startingArrayEl, arr);
+
+    arrayContainerEl.innerHTML = "";
+})
