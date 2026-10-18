@@ -55,3 +55,6 @@ generateBtn.addEventListener("click", () => {
 highlightCurrentEls(startingArrayEl, 0);
 
 arrayContainerEl.appendChild(startingArrayEl);
+
+let currentArr = [...arr];
+const n = currentArr.length;
