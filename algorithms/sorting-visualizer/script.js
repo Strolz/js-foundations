@@ -35,3 +35,7 @@ function highlightCurrentEls(el, index) {
     children[index + 1].style.borderColor = "red";
     children[index + 1].style.borderWidth = "2px";
 }
+
+const generateBtn = document.getElementById("generate-btn");
+const startingArrayEl = document.getElementById("starting-array");
+const arrayContainerEl = document.getElementById("array-container");
