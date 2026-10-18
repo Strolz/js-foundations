@@ -45,5 +45,9 @@ generateBtn.addEventListener("click", () => {
 
     fillArrContainer(startingArrayEl, arr);
 
-    arrayContainerEl.innerHTML = "";
-})
+    Array.from(arrayContainerEl.children).forEach(child => {
+        if (child !== startingArrayEl) {
+            child.remove();
+        }
+    });
+});
