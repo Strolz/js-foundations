@@ -23,6 +23,20 @@ Make a GET request to this URL: "https://cdn.freecodecamp.org/curriculum/news-au
 Step 3
 ------------
 
+The fetch() method returns a Promise, which is a placeholder object that will either be fulfilled if your request is successful, or rejected if your request is unsuccessful.
+
+If the Promise is fulfilled, it resolves to a Response object, and you can use the .then() method to access the Response.
+
+Here's how you can chain .then() to the fetch() method:
+
+Example Code
+fetch("sample-url-goes-here")
+  .then((res) => res)
+
+Chain the .then() method to your fetch call. Inside the .then() method, add a callback function with res as a parameter, then log the res to the console so you can see the Response object. Open your browser console and expand the Response object to see what it contains.
+
+Again, don't terminate the code with a semicolon yet.
+
 Step 4
 ------------
 
