@@ -51,3 +51,5 @@ generateBtn.addEventListener("click", () => {
         }
     });
 });
+
+highlightCurrentEls(startingArrayEl, 0);
