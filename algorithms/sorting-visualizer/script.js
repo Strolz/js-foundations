@@ -53,3 +53,5 @@ generateBtn.addEventListener("click", () => {
 });
 
 highlightCurrentEls(startingArrayEl, 0);
+
+arrayContainerEl.appendChild(startingArrayEl);
