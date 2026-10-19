@@ -76,6 +76,21 @@ Declare and initialize each variable on a separate line.
 Step 8
 ------------
 
+Now, it is time to create the function that will be responsible for displaying the authors on the page.
+
+Start by creating a function called displayAuthors that takes an authors parameter. Your function should then loop through the authors array and add a card for each author to the authorContainer element.
+
+The card should have the following structure:
+
+Example Code
+<div id="${index}" class="user-card">
+  <h2 class="author-name">${author}</h2>
+</div>
+Tips:
+
+You can use any type of loop to iterate over the authors array. Ex. for, forEach, map, etc.
+You should use the innerHTML property to add the card to the authorContainer inside the loop. You will also need to use template literal syntax to add the markup.
+
 Step 9
 ------------
 
