@@ -94,6 +94,10 @@ You should use the innerHTML property to add the card to the authorContainer ins
 Step 9
 ------------
 
+To see the authors' names on the page, you need to call the displayAuthors function inside the second .then() method. But before that, you need to assign the author data to the empty authorDataArr array.
+
+First, remove your console.log() statement. Then, assign data to the authorDataArr variable.
+
 Step 10
 ------------
 
