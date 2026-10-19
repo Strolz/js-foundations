@@ -63,6 +63,16 @@ Note: catch is the last call chained on to fetch, so you can terminate your code
 Step 7
 ------------
 
+Now that you have the data you want, you can use it to populate the UI.
+
+But the data you are fetching will have a total of 26 authors. Instead of displaying all 26 authors at once, you should display 8 authors at a time.
+
+Start by using the let keyword to create two variables named startingIndex and endingIndex, and assign them the numbers 0 and 8, respectively. You will need to use let here because you will be reassigning these values later on.
+
+Then, create an authorDataArr variable and assign it an empty array.
+
+Declare and initialize each variable on a separate line.
+
 Step 8
 ------------
 
