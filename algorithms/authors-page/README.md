@@ -115,6 +115,10 @@ First, remove the console log statement showing authorDataArr. Then, call the di
 Step 12
 ------------
 
+Inside the displayAuthors function, the data of each author has been destructured for you.
+
+Now create an image tag and give it a class attribute of "user-img". Use string interpolation to set the src attribute to the image property. Set the alt attribute to author followed by the text "avatar". Make sure there is a space between the author variable and the word "avatar", for example, "Quincy Larson avatar".
+
 Step 13
 ------------
 
