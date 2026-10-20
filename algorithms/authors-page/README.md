@@ -128,6 +128,10 @@ Add a paragraph element with a class attribute of "bio", then interpolate bio in
 Step 14
 ------------
 
+Next, add a link to the author's page on freeCodeCamp News.
+
+Add an anchor element with a class attribute of "author-link", interpolate url as the value for the href attribute, and set target to "_blank". For the text of the anchor element, interpolate author followed by the text "'s author page". For example, "Quincy Larson's author page".
+
 Step 15
 ------------
 
