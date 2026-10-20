@@ -122,6 +122,9 @@ Now create an image tag and give it a class attribute of "user-img". Use string 
 Step 13
 ------------
 
+The next thing you'll show are biographical details about the author. You can do this by using the bio property.
+Add a paragraph element with a class attribute of "bio", then interpolate bio inside the paragraph element.
+
 Step 14
 ------------
 
