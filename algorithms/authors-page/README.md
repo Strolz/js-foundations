@@ -141,11 +141,15 @@ Use const to create a fetchMoreAuthors function with the arrow function syntax. 
 
 Step 16
 ------------
-  
+
 Inside the fetchMoreAuthors function, set the startingIndex and endingIndex variables to +=8 each.
 
 Step 17
 ------------
+
+Now call the displayAuthors function with a portion of the author data just like you did before.
+
+If you click the Load More Authors button after calling the function, it won't work. That's because you still have to add the click event listener to the button. You'll do that next.
 
 Step 18
 ------------
