@@ -141,6 +141,8 @@ Use const to create a fetchMoreAuthors function with the arrow function syntax. 
 
 Step 16
 ------------
+  
+Inside the fetchMoreAuthors function, set the startingIndex and endingIndex variables to +=8 each.
 
 Step 17
 ------------
