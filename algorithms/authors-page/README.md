@@ -191,6 +191,10 @@ Within the paragraph element, replace bio with a ternary operator. For the condi
 Step 23
 ------------
 
+Finally, what if there's an error and the author data fails to load? Then you need to show an error in the UI. That's exactly what the .catch() method is for – handling errors.
+
+Inside the .catch(), remove the console.error() and set the innerHTML of the authorContainer to a p element with a class attribute of "error-msg" and text "There was an error loading the authors".
+
 Step 24
 ------------
 
