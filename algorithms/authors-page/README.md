@@ -177,6 +177,10 @@ If this condition is met, disable the button by setting its disabled property to
 Step 21
 ------------
 
+Next, there's not a lot of separation between each author's name and image, and the rest of the details on the card. A divider will give the author cards a clear visual hierarchy.
+
+Add a div element above the author's bio and give it a class attribute of "purple-divider".
+
 Step 22
 ------------
 
