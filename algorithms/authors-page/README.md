@@ -261,3 +261,15 @@ You will notice a SyntaxError in the console at this point. The next step will d
 
 Step 29
 ------------
+
+Finally, you need to deal with the catch method. First, nest the fetch statement, the json statement, and the displayAuthors call into a try block within initialFetch. Then, modify the chained catch method to be a catch block instead as per the example shown below.
+
+Example Code
+try {
+  // code that can cause or throw an error goes in this block
+} catch (error) {
+  // error handling code here
+}
+If you've done this correctly, the try block will contain three lines of code in it and the catch block will contain just one line of code. Also, the SyntaxError will be resolved and the app should function normally.
+
+Give yourself a pat on the back! You have learned how to make your asynchronous code more readable using the async and await operators! Now your author page is complete.
