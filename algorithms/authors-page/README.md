@@ -205,6 +205,19 @@ Access the style property of the Load More Authors button and set cursor to "not
 Step 25
 ------------
 
+Now that your fCC Authors Page is fully functional, let's refactor it to improve its readability by using async and await instead of the promise chaining method then.
+
+Recall that in order to use the await operator to wait for a function that returns a Promise, you need to wrap the function call in an async function (if it is not in the main body of a module).
+
+Since your fetch call is not defined in either an asynchronous function or the main body of a module, you cannot use await before fixing that.
+
+Wrap the fetch statement and the entire sequence of chained then and catch methods as a whole in a new asynchronous arrow function called initialFetch which takes no arguments.
+
+An example of an async function declaration is:
+
+Example Code
+const functionName = async () => {}
+
 Step 26
 ------------
 
