@@ -221,6 +221,10 @@ const functionName = async () => {}
 Step 26
 ------------
 
+When calling an asynchronous function, you can either await the function's return or you can let it run asynchronously. If you had any code that depends on the initialFetch data being returned, you would want to await the function call, but since you don't have any such dependency, you can go ahead and just call the function asynchronously.
+
+Add a function call to initialFetch in the indicated space in the editor.
+
 Step 27
 ------------
 

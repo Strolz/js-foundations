@@ -45,4 +45,5 @@ const displayAuthors = (authors) => {
   });
 };
 
+initialFetch();
 loadMoreBtn.addEventListener("click", fetchMoreAuthors);
