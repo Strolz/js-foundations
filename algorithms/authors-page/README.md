@@ -245,5 +245,19 @@ You may see a SyntaxError. This can be ignored for now.
 Step 28
 ------------
 
+Next, change the line of code that calls the json method to use the await operator instead.
+
+For example, given this code:
+
+Example Code
+  .then((res) => res.json());
+You would write:
+
+Example Code
+   await res.json();
+Then, store the result in your authorDataArr, and move the line of code that calls displayAuthors so it is immediately following your new await statement. Finally, delete the remaining then statement and its code block as it no longer serves any purpose.
+
+You will notice a SyntaxError in the console at this point. The next step will deal with refactoring the catch method to resolve this error.
+
 Step 29
 ------------
