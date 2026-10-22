@@ -1,11 +1,14 @@
 const authorContainer = document.getElementById("author-container");
 const loadMoreBtn = document.getElementById("load-more-btn");
 
+// set range for UI display
 let startingIndex = 0;
 let endingIndex = 8;
 
+// container for fetched data access 
 let authorDataArr = [];
 
+// fetch authors data, store it, render initial slice, and handle errors
 const initialFetch = async () => {
   try {
     const res = await fetch('https://cdn.freecodecamp.org/curriculum/news-author-page/authors.json');
@@ -16,6 +19,7 @@ const initialFetch = async () => {
   };
 };
 
+// handle laoding more authors and updating UI state
 const fetchMoreAuthors = () => {
   startingIndex += 8;
   endingIndex += 8;
@@ -28,6 +32,7 @@ const fetchMoreAuthors = () => {
     }
 }
 
+// render each author's card
 const displayAuthors = (authors) => {
   authors.forEach(({ author, image, url, bio }, index) => {
     authorContainer.innerHTML += `
