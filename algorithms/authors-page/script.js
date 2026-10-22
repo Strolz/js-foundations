@@ -8,7 +8,7 @@ let authorDataArr = [];
 
 const initialFetch = async () => {
   
-  fetch('https://cdn.freecodecamp.org/curriculum/news-author-page/authors.json')
+    const res = await fetch('https://cdn.freecodecamp.org/curriculum/news-author-page/authors.json')
     .then((res) => res.json())
     .then((data) => {
       authorDataArr = data;

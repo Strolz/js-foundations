@@ -228,6 +228,20 @@ Add a function call to initialFetch in the indicated space in the editor.
 Step 27
 ------------
 
+At this point, the behavior of the app should not have changed. The code still fetches a file from the CDN and then processes the retrieved data into JSON. Once that's done, it saves that data into the authorDataArr variable and then calls displayAuthors.
+
+Modify the call to fetch so that it uses the await operator. Save the result in a new const variable called res. The new variable should be locally defined within initialFetch.
+
+Given this code:
+
+Example Code
+  fetch('https://cdn.freecodecamp.org/curriculum/news-author-page/authors.json')
+You would write:
+
+Example Code
+  await fetch('https://cdn.freecodecamp.org/curriculum/news-author-page/authors.json')
+You may see a SyntaxError. This can be ignored for now.
+
 Step 28
 ------------
 
