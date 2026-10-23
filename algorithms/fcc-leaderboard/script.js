@@ -15,5 +15,12 @@ const allCategories = {
 };
 
 function timeAgo(timestamp) {
+    const now = new Date()
+    const past = new Date(timestamp);
+    const diffMs = now - past;
+    const diffMinutes = Math.floor(diffMs / 60000);
 
+    if (diffMinutes < 60) {
+        return `${diffMinutes}m agi`
+    }
 }
