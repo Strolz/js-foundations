@@ -36,5 +36,7 @@ function timeAgo(timestamp) {
 }
 
 function viewCount(views) {
+    if (views < 1000) return views;
 
+    return `${Math.floor(views / 1000)}k`
 }
