@@ -34,3 +34,7 @@ function timeAgo(timestamp) {
 
     return `${diffDays}d ago`;
 }
+
+function viewCount(views) {
+
+}
