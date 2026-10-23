@@ -21,6 +21,12 @@ function timeAgo(timestamp) {
     const diffMinutes = Math.floor(diffMs / 60000);
 
     if (diffMinutes < 60) {
-        return `${diffMinutes}m agi`
+        return `${diffMinutes}m ago`
+    }
+
+    const diffHours = Math.floor(diffMinutes / 60)
+    
+    if (diffHours < 24) {
+        return `${diffHours}h ago`
     }
 }
