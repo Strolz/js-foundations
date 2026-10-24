@@ -51,3 +51,7 @@ function forumCategory(id) {
     return `<a class="category general" href="${forumCategoryUrl}general/${id}">General</a>`;
 
 }
+
+function avatars(posters, users) {
+
+}
