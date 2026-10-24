@@ -69,3 +69,7 @@ function avatars(posters, users) {
     })
     .join("");
 }
+
+function showLatestPosts(obj) {
+
+}
