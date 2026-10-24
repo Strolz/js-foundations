@@ -40,3 +40,7 @@ function viewCount(views) {
 
     return `${Math.floor(views / 1000)}k`
 }
+
+function forumCategory(id) {
+
+}
