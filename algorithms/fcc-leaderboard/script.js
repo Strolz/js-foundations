@@ -42,5 +42,12 @@ function viewCount(views) {
 }
 
 function forumCategory(id) {
+    const categoryObj = allCategories[id];
+
+    if (categoryObj) {
+        return `<a class="category ${categoryObj.className}" href="${forumCategoryUrl}${categoryObj.className}/${id}">${categoryObj.category}</a>`;
+    }
+
+    return `<a class="category general" href="${forumCategoryUrl}general/${id}">General</a>`;
 
 }
