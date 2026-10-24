@@ -53,5 +53,19 @@ function forumCategory(id) {
 }
 
 function avatars(posters, users) {
+  return posters
+    .map(poster => {
+      const matchedUser = users.find(
+        user => user.id === poster.user_id
+      );
 
+      const avatar = matchedUser.avatar_template.replace("{size}", 30);
+
+      const avatarSrc = avatar.startsWith("/")
+        ? `${avatarUrl}${avatar}`
+        : avatar;
+
+      return `<img src="${avatarSrc}" alt="${matchedUser.name}">`;
+    })
+    .join("");
 }
