@@ -76,6 +76,17 @@ function showLatestPosts(obj) {
 
   const postsContainer = document.getElementById("posts-container");
 
+  postsContainer.innerHTML += `
+    <tr>
+      <td>
+        <a></a>
+      </td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  `
 }
 
 const fetchData = async () => {
