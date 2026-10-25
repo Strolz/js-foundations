@@ -74,6 +74,8 @@ function showLatestPosts(obj) {
   const {users, topic_list} = obj;
   const {topics} = topic_list;
 
+  const postsContainer = document.getElementById("posts-container");
+
   const rows = topics.map(topic => {
     const {
       id,
@@ -85,9 +87,6 @@ function showLatestPosts(obj) {
       category_id,
       posters
     } = topic
-  })
-
-  const postsContainer = document.getElementById("posts-container");
 
   postsContainer.innerHTML += `
     <tr>
@@ -100,6 +99,7 @@ function showLatestPosts(obj) {
       <td></td>
     </tr>
   `
+  })
 }
 
 const fetchData = async () => {
