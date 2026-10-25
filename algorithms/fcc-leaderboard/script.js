@@ -73,3 +73,7 @@ function avatars(posters, users) {
 function showLatestPosts(obj) {
 
 }
+
+async function fetchData() {
+  
+}
