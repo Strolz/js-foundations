@@ -71,7 +71,8 @@ function avatars(posters, users) {
 }
 
 function showLatestPosts(obj) {
-
+  const {users, topic_list} = obj;
+  const {topics} = topic_list;
 }
 
 const fetchData = async () => {
