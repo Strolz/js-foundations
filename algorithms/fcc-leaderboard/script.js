@@ -74,6 +74,6 @@ function showLatestPosts(obj) {
 
 }
 
-async function fetchData() {
-  
+const fetchData = async () => {
+
 }
