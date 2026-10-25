@@ -74,6 +74,19 @@ function showLatestPosts(obj) {
   const {users, topic_list} = obj;
   const {topics} = topic_list;
 
+  const rows = topics.map(topic => {
+    const {
+      id,
+      title,
+      slug,
+      posts_count,
+      views,
+      bumped_at,
+      category_id,
+      posters
+    } = topic
+  })
+
   const postsContainer = document.getElementById("posts-container");
 
   postsContainer.innerHTML += `
