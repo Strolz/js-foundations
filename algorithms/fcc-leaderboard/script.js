@@ -131,3 +131,5 @@ const fetchData = async () => {
     console.log(forumLatest)
   };
 }
+
+fetchData();
