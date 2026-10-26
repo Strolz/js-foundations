@@ -101,7 +101,9 @@ function showLatestPosts(obj) {
         </div>
       </td>
       
-      <td></td>
+      <td>
+        ${posts_count - 1}
+      </td>
       
       <td></td>
       
