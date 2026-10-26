@@ -94,9 +94,17 @@ function showLatestPosts(obj) {
           <a class="post-title" href="${forumTopicUrl}${slug}/${id}">${title}</a>
           ${forumCategory(category_id)}
       </td>
+
+      <td>
+        <div class="avatar-container">
+          ${avatars(posters, users)}
+        </div>
+      </td>
+      
       <td></td>
+      
       <td></td>
-      <td></td>
+      
       <td></td>
     </tr>
   `
