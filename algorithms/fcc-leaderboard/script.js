@@ -115,6 +115,9 @@ function showLatestPosts(obj) {
     </tr>
   `
   })
+
+  postsContainer.innerHTML += rows.join("")
+
 }
 
 const fetchData = async () => {
