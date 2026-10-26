@@ -105,7 +105,9 @@ function showLatestPosts(obj) {
         ${posts_count - 1}
       </td>
       
-      <td></td>
+      <td>
+        ${viewCount(views)}
+      </td>
       
       <td></td>
     </tr>
