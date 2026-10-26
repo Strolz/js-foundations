@@ -91,7 +91,8 @@ function showLatestPosts(obj) {
   postsContainer.innerHTML += `
     <tr>
       <td>
-        <a></a>
+          <a class="post-title" href="${forumTopicUrl}${slug}/${id}">${title}</a>
+          ${forumCategory(category_id)}
       </td>
       <td></td>
       <td></td>
