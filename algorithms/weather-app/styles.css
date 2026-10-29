@@ -18,3 +18,9 @@ body {
     align-items: center;
     height: 100dvh;
 }
+
+.weather-app {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
