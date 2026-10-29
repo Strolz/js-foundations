@@ -9,3 +9,7 @@ const location = document.getElementById("location");
 
 const locationSelection = document.querySelector("select");
 const weatherBtn = document.getElementById("get-weather-btn");
+
+async function getWeather(city) {
+    
+}
