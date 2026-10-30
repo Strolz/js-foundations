@@ -13,7 +13,8 @@ const weatherBtn = document.getElementById("get-weather-btn");
 async function getWeather(city) {
     try {
         const res = await fetch(`https://weather-proxy.freecodecamp.rocks/api/city/${city}`);
-        return await res.json()
+        const data = await res.json()
+        return data;
     } catch (err) {
         console.log(err);
     }
