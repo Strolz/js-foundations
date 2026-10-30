@@ -18,3 +18,7 @@ async function getWeather(city) {
         console.log(err);
     }
 }
+
+async function showWeather(city) {
+
+}
