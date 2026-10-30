@@ -23,3 +23,8 @@ async function getWeather(city) {
 async function showWeather(city) {
 
 }
+
+weatherBtn.addEventListener("click", () => {
+    let selectedLocation = locationSelection.value;
+    showWeather(selectedLocation);
+})
