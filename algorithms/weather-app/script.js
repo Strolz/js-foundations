@@ -21,7 +21,8 @@ async function getWeather(city) {
 }
 
 async function showWeather(city) {
-
+    const data = getWeather(city);
+    
 }
 
 weatherBtn.addEventListener("click", () => {
