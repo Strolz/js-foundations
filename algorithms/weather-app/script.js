@@ -9,3 +9,12 @@ const locations = document.getElementById("location");
 
 const locationSelection = document.querySelector("select");
 const weatherBtn = document.getElementById("get-weather-btn");
+
+async function getWeather(city) {
+    try {
+        const res = await fetch(`https://weather-proxy.freecodecamp.rocks/api/city/${city}`);
+        const data = await res.json()
+    } catch (err) {
+        console.log(err);
+    }
+}
