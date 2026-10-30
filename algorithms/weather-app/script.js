@@ -23,7 +23,8 @@ async function getWeather(city) {
 async function showWeather(city) {
     const data = await getWeather(city);
     weatherIcon.src = data.weather[0].icon;
-    
+    mainTemp.textContent = `${data.main.temp} c`;
+    feelsLike.textContent = `${data.main.feels_like} c`
 }
 
 weatherBtn.addEventListener("click", () => {
