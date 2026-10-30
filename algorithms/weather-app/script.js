@@ -21,7 +21,8 @@ async function getWeather(city) {
 }
 
 async function showWeather(city) {
-    const data = getWeather(city);
+    const data = await getWeather(city);
+    weatherIcon.src = data.weather[0].icon;
     
 }
 
