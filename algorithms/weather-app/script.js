@@ -14,6 +14,11 @@ async function getWeather(city) {
     try {
         const res = await fetch(`https://weather-proxy.freecodecamp.rocks/api/city/${city}`);
         const data = await res.json()
+
+        if (data.error) {
+            throw new Error()
+        }
+
         return data;
     } catch (err) {
         console.log(err);
