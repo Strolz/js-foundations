@@ -27,8 +27,8 @@ async function showWeather(city) {
     feelsLike.textContent = `${data.main.feels_like} c`
 }
 
-function isUndefined(value) {
-    return value !== undefined ? value : "N/A"
+function isUndefined(value, append) {
+    return value !== undefined ? value + append : "N/A"
 }
 
 weatherBtn.addEventListener("click", () => {
