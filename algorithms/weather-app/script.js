@@ -23,8 +23,13 @@ async function getWeather(city) {
 async function showWeather(city) {
     const data = await getWeather(city);
     weatherIcon.src = data.weather[0].icon;
-    mainTemp.textContent = `${data.main.temp} c`;
-    feelsLike.textContent = `${data.main.feels_like} c`
+    mainTemp.textContent = isUndefined(data.main.temp, "°C");
+    feelsLike.textContent = isUndefined(data.main.feels_like, "°C");
+    humidity.textContent = isUndefined(data.main.humidity, "%");
+    wind.textContent = isUndefined(data.wind.speed, "m/s");
+    windGust.textContent = isUndefined(data.wind.gust, "m/s");
+    weatherMain.textContent = data.weather[0].main;
+    locations.textContent = data.name;
 }
 
 function isUndefined(value, append) {
